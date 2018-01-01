@@ -12,7 +12,7 @@ title: HASHBOX
 description: 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그
 cover: assets/images/blog-cover.jpg
 logo: assets/images/hashbox-logo.png
-logo_dark: assets/images/favicon.png
+logo_dark: assets/images/project_insple.ico
 favicon: assets/images/favicon.png
 production_url: https://hashbox.github.io/
 source_url: https://github.com/hashbox/hashbox.github.io/
