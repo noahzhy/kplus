@@ -3,52 +3,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>/jasper2/</title>
+      <title>/</title>
    
-   <link>/jasper2/</link>
+   <link>/</link>
    <description>The professional publishing platform</description>
-   <language>en-uk</language>
+   <language>ko-kr</language>
    
    <title>
-   <![CDATA[ Ghost ]]>
+   <![CDATA[ HASHBOX ]]>
    </title>
    <description>
    <![CDATA[ The professional publishing platform ]]>
    </description>
-   <link>/jasper2/</link>
+   <link>/</link>
    <image>
-   <url>/jasper2/assets/images/favicon.png</url>
-   <title>Ghost</title>
-   <link>/jasper2/</link>
+   <url>//assets/images/favicon.png</url>
+   <title>HASHBOX</title>
+   <link>/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="/jasper2/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>Out to Sea</title>
-	  <link>/jasper2/out-to-sea</link>
-		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-						<author>Edgar Rice Burroughs</author>
-				
+	  <link>/out-to-sea</link>
 		
 				
 		
 	  <pubDate>1912-07-24T10:18:00+00:00</pubDate>
-	  <guid>/jasper2/out-to-sea</guid>
+	  <guid>/out-to-sea</guid>
 	  <description><![CDATA[
 	     <p>I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.</p>
 
@@ -131,26 +117,12 @@
 
 	<item>
 	  <title>Looking-Glass house</title>
-	  <link>/jasper2/looking-glass-house</link>
-		
-				
-		
-				
-		
-				
-		
-				
-						<author>Lewis Carroll</author>
-				
-		
-				
-		
-				
+	  <link>/looking-glass-house</link>
 		
 				
 		
 	  <pubDate>1871-03-18T10:18:00+00:00</pubDate>
-	  <guid>/jasper2/looking-glass-house</guid>
+	  <guid>/looking-glass-house</guid>
 	  <description><![CDATA[
 	     <p>One thing was certain, that the white kitten had had nothing to do with it:— it was the black kitten’s fault entirely. For the white kitten had been having its face washed by the old cat for the last quarter of an hour (and bearing it pretty well, considering); so you see that it couldn’t have had any hand in the mischief.
 The way Dinah washed her children’s faces was this: first she held the poor thing down by its ear with one paw, and then with the other paw she rubbed its face all over, the wrong way, beginning at the nose: and just now, as I said, she was hard at work on the white kitten, which was lying quite still and trying to purr — no doubt feeling that it was all meant for its good.
@@ -186,26 +158,12 @@ The poor King looked puzzled and unhappy, and struggled with the pencil for some
 
 	<item>
 	  <title>Down The Rabbit Hole</title>
-	  <link>/jasper2/down-the-rabbit-hole</link>
-		
-				
-		
-				
-		
-				
-		
-				
-						<author>Lewis Carroll</author>
-				
-		
-				
-		
-				
+	  <link>/down-the-rabbit-hole</link>
 		
 				
 		
 	  <pubDate>1865-11-26T10:18:00+00:00</pubDate>
-	  <guid>/jasper2/down-the-rabbit-hole</guid>
+	  <guid>/down-the-rabbit-hole</guid>
 	  <description><![CDATA[
 	     <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversation?’</p>
 

@@ -3,52 +3,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>/jasper2/</title>
+      <title>/</title>
    
-   <link>/jasper2/</link>
+   <link>/</link>
    <description>The professional publishing platform</description>
-   <language>en-uk</language>
+   <language>ko-kr</language>
    
    <title>
-   <![CDATA[ Ghost ]]>
+   <![CDATA[ HASHBOX ]]>
    </title>
    <description>
    <![CDATA[ The professional publishing platform ]]>
    </description>
-   <link>/jasper2/</link>
+   <link>/</link>
    <image>
-   <url>/jasper2/assets/images/favicon.png</url>
-   <title>Ghost</title>
-   <link>/jasper2/</link>
+   <url>//assets/images/favicon.png</url>
+   <title>HASHBOX</title>
+   <link>/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="/jasper2/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>The Businessman & The Fisherman</title>
-	  <link>/jasper2/the-businessman-and-fisherman</link>
-		
-				
-		
-				
-						<author>Hannah Wolfe</author>
-				
-		
-				
-		
-				
-		
-				
-		
-				
+	  <link>/the-businessman-and-fisherman</link>
 		
 				
 		
 	  <pubDate>2014-08-12T10:18:00+00:00</pubDate>
-	  <guid>/jasper2/the-businessman-and-fisherman</guid>
+	  <guid>/the-businessman-and-fisherman</guid>
 	  <description><![CDATA[
 	     <p>An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.</p>
 

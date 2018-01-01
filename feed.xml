@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/jasper2/feed.xml" rel="self" type="application/atom+xml" /><link href="/jasper2/" rel="alternate" type="text/html" /><updated>2017-12-14T16:36:52+00:00</updated><id>/jasper2/</id><title type="html">Ghost</title><subtitle>The professional publishing platform</subtitle><entry><title type="html">Welcome to Ghost</title><link href="/jasper2/welcome" rel="alternate" type="text/html" title="Welcome to Ghost" /><published>2017-07-27T10:00:00+00:00</published><updated>2017-07-27T10:00:00+00:00</updated><id>/jasper2/welcome</id><content type="html" xml:base="/jasper2/welcome">&lt;p&gt;Hey! Welcome to Ghost, it’s great to have you :)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-01T16:47:36+00:00</updated><id>/</id><title type="html">HASHBOX</title><subtitle>The professional publishing platform</subtitle><entry><title type="html">Welcome to Ghost</title><link href="/welcome" rel="alternate" type="text/html" title="Welcome to Ghost" /><published>2017-07-27T10:00:00+00:00</published><updated>2017-07-27T10:00:00+00:00</updated><id>/welcome</id><content type="html" xml:base="/welcome">&lt;p&gt;Hey! Welcome to Ghost, it’s great to have you :)&lt;/p&gt;
 
 &lt;p&gt;We know that first impressions are important, so we’ve populated your new site with some initial &lt;strong&gt;Getting Started&lt;/strong&gt; posts that will help you get familiar with everything in no time. This is the first one!&lt;/p&gt;
 
@@ -13,7 +13,7 @@
 
 &lt;p&gt;The main thing you’ll want to read about next is probably: &lt;a href=&quot;https://demo.ghost.io/the-editor/&quot;&gt;the Ghost editor&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Once you’re done reading, you can simply delete the default &lt;strong&gt;Ghost&lt;/strong&gt; user from your team to remove all of these introductory posts!&lt;/p&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">Hey! Welcome to Ghost, it’s great to have you :)</summary></entry><entry><title type="html">Using the Ghost editor</title><link href="/jasper2/the-editor" rel="alternate" type="text/html" title="Using the Ghost editor" /><published>2017-07-27T09:00:00+00:00</published><updated>2017-07-27T09:00:00+00:00</updated><id>/jasper2/the-editor</id><content type="html" xml:base="/jasper2/the-editor">&lt;p&gt;Ghost uses a language called &lt;strong&gt;Markdown&lt;/strong&gt; to format text.&lt;/p&gt;
+&lt;p&gt;Once you’re done reading, you can simply delete the default &lt;strong&gt;Ghost&lt;/strong&gt; user from your team to remove all of these introductory posts!&lt;/p&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">Hey! Welcome to Ghost, it’s great to have you :)</summary></entry><entry><title type="html">Using the Ghost editor</title><link href="/the-editor" rel="alternate" type="text/html" title="Using the Ghost editor" /><published>2017-07-27T09:00:00+00:00</published><updated>2017-07-27T09:00:00+00:00</updated><id>/the-editor</id><content type="html" xml:base="/the-editor">&lt;p&gt;Ghost uses a language called &lt;strong&gt;Markdown&lt;/strong&gt; to format text.&lt;/p&gt;
 &lt;p&gt;When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you can quickly apply formatting as you type, without needing to pause.&lt;/p&gt;
 &lt;p&gt;At the bottom of the editor, you'll find a toolbar with basic formatting options to help you get started as easily as possible. You'll also notice that there's a &lt;strong&gt;?&lt;/strong&gt; icon, which contains more advanced shortcuts.&lt;/p&gt;
 &lt;p&gt;For now, though, let's run you through some of the basics. You'll want to make sure you're editing this post in order to see all the Markdown we've used.&lt;/p&gt;
@@ -54,7 +54,7 @@
 &lt;h2 id=&quot;dividingthingsup&quot;&gt;Dividing things up&lt;/h2&gt;
 &lt;p&gt;If you're writing a piece in parts and you just feel like you need to divide a couple of sections distinctly from each other, a horizontal rule might be just what you need. Dropping &lt;code&gt;---&lt;/code&gt; on a new line will create a sleak divider, anywhere you want it.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the &lt;a href=&quot;/advanced-markdown/&quot;&gt;Advanced Markdown Guide&lt;/a&gt; - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of &lt;a href=&quot;/using-tags/&quot;&gt;how to use Ghost tags&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">Ghost uses a language called Markdown to format text. When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you can quickly apply formatting as you type, without needing to pause. At the bottom of the editor, you'll find a toolbar with basic formatting options to help you get started as easily as possible. You'll also notice that there's a ? icon, which contains more advanced shortcuts. For now, though, let's run you through some of the basics. You'll want to make sure you're editing this post in order to see all the Markdown we've used. Formatting text The most common shortcuts are of course, bold text, italic text, and hyperlinks. These generally make up the bulk of any document. You can type the characters out, but you can also use keyboard shortcuts. CMD/Ctrl + B for Bold CMD/Ctrl + I for Italic CMD/Ctrl + K for a Link CMD/Ctrl + H for a Heading (Press multiple times for h2/h3/h4/etc) With just a couple of extra characters here and there, you're well on your way to creating a beautifully formatted story. Inserting images Images in Markdown look just the same as links, except they're prefixed with an exclamation mark, like this: ![Image description](/path/to/image.jpg) Most Markdown editors don't make you type this out, though. In Ghost you can click on the image icon in the toolbar at the bottom of the editor, or you can just click and drag an image from your desktop directly into the editor. Both will upload the image for you and generate the appropriate Markdown. Important Note: Ghost does not currently have automatic image resizing, so it's always a good idea to make sure your images aren't gigantic files before uploading them to Ghost. Making lists Lists in HTML are a formatting nightmare, but in Markdown they become an absolute breeze with just a couple of characters and a bit of smart automation. For numbered lists, just write out the numbers. For bullet lists, just use * or - or +. Like this: Crack the eggs over a bowl Whisk them together Make an omellete or Remember to buy milk Feed the cat Come up with idea for next story Adding quotes When you want to pull out a particularly good except in the middle of a piece, you can use &amp;gt; at the beginning of a paragraph to turn it into a Blockquote. You might've seen this formatting before in email clients. A well placed quote guides a reader through a story, helping them to understand the most important points being made All themes handles blockquotes slightly differently. Sometimes they'll look better kept shorter, while other times you can quote fairly hefty amounts of text and get away with it. Generally, the safest option is to use blockquotes sparingly. Dividing things up If you're writing a piece in parts and you just feel like you need to divide a couple of sections distinctly from each other, a horizontal rule might be just what you need. Dropping --- on a new line will create a sleak divider, anywhere you want it. This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the Advanced Markdown Guide - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of how to use Ghost tags.</summary></entry><entry><title type="html">Organising your content with tags</title><link href="/jasper2/using-tags" rel="alternate" type="text/html" title="Organising your content with tags" /><published>2017-07-27T08:00:00+00:00</published><updated>2017-07-27T08:00:00+00:00</updated><id>/jasper2/using-tags</id><content type="html" xml:base="/jasper2/using-tags">&lt;p&gt;Ghost has a single, powerful organisational taxonomy, called tags.&lt;/p&gt;
+&lt;p&gt;This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the &lt;a href=&quot;/advanced-markdown/&quot;&gt;Advanced Markdown Guide&lt;/a&gt; - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of &lt;a href=&quot;/using-tags/&quot;&gt;how to use Ghost tags&lt;/a&gt;.&lt;/p&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">Ghost uses a language called Markdown to format text. When you go to edit a post and see special characters and colours intertwined between the words, those are Markdown shortcuts which tell Ghost what to do with the words in your document. The biggest benefit of Markdown is that you can quickly apply formatting as you type, without needing to pause. At the bottom of the editor, you'll find a toolbar with basic formatting options to help you get started as easily as possible. You'll also notice that there's a ? icon, which contains more advanced shortcuts. For now, though, let's run you through some of the basics. You'll want to make sure you're editing this post in order to see all the Markdown we've used. Formatting text The most common shortcuts are of course, bold text, italic text, and hyperlinks. These generally make up the bulk of any document. You can type the characters out, but you can also use keyboard shortcuts. CMD/Ctrl + B for Bold CMD/Ctrl + I for Italic CMD/Ctrl + K for a Link CMD/Ctrl + H for a Heading (Press multiple times for h2/h3/h4/etc) With just a couple of extra characters here and there, you're well on your way to creating a beautifully formatted story. Inserting images Images in Markdown look just the same as links, except they're prefixed with an exclamation mark, like this: ![Image description](/path/to/image.jpg) Most Markdown editors don't make you type this out, though. In Ghost you can click on the image icon in the toolbar at the bottom of the editor, or you can just click and drag an image from your desktop directly into the editor. Both will upload the image for you and generate the appropriate Markdown. Important Note: Ghost does not currently have automatic image resizing, so it's always a good idea to make sure your images aren't gigantic files before uploading them to Ghost. Making lists Lists in HTML are a formatting nightmare, but in Markdown they become an absolute breeze with just a couple of characters and a bit of smart automation. For numbered lists, just write out the numbers. For bullet lists, just use * or - or +. Like this: Crack the eggs over a bowl Whisk them together Make an omellete or Remember to buy milk Feed the cat Come up with idea for next story Adding quotes When you want to pull out a particularly good except in the middle of a piece, you can use &amp;gt; at the beginning of a paragraph to turn it into a Blockquote. You might've seen this formatting before in email clients. A well placed quote guides a reader through a story, helping them to understand the most important points being made All themes handles blockquotes slightly differently. Sometimes they'll look better kept shorter, while other times you can quote fairly hefty amounts of text and get away with it. Generally, the safest option is to use blockquotes sparingly. Dividing things up If you're writing a piece in parts and you just feel like you need to divide a couple of sections distinctly from each other, a horizontal rule might be just what you need. Dropping --- on a new line will create a sleak divider, anywhere you want it. This should get you going with the vast majority of what you need to do in the editor, but if you're still curious about more advanced tips then check out the Advanced Markdown Guide - or if you'd rather learn about how Ghost taxononomies work, we've got a overview of how to use Ghost tags.</summary></entry><entry><title type="html">Organising your content with tags</title><link href="/using-tags" rel="alternate" type="text/html" title="Organising your content with tags" /><published>2017-07-27T08:00:00+00:00</published><updated>2017-07-27T08:00:00+00:00</updated><id>/using-tags</id><content type="html" xml:base="/using-tags">&lt;p&gt;Ghost has a single, powerful organisational taxonomy, called tags.&lt;/p&gt;
 &lt;p&gt;It doesn't matter whether you want to call them categories, tags, boxes, or anything else. You can think of Ghost tags a lot like Gmail labels. By tagging posts with one or more keyword, you can organise articles into buckets of related content.&lt;/p&gt;
 &lt;h2 id=&quot;basictagging&quot;&gt;Basic tagging&lt;/h2&gt;
 &lt;p&gt;When you write a post, you can assign tags to help differentiate between categories of content. For example, you might tag some posts with &lt;code&gt;News&lt;/code&gt; and other posts with &lt;code&gt;Cycling&lt;/code&gt;, which would create two distinct categories of content listed on &lt;code&gt;/tag/news/&lt;/code&gt; and &lt;code&gt;/tag/cycling/&lt;/code&gt;, respectively.&lt;/p&gt;
@@ -79,7 +79,7 @@
     {{/has}}
 {{/post}}
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You can find documentation for theme development techniques like this and many more over on Ghost's extensive &lt;a href=&quot;https://themes.ghost.org/&quot;&gt;theme documentation&lt;/a&gt;.&lt;/p&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">Ghost has a single, powerful organisational taxonomy, called tags. It doesn't matter whether you want to call them categories, tags, boxes, or anything else. You can think of Ghost tags a lot like Gmail labels. By tagging posts with one or more keyword, you can organise articles into buckets of related content. Basic tagging When you write a post, you can assign tags to help differentiate between categories of content. For example, you might tag some posts with News and other posts with Cycling, which would create two distinct categories of content listed on /tag/news/ and /tag/cycling/, respectively. If you tag a post with both News and Cycling - then it appears in both sections. Tag archives are like dedicated home-pages for each category of content that you have. They have their own pages, their own RSS feeds, and can support their own cover images and meta data. The primary tag Inside the Ghost editor, you can drag and drop tags into a specific order. The first tag in the list is always given the most importance, and some themes will only display the primary tag (the first tag in the list) by default. So you can add the most important tag which you want to show up in your theme, but also add a bunch of related tags which are less important. News, Cycling, Bart Stevens, Extreme Sports In this example, News is the primary tag which will be displayed by the theme, but the post will also still receive all the other tags, and show up in their respective archives. Private tags Sometimes you may want to assign a post a specific tag, but you don't necessarily want that tag appearing in the theme or creating an archive page. In Ghost, hashtags are private and can be used for special styling. For example, if you sometimes publish posts with video content - you might want your theme to adapt and get rid of the sidebar for these posts, to give more space for an embedded video to fill the screen. In this case, you could use private tags to tell your theme what to do. News, Cycling, #video Here, the theme would assign the post publicly displayed tags of News, and Cycling - but it would also keep a private record of the post being tagged with #video. In your theme, you could then look for private tags conditionally and give them special formatting: {{#post}} {{#has tag=&amp;quot;#video&amp;quot;}} ...markup for a nice big video post layout... {{else}} ...regular markup for a post... {{/has}} {{/post}} You can find documentation for theme development techniques like this and many more over on Ghost's extensive theme documentation.</summary></entry><entry><title type="html">Managing Ghost users</title><link href="/jasper2/managing-users" rel="alternate" type="text/html" title="Managing Ghost users" /><published>2017-07-27T07:00:00+00:00</published><updated>2017-07-27T07:00:00+00:00</updated><id>/jasper2/managing-users</id><content type="html" xml:base="/jasper2/managing-users">&lt;p&gt;Ghost has a number of different user roles for your team&lt;/p&gt;
+&lt;p&gt;You can find documentation for theme development techniques like this and many more over on Ghost's extensive &lt;a href=&quot;https://themes.ghost.org/&quot;&gt;theme documentation&lt;/a&gt;.&lt;/p&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">Ghost has a single, powerful organisational taxonomy, called tags. It doesn't matter whether you want to call them categories, tags, boxes, or anything else. You can think of Ghost tags a lot like Gmail labels. By tagging posts with one or more keyword, you can organise articles into buckets of related content. Basic tagging When you write a post, you can assign tags to help differentiate between categories of content. For example, you might tag some posts with News and other posts with Cycling, which would create two distinct categories of content listed on /tag/news/ and /tag/cycling/, respectively. If you tag a post with both News and Cycling - then it appears in both sections. Tag archives are like dedicated home-pages for each category of content that you have. They have their own pages, their own RSS feeds, and can support their own cover images and meta data. The primary tag Inside the Ghost editor, you can drag and drop tags into a specific order. The first tag in the list is always given the most importance, and some themes will only display the primary tag (the first tag in the list) by default. So you can add the most important tag which you want to show up in your theme, but also add a bunch of related tags which are less important. News, Cycling, Bart Stevens, Extreme Sports In this example, News is the primary tag which will be displayed by the theme, but the post will also still receive all the other tags, and show up in their respective archives. Private tags Sometimes you may want to assign a post a specific tag, but you don't necessarily want that tag appearing in the theme or creating an archive page. In Ghost, hashtags are private and can be used for special styling. For example, if you sometimes publish posts with video content - you might want your theme to adapt and get rid of the sidebar for these posts, to give more space for an embedded video to fill the screen. In this case, you could use private tags to tell your theme what to do. News, Cycling, #video Here, the theme would assign the post publicly displayed tags of News, and Cycling - but it would also keep a private record of the post being tagged with #video. In your theme, you could then look for private tags conditionally and give them special formatting: {{#post}} {{#has tag=&amp;quot;#video&amp;quot;}} ...markup for a nice big video post layout... {{else}} ...regular markup for a post... {{/has}} {{/post}} You can find documentation for theme development techniques like this and many more over on Ghost's extensive theme documentation.</summary></entry><entry><title type="html">Managing Ghost users</title><link href="/managing-users" rel="alternate" type="text/html" title="Managing Ghost users" /><published>2017-07-27T07:00:00+00:00</published><updated>2017-07-27T07:00:00+00:00</updated><id>/managing-users</id><content type="html" xml:base="/managing-users">&lt;p&gt;Ghost has a number of different user roles for your team&lt;/p&gt;
 &lt;h3 id=&quot;authors&quot;&gt;Authors&lt;/h3&gt;
 &lt;p&gt;The base user level in Ghost is an author. Authors can write posts, edit their own posts, and publish their own posts. Authors are &lt;strong&gt;trusted&lt;/strong&gt; users. If you don't trust users to be allowed to publish their own posts, you shouldn't invite them to Ghost admin.&lt;/p&gt;
 &lt;h3 id=&quot;editors&quot;&gt;Editors&lt;/h3&gt;
@@ -89,12 +89,12 @@
 &lt;h3 id=&quot;theowner&quot;&gt;The Owner&lt;/h3&gt;
 &lt;p&gt;There is only ever one owner of a Ghost site. The owner is a special user which has all the same permissions as an Administrator, but with two exceptions: The Owner can never be deleted. And in some circumstances the owner will have access to additional special settings if applicable — for example, billing details, if using Ghost(Pro).&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;It's a good idea to ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design.&lt;/p&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">Ghost has a number of different user roles for your team Authors The base user level in Ghost is an author. Authors can write posts, edit their own posts, and publish their own posts. Authors are trusted users. If you don't trust users to be allowed to publish their own posts, you shouldn't invite them to Ghost admin. Editors Editors are the 2nd user level in Ghost. Editors can do everything that an Author can do, but they can also edit and publish the posts of others - as well as their own. Editors can also invite new authors to the site. Administrators The top user level in Ghost is Administrator. Again, administrators can do everything that Authors and Editors can do, but they can also edit all site settings and data, not just content. Additionally, administrators have full access to invite, manage or remove any other user of the site. The Owner There is only ever one owner of a Ghost site. The owner is a special user which has all the same permissions as an Administrator, but with two exceptions: The Owner can never be deleted. And in some circumstances the owner will have access to additional special settings if applicable — for example, billing details, if using Ghost(Pro). It's a good idea to ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design.</summary></entry><entry><title type="html">Making your site private</title><link href="/jasper2/private-sites" rel="alternate" type="text/html" title="Making your site private" /><published>2017-07-27T06:00:00+00:00</published><updated>2017-07-27T06:00:00+00:00</updated><id>/jasper2/private-sites</id><content type="html" xml:base="/jasper2/private-sites">&lt;p&gt;Sometimes you might want to put your site behind closed doors&lt;/p&gt;
+&lt;p&gt;It's a good idea to ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design.&lt;/p&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">Ghost has a number of different user roles for your team Authors The base user level in Ghost is an author. Authors can write posts, edit their own posts, and publish their own posts. Authors are trusted users. If you don't trust users to be allowed to publish their own posts, you shouldn't invite them to Ghost admin. Editors Editors are the 2nd user level in Ghost. Editors can do everything that an Author can do, but they can also edit and publish the posts of others - as well as their own. Editors can also invite new authors to the site. Administrators The top user level in Ghost is Administrator. Again, administrators can do everything that Authors and Editors can do, but they can also edit all site settings and data, not just content. Additionally, administrators have full access to invite, manage or remove any other user of the site. The Owner There is only ever one owner of a Ghost site. The owner is a special user which has all the same permissions as an Administrator, but with two exceptions: The Owner can never be deleted. And in some circumstances the owner will have access to additional special settings if applicable — for example, billing details, if using Ghost(Pro). It's a good idea to ask all of your users to fill out their user profiles, including bio and social links. These will populate rich structured data for posts and generally create more opportunities for themes to fully populate their design.</summary></entry><entry><title type="html">Making your site private</title><link href="/private-sites" rel="alternate" type="text/html" title="Making your site private" /><published>2017-07-27T06:00:00+00:00</published><updated>2017-07-27T06:00:00+00:00</updated><id>/private-sites</id><content type="html" xml:base="/private-sites">&lt;p&gt;Sometimes you might want to put your site behind closed doors&lt;/p&gt;
 &lt;p&gt;If you've got a publication that you don't want the world to see yet because it's not ready to launch, you can hide your Ghost site behind a simple shared pass-phrase.&lt;/p&gt;
 &lt;p&gt;You can toggle this preference on at the bottom of Ghost's General Settings&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://casper.ghost.org/v1.0.0/images/private.png&quot; alt=&quot;private&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Ghost will give you a short, randomly generated pass-phrase which you can share with anyone who needs access to the site while you're working on it. While this setting is enabled, all search engine optimisation features will be switched off to help keep the site off the radar.&lt;/p&gt;
-&lt;p&gt;Do remember though, this is &lt;em&gt;not&lt;/em&gt; secure authentication. You shouldn't rely on this feature for protecting important private data. It's just a simple, shared pass-phrase for very basic privacy.&lt;/p&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">Sometimes you might want to put your site behind closed doors If you've got a publication that you don't want the world to see yet because it's not ready to launch, you can hide your Ghost site behind a simple shared pass-phrase. You can toggle this preference on at the bottom of Ghost's General Settings Ghost will give you a short, randomly generated pass-phrase which you can share with anyone who needs access to the site while you're working on it. While this setting is enabled, all search engine optimisation features will be switched off to help keep the site off the radar. Do remember though, this is not secure authentication. You shouldn't rely on this feature for protecting important private data. It's just a simple, shared pass-phrase for very basic privacy.</summary></entry><entry><title type="html">Advanced Markdown tips</title><link href="/jasper2/advanced-markdown" rel="alternate" type="text/html" title="Advanced Markdown tips" /><published>2017-07-27T05:00:00+00:00</published><updated>2017-07-27T05:00:00+00:00</updated><id>/jasper2/advanced-markdown</id><content type="html" xml:base="/jasper2/advanced-markdown">&lt;p&gt;There are lots of powerful things you can do with the Ghost editor&lt;/p&gt;
+&lt;p&gt;Do remember though, this is &lt;em&gt;not&lt;/em&gt; secure authentication. You shouldn't rely on this feature for protecting important private data. It's just a simple, shared pass-phrase for very basic privacy.&lt;/p&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">Sometimes you might want to put your site behind closed doors If you've got a publication that you don't want the world to see yet because it's not ready to launch, you can hide your Ghost site behind a simple shared pass-phrase. You can toggle this preference on at the bottom of Ghost's General Settings Ghost will give you a short, randomly generated pass-phrase which you can share with anyone who needs access to the site while you're working on it. While this setting is enabled, all search engine optimisation features will be switched off to help keep the site off the radar. Do remember though, this is not secure authentication. You shouldn't rely on this feature for protecting important private data. It's just a simple, shared pass-phrase for very basic privacy.</summary></entry><entry><title type="html">Advanced Markdown tips</title><link href="/advanced-markdown" rel="alternate" type="text/html" title="Advanced Markdown tips" /><published>2017-07-27T05:00:00+00:00</published><updated>2017-07-27T05:00:00+00:00</updated><id>/advanced-markdown</id><content type="html" xml:base="/advanced-markdown">&lt;p&gt;There are lots of powerful things you can do with the Ghost editor&lt;/p&gt;
 &lt;p&gt;If you've gotten pretty comfortable with &lt;a href=&quot;/the-editor/&quot;&gt;all the basics&lt;/a&gt; of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
 &lt;p&gt;As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.&lt;/p&gt;
 &lt;h2 id=&quot;specialformatting&quot;&gt;Special formatting&lt;/h2&gt;
@@ -136,7 +136,7 @@
 &lt;/li&gt;
 &lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;Dogs are usually not red &lt;a href=&quot;#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using. Special formatting As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example: strike through highlight *escaped characters* Writing code blocks There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, like this. Larger snippets of code can be displayed across multiple lines using triple back ticks: .my-link { text-decoration: underline; } If you want to get really fancy, you can even add syntax highlighting using Prism.js. Full bleed images One neat trick which you can use in Markdown to distinguish between different types of images is to add a #hash value to the end of the source URL, and then target images containing the hash with special styling. For example: which is styled with... img[src$=&amp;quot;#full&amp;quot;] { max-width: 100vw; } This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with if you want to have a variety of image sizes and styles. Reference lists The quick brown fox, jumped over the lazy dog. Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference. Creating footnotes The quick brown fox[1] jumped over the lazy dog[2]. Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post. Full HTML Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example: Foxes are red ↩︎ Dogs are usually not red ↩︎</summary></entry><entry><title type="html">Setting up your own Ghost theme</title><link href="/jasper2/themes" rel="alternate" type="text/html" title="Setting up your own Ghost theme" /><published>2017-07-27T04:00:00+00:00</published><updated>2017-07-27T04:00:00+00:00</updated><id>/jasper2/themes</id><content type="html" xml:base="/jasper2/themes">&lt;p&gt;Creating a totally custom design for your publication&lt;/p&gt;
+&lt;/ol&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using. Special formatting As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example: strike through highlight *escaped characters* Writing code blocks There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, like this. Larger snippets of code can be displayed across multiple lines using triple back ticks: .my-link { text-decoration: underline; } If you want to get really fancy, you can even add syntax highlighting using Prism.js. Full bleed images One neat trick which you can use in Markdown to distinguish between different types of images is to add a #hash value to the end of the source URL, and then target images containing the hash with special styling. For example: which is styled with... img[src$=&amp;quot;#full&amp;quot;] { max-width: 100vw; } This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with if you want to have a variety of image sizes and styles. Reference lists The quick brown fox, jumped over the lazy dog. Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference. Creating footnotes The quick brown fox[1] jumped over the lazy dog[2]. Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post. Full HTML Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example: Foxes are red ↩︎ Dogs are usually not red ↩︎</summary></entry><entry><title type="html">Setting up your own Ghost theme</title><link href="/themes" rel="alternate" type="text/html" title="Setting up your own Ghost theme" /><published>2017-07-27T04:00:00+00:00</published><updated>2017-07-27T04:00:00+00:00</updated><id>/themes</id><content type="html" xml:base="/themes">&lt;p&gt;Creating a totally custom design for your publication&lt;/p&gt;
 &lt;p&gt;Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving you a few basic settings which act as a poor proxy for code, we just let you write code.&lt;/p&gt;
 &lt;p&gt;There are a huge range of both free and premium pre-built themes which you can get from the &lt;a href=&quot;http://marketplace.ghost.org&quot;&gt;Ghost Theme Marketplace&lt;/a&gt;, or you can simply create your own from scratch.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://marketplace.ghost.org&quot;&gt;&lt;img src=&quot;https://casper.ghost.org/v1.0.0/images/marketplace.jpg&quot; alt=&quot;marketplace&quot;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -152,7 +152,248 @@
 &lt;li&gt;and so on&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;We've got &lt;a href=&quot;http://themes.ghost.org/docs/about&quot;&gt;full and extensive theme documentation&lt;/a&gt; which outlines every template file, context and helper that you can use.&lt;/p&gt;
-&lt;p&gt;If you want to chat with other people making Ghost themes to get any advice or help, there's also a &lt;strong&gt;#themes&lt;/strong&gt; channel in our &lt;a href=&quot;https://slack.ghost.org&quot;&gt;public Slack community&lt;/a&gt; which we always recommend joining!&lt;/p&gt;</content><author><name>Ghost</name></author><category term="Getting started" /><summary type="html">Creating a totally custom design for your publication Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving you a few basic settings which act as a poor proxy for code, we just let you write code. There are a huge range of both free and premium pre-built themes which you can get from the Ghost Theme Marketplace, or you can simply create your own from scratch. Anyone can write a completely custom Ghost theme, with just some solid knowledge of HTML and CSS Ghost themes are written with a templating language called handlebars, which has a bunch of dynamic helpers to insert your data into template files. Like , for example, outputs the name of the current author. The best way to learn how to write your own Ghost theme is to have a look at the source code for Casper, which is heavily commented and should give you a sense of how everything fits together. default.hbs is the main template file, all contexts will load inside this file unless specifically told to use a different template. post.hbs is the file used in the context of viewing a post. index.hbs is the file used in the context of viewing the home page. and so on We've got full and extensive theme documentation which outlines every template file, context and helper that you can use. If you want to chat with other people making Ghost themes to get any advice or help, there's also a #themes channel in our public Slack community which we always recommend joining!</summary></entry><entry><title type="html">The Businessman &amp;amp; The Fisherman</title><link href="/jasper2/the-businessman-and-fisherman" rel="alternate" type="text/html" title="The Businessman &amp; The Fisherman" /><published>2014-08-12T10:18:00+00:00</published><updated>2014-08-12T10:18:00+00:00</updated><id>/jasper2/the-businessman-and-fisherman</id><content type="html" xml:base="/jasper2/the-businessman-and-fisherman">&lt;p&gt;An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.&lt;/p&gt;
+&lt;p&gt;If you want to chat with other people making Ghost themes to get any advice or help, there's also a &lt;strong&gt;#themes&lt;/strong&gt; channel in our &lt;a href=&quot;https://slack.ghost.org&quot;&gt;public Slack community&lt;/a&gt; which we always recommend joining!&lt;/p&gt;</content><author><name>ghost</name></author><category term="Getting started" /><summary type="html">Creating a totally custom design for your publication Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for most purposes. However, Ghost can also be completely themed to suit your needs. Rather than just giving you a few basic settings which act as a poor proxy for code, we just let you write code. There are a huge range of both free and premium pre-built themes which you can get from the Ghost Theme Marketplace, or you can simply create your own from scratch. Anyone can write a completely custom Ghost theme, with just some solid knowledge of HTML and CSS Ghost themes are written with a templating language called handlebars, which has a bunch of dynamic helpers to insert your data into template files. Like , for example, outputs the name of the current author. The best way to learn how to write your own Ghost theme is to have a look at the source code for Casper, which is heavily commented and should give you a sense of how everything fits together. default.hbs is the main template file, all contexts will load inside this file unless specifically told to use a different template. post.hbs is the file used in the context of viewing a post. index.hbs is the file used in the context of viewing the home page. and so on We've got full and extensive theme documentation which outlines every template file, context and helper that you can use. If you want to chat with other people making Ghost themes to get any advice or help, there's also a #themes channel in our public Slack community which we always recommend joining!</summary></entry><entry><title type="html">CentOS7 + Apache + Tomcat8 연동(mod_jk)</title><link href="/Apache-Tomcat-%EC%97%B0%EB%8F%99" rel="alternate" type="text/html" title="CentOS7 + Apache + Tomcat8 연동(mod_jk)" /><published>2017-06-24T10:18:00+00:00</published><updated>2017-06-24T10:18:00+00:00</updated><id>/Apache-Tomcat-%EC%97%B0%EB%8F%99</id><content type="html" xml:base="/Apache-Tomcat-%EC%97%B0%EB%8F%99">&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
+
+&lt;p&gt;이번에는 CentOS7 환경에서 아파치 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat8&lt;/code&gt;을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난 뒤에 필요하신 옵션을 추가해서 사용하세요~! 지금 부터 알아보도록 하겠습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;환경을-구축하기-위한-패키지-및-apache-httpd-설치&quot;&gt;환경을 구축하기 위한 패키지 및 Apache Httpd 설치&lt;/h2&gt;
+
+&lt;p&gt;우선 환경을 구축하기 위해서 필요로 하는 패키지를 한번에 설치하도록 하겠습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; gcc gcc-c++ httpd-devel java-1.8.0-openjdk-devel.x86_64 wget libtool make
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;기본적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;libtool&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt;환경과 &lt;code class=&quot;highlighter-rouge&quot;&gt;java jdk&lt;/code&gt;가 설치 되어 있어야하며, &lt;code class=&quot;highlighter-rouge&quot;&gt;wget&lt;/code&gt;이나 &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;는 설치가 안되 있으신 분들은 위해 넣었습니다. 이와 함께 제일 설치하기 쉬운 아파치 설치는 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd-devel&lt;/code&gt;을 통해서 설치가 가능합니다. 위 명령어를 이용하면 환경을 구축하는데 있어 필요로하는 패키지들과 &lt;code class=&quot;highlighter-rouge&quot;&gt;apache&lt;/code&gt;가 설치가 완료 하셨습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tomcat8-설치&quot;&gt;Tomcat8 설치&lt;/h2&gt;
+
+&lt;p&gt;저는 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat8&lt;/code&gt;을 설치 하게 되었는데요. 이는 http://tomcat.apache.org/download-80.cgi에 들어가시면 최신버전의 톰캣 &lt;code class=&quot;highlighter-rouge&quot;&gt;tar.gz&lt;/code&gt;압축 파일을 받으실 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://mirror.navercorp.com/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
+&lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;zxvf apache-tomcat-8.5.23.tar.gz
+mv apache-tomcat-8.5.23.tar.gz /opt/tomcat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같은 명령어를 통해서 현재 폴더에 톰캣 압축파일을 받아옵니다.  그 후 &lt;code class=&quot;highlighter-rouge&quot;&gt;tar&lt;/code&gt;명령어를 통해 압축을 풀어주고 난 뒤에 해당 폴더를 그대로 &lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/tomcat&lt;/code&gt;으로 이동을 시켜줍니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;groupadd tomcat
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;useradd &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/nologin &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; tomcat &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; /opt/tomcat tomcat
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chown &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; tomcat:tomcat /opt/tomcat
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그 후 톰캣을 사용하는 유저를 지정해주셔야합니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;그룹과 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;유저를 생성하면서 구동파일들을 옮겨놨던 &lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/tomcat&lt;/code&gt;을 지정해주고, 해당 폴더의 소유자를 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;으로 변경해주시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;그 다음에는 톰캣을 서비스에서 등록하고 서버가 부팅될 때 바로 켜지도록 설정을 할 것입니다. 수동으로 켜고 끄시는 것만 하실 경우에는 서비스만 등록하시고 &lt;code class=&quot;highlighter-rouge&quot;&gt;chkconfig&lt;/code&gt; 명령어만 입력 안하셔도 괜찮습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;tomcat-서비스-파일-생성&quot;&gt;Tomcat 서비스 파일 생성&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /etc/systemd/system/tomcat.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;Unit&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+Description&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;Apache Tomcat Web Application Container
+After&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;syslog&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;target network&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;target
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;Service&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+Type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;forking
+
+Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;JAVA_HOME&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;lib&lt;span class=&quot;sr&quot;&gt;/jvm/&lt;/span&gt;java&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;openjdk&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;151-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;b12&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;el7_4&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;x86_64
+Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;CATALINA_PID&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat&lt;span class=&quot;sr&quot;&gt;/temp/&lt;/span&gt;tomcat&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;pid
+Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;CATALINA_HOME&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat
+Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;CATALINA_BASE&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat
+Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'&lt;/span&gt;
+Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'&lt;/span&gt;
+
+ExecStart&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat&lt;span class=&quot;sr&quot;&gt;/bin/&lt;/span&gt;startup&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sh&lt;/span&gt;
+ExecStop&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/bin/&lt;/span&gt;kill &lt;span class=&quot;m&quot;&gt;-15&lt;/span&gt; $MAINPID
+
+&lt;span class=&quot;nb&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;tomcat
+Group&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;tomcat
+UMask&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0007&lt;/span&gt;
+RestartSec&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;
+Restart&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;always
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;Install&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+WantedBy&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;multi&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;user&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;target
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JAVA_HOME&lt;/code&gt;과 같은 경우에는 혹시나 다를까 싶어 해당하는 경로를 가져오는 방법까지 첨부합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;which javac
+readlink &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;which javac로 나온 경로를 입력&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같은 명령어로 &lt;code class=&quot;highlighter-rouge&quot;&gt;java&lt;/code&gt;가 불려지는 파일 링크의 절대경로를 읽어 올 수 있습니다. 명령어로 얻은 주소에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;경로 전까지의 경로를 &lt;code class=&quot;highlighter-rouge&quot;&gt;JAVA_HOME&lt;/code&gt;에 입력하시면됩니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;tomcat-서버-부팅시-자동시작&quot;&gt;Tomcat 서버 부팅시 자동시작&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chkconfig tomcat on
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chkconfig&lt;/code&gt;를 통해서 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;서비스가 자동으로 시작되도록 추가해주시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;apache-httpd와-tomcat-연동mod_jk&quot;&gt;Apache Httpd와 Tomcat 연동(mod_jk)&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Apache&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;을 연동하기 위해서는 모듈이 필요한데요. 가장 많이 사용하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;를 이용해서 연동해보도록 하겠습니다. 우선 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;를 설치파일을 다운 받아야합니다. 파일은 http://tomcat.apache.org/download-connectors.cgi에서 다운로드 받으실 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://apache.mirror.cdnetworks.com/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.42-src.tar.gz
+&lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;zxvf tomcat-connectors-1.2.42-src.tar.gz
+&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;tomcat-connectors-1.2.42-src/native/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;다운로드를 받으신 후 압축을 푸신다음에 해당 폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;native&lt;/code&gt;폴더로 들어가셔서 설치를 하셔야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./buildconf.sh
+./configure &lt;span class=&quot;nt&quot;&gt;--with-apxs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/bin/apxs
+make
+make install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같은 순서대로 설치를 진행해주세요. 혹시나 다른 리눅스 환경에서 설치를 하시는 경우에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;--with-apxs&lt;/code&gt;의 폴더 위치가 다를 수 있습니다. 다른 환경에서 진행 시 &lt;code class=&quot;highlighter-rouge&quot;&gt;apxs&lt;/code&gt;를 찾지 못하는 오류가 있으실 경우에는 리눅스 환경에 맞는 경로를 따로 찾으셔서 적용해주세요. CentOS의 경우에는 위 명령어대로 설치하시면 문제 없이 설치가 완료를 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;연동-설정&quot;&gt;연동 설정&lt;/h3&gt;
+
+&lt;p&gt;설치를 모두 완료 하셨으니 인제 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;간 설정을 해주셔야합니다. 우선 아파치 설정을 잡을 것입니다. CentOS를 사용하시는 경우 아파치 관련 폴더인  &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/httpd/&lt;/code&gt;에서 폴더 구조가 &lt;code class=&quot;highlighter-rouge&quot;&gt;conf&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.modules.d&lt;/code&gt;와 같이 나뉘어져 있습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conf&lt;/code&gt;는 아파치의 설정파일만 존재하도록 구성되어있고 추가적인 모듈별 설정 같은 것을 &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;에 생성하셔서 사용하시면 자동으로 불러와 적용되어집니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.modules.d&lt;/code&gt;와 같은 경우에는 사용할 모듈을 불러오는 설정만 적용하는 파일들을 관리하는 폴더입니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/httpd/conf.modules.d/
+vim 00-jk.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LoadModule jk_module modules/mod_jk&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;so&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;우선 &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.module.d&lt;/code&gt;폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;관련 모듈을 불러오기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;00-jk.conf&lt;/code&gt;파일을 생성하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;LoadModule ~~&lt;/code&gt;을 입력하고 저장해주세요. 이는 방금전 설치한 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;모듈을 불러와 &lt;code class=&quot;highlighter-rouge&quot;&gt;jk_module&lt;/code&gt;이라는 이름으로 명명하는 구문입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/httpd/conf.d/
+vim httpd-jk.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;IfModule jk_module&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    # We need &lt;span class=&quot;k&quot;&gt;a&lt;/span&gt; workers &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt; exactly once
+    # and &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; the global server
+    JkWorkersFile &lt;span class=&quot;k&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;d&lt;/span&gt;/workers&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;properties
+
+    JkLogStampFormat &lt;span class=&quot;s2&quot;&gt;&quot;[%a %b %d %H:%M:%S %Y] &quot;&lt;/span&gt;
+    # Our JK error log
+    # You can &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;and should&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; use rotatelogs here
+    JkLogFile logs/mod_jk&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;log
+
+    # Our JK log level &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;trace&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;info&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;warn&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;error&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    JkLogLevel info
+
+    # Our JK shared memory &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt;
+    JkShmFile logs/mod_jk&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;shm
+
+    # If you want &lt;span class=&quot;k&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;put&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;all&lt;/span&gt; mounts into an external &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt;
+    # that gets reloaded automatically after &lt;span class=&quot;k&quot;&gt;changes&lt;/span&gt;
+    # &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;with &lt;span class=&quot;k&quot;&gt;a&lt;/span&gt; default latency of &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; minute&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    # you can define the name of the &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt; here&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+    JkMountFile &lt;span class=&quot;k&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;d&lt;/span&gt;/uriworkermap&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;properties
+
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/IfModule&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;그 후 불러온 모듈에 대한 설정을 진행해 줍니다. 주의해서 보셔야 할 것은 &lt;code class=&quot;highlighter-rouge&quot;&gt;JkWorkersFile&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;JkMountFile&lt;/code&gt;입니다. 전자는 톰캣 서버들을 각각 설정하는 역할을 해주며, 후자는 특정 패턴을 가지는 파일을 요청했을 때 서비스하고자 하는 톰캣 서버를 지정하는 역할을 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/httpd/conf.d/
+vim workers.properties
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;list&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;instance3
+
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8109&lt;/span&gt;
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;host&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;localhost
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;ajp13
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;lbfactor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8209&lt;/span&gt;
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;host&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;localhost
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;ajp13
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;lbfactor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8309&lt;/span&gt;
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;host&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;localhost
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;ajp13
+worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;lbfactor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;workers.properties&lt;/code&gt;파일은 위와같이 톰캣서버가 3개일 경우 톰캣서버의 이름들을 설정하고 해당 서버에 대한 설정을 이루도록 되어있습니다. 구축하시려는 환경에 맞게 옵션을 설정해주시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim uriworkermap.properties
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;jsp&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance1
+/*&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;png&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance2
+/*&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;css&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;uriworkermap.properties&lt;/code&gt;에는 특정 파일에 대해서 어떤 톰캣서버가 서비스할 것인지 맵핑하실 수 있습니다. 해당하는 파일들을 따로 나누어 관리하는 이유는 톰캣이 기본 10분마다 다시불러와 적용하기 때문에 톰캣 설정 변경을 위해 서비스를 재시작하지 않으셔도 적용이 가능하다는 이점이있기 때문입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;서비스-재시작&quot;&gt;서비스 재시작&lt;/h2&gt;
+
+&lt;p&gt;인제 모든 설정을 마무리했습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;서비스와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;서비스를 재시작하셔서 설정된 내용들을 적용하시면 됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service httpd restart
+service tomcat restart
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;팁1-연동-설정이-정상적으로-적용이-되는지-확인하는-방법&quot;&gt;팁1: 연동 설정이 정상적으로 적용이 되는지 확인하는 방법&lt;/h3&gt;
+
+&lt;p&gt;아파치 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;에는 정상적으로 설정파일들이 정상적인 Syntax를 가지고 있는지 확인하는 명령어를 내장하고 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apachectl configtest
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;팁2-톰캣-인코딩설정&quot;&gt;팁2: 톰캣 인코딩설정&lt;/h3&gt;
+
+&lt;p&gt;톰캣에서 한글을 사용할 때 인코딩 문제로 깨지는 문제가 발생하실 수 있기 때문에 인코딩을 설정을 하셔야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /opt/tomcat/conf/server.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;생략&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Connector port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8009&quot;&lt;/span&gt; protocol&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AJP/1.3&quot;&lt;/span&gt; redirectPort&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8443&quot;&lt;/span&gt; URIEncoding&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt; /&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;생략&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같이 AJP 커넥터에 &lt;code class=&quot;highlighter-rouge&quot;&gt;URIEncoding=&quot;UTF-8&quot;&lt;/code&gt;을 적용하시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;마치며&quot;&gt;마치며&lt;/h1&gt;
+
+&lt;p&gt;매번 환경을 구축할 때마다 괜한 곳에서 헤매는 경우가 많아 제가 많이 사용하는 서버환경에서 구축하는 방법을 정리해보았습니다. 여러번 시도하면서 군더더기 없는 설치를 위해 여러번을 엎고 다시 기록했습니다. 많은 분들께서 도움이 되셨으면 좋겠습니다. 감사합니다!&lt;/p&gt;</content><author><name>한지승</name></author><category term="develop" /><summary type="html"></summary></entry><entry><title type="html">The Businessman &amp;amp; The Fisherman</title><link href="/the-businessman-and-fisherman" rel="alternate" type="text/html" title="The Businessman &amp; The Fisherman" /><published>2014-08-12T10:18:00+00:00</published><updated>2014-08-12T10:18:00+00:00</updated><id>/the-businessman-and-fisherman</id><content type="html" xml:base="/the-businessman-and-fisherman">&lt;p&gt;An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.&lt;/p&gt;
 
 &lt;p&gt;“How long did it take you to catch them?” the American asked.&lt;/p&gt;
 
@@ -184,7 +425,7 @@
 
 &lt;p&gt;Adapted from the “Anekdote zur Senkung der Arbeitsmoral” by &lt;strong&gt;Heinrich Böll&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;An influential German write and Nobel Prize for Literature in 1972.&lt;/p&gt;</content><author><name>Hannah Wolfe</name></author><category term="fables" /><summary type="html">An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.</summary></entry><entry><title type="html">A Full and Comprehensive Style Test</title><link href="/jasper2/a-full-and-comprehensive-style-test" rel="alternate" type="text/html" title="A Full and Comprehensive Style Test" /><published>2012-09-01T10:00:00+00:00</published><updated>2012-09-01T10:00:00+00:00</updated><id>/jasper2/a-full-and-comprehensive-style-test</id><content type="html" xml:base="/jasper2/a-full-and-comprehensive-style-test">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+&lt;p&gt;An influential German write and Nobel Prize for Literature in 1972.&lt;/p&gt;</content><author><name>hannah</name></author><category term="fables" /><summary type="html">An American businessman took a vacation to a small coastal Mexican village on doctor’s orders. Unable to sleep after an urgent phone call from the office the first morning, he walked out to the pier to clear his head. A small boat with just one fisherman had docked, and inside the boat were several large yellowfin tuna. The American complimented the Mexican on the quality of his fish.</summary></entry><entry><title type="html">A Full and Comprehensive Style Test</title><link href="/a-full-and-comprehensive-style-test" rel="alternate" type="text/html" title="A Full and Comprehensive Style Test" /><published>2012-09-01T10:00:00+00:00</published><updated>2012-09-01T10:00:00+00:00</updated><id>/a-full-and-comprehensive-style-test</id><content type="html" xml:base="/a-full-and-comprehensive-style-test">&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
 
 
 &lt;hr /&gt;
@@ -590,96 +831,4 @@ c.draw = function() {
 
 &lt;p&gt;&lt;/div&gt;&lt;script async src=&quot;//codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;Isn't it beautiful?&lt;/p&gt;</content><author><name>John O'Nolan</name></author><summary type="html">Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</summary></entry><entry><title type="html">I Have a Dream</title><link href="/jasper2/i-have-a-dream" rel="alternate" type="text/html" title="I Have a Dream" /><published>1963-08-28T10:18:00+00:00</published><updated>1963-08-28T10:18:00+00:00</updated><id>/jasper2/i-have-a-dream</id><content type="html" xml:base="/jasper2/i-have-a-dream">&lt;p&gt;I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.&lt;/p&gt;
-
-&lt;p&gt;Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.&lt;/p&gt;
-
-&lt;p&gt;But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the Negro is still languished in the corners of American society and finds himself an exile in his own land. And so we’ve come here today to dramatize a shameful condition.&lt;/p&gt;
-
-&lt;p&gt;In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was a promise that all men, yes, black men as well as white men, would be guaranteed the “unalienable Rights” of “Life, Liberty and the pursuit of Happiness.” It is obvious today that America has defaulted on this promissory note, insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check, a check which has come back marked “insufficient funds.”&lt;/p&gt;
-
-&lt;p&gt;But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. And so, we’ve come to cash this check, a check that will give us upon demand the riches of freedom and the security of justice.&lt;/p&gt;
-
-&lt;p&gt;We have also come to this hallowed spot to remind America of the fierce urgency of Now. This is no time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism. Now is the time to make real the promises of democracy. Now is the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice a reality for all of God’s children.&lt;/p&gt;
-
-&lt;p&gt;It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the Negro’s legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end, but a beginning. And those who hope that the Negro needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual. And there will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice emerges.&lt;/p&gt;
-
-&lt;p&gt;But there is something that I must say to my people, who stand on the warm threshold which leads into the palace of justice: In the process of gaining our rightful place, we must not be guilty of wrongful deeds. Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our creative protest to degenerate into physical violence. Again and again, we must rise to the majestic heights of meeting physical force with soul force.&lt;/p&gt;
-
-&lt;p&gt;The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all white people, for many of our white brothers, as evidenced by their presence here today, have come to realize that their destiny is tied up with our destiny. And they have come to realize that their freedom is inextricably bound to our freedom.&lt;/p&gt;
-
-&lt;p&gt;We cannot walk alone.&lt;/p&gt;
-
-&lt;p&gt;And as we walk, we must make the pledge that we shall always march ahead.&lt;/p&gt;
-
-&lt;p&gt;We cannot turn back.&lt;/p&gt;
-
-&lt;p&gt;There are those who are asking the devotees of civil rights, “When will you be satisfied?” We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality. We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities. We cannot be satisfied as long as the negro’s basic mobility is from a smaller ghetto to a larger one. We can never be satisfied as long as our children are stripped of their self-hood and robbed of their dignity by signs stating: “For Whites Only.” We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote. No, no, we are not satisfied, and we will not be satisfied until “justice rolls down like waters, and righteousness like a mighty stream.”&lt;/p&gt;
-
-&lt;p&gt;I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have come fresh from narrow jail cells. And some of you have come from areas where your quest – quest for freedom left you battered by the storms of persecution and staggered by the winds of police brutality. You have been the veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive. Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation can and will be changed.&lt;/p&gt;
-
-&lt;p&gt;Let us not wallow in the valley of despair, I say to you today, my friends.&lt;/p&gt;
-
-&lt;p&gt;And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.&lt;/p&gt;
-
-&lt;p&gt;I have a dream that one day this nation will rise up and live out the true meaning of its creed: “We hold these truths to be self-evident, that all men are created equal.”&lt;/p&gt;
-
-&lt;p&gt;I have a dream that one day on the red hills of Georgia, the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.&lt;/p&gt;
-
-&lt;p&gt;I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.&lt;/p&gt;
-
-&lt;p&gt;I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.&lt;/p&gt;
-
-&lt;p&gt;I have a &lt;strong&gt;dream&lt;/strong&gt; today!&lt;/p&gt;
-
-&lt;p&gt;I have a dream that one day, down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of “interposition” and “nullification” – one day right there in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.&lt;/p&gt;
-
-&lt;p&gt;I have a &lt;strong&gt;dream&lt;/strong&gt; today!&lt;/p&gt;
-
-&lt;p&gt;I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight; “and the glory of the Lord shall be revealed and all flesh shall see it together.”&lt;/p&gt;
-
-&lt;p&gt;This is our hope, and this is the faith that I go back to the South with.&lt;/p&gt;
-
-&lt;p&gt;With this faith, we will be able to hew out of the mountain of despair a stone of hope. With this faith, we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith, we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.&lt;/p&gt;
-
-&lt;p&gt;And this will be the day – this will be the day when all of God’s children will be able to sing with new meaning:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;My country ‘tis of thee, sweet land of liberty, of thee I sing.&lt;/p&gt;
-
-  &lt;p&gt;Land where my fathers died, land of the Pilgrim’s pride,&lt;/p&gt;
-
-  &lt;p&gt;From every mountainside, let freedom ring!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And if America is to be a great nation, this must become true.&lt;/p&gt;
-
-&lt;p&gt;And so let freedom ring from the prodigious hilltops of New Hampshire.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Let freedom ring from the mighty mountains of New York.&lt;/p&gt;
-
-  &lt;p&gt;Let freedom ring from the heightening Alleghenies of Pennsylvania.&lt;/p&gt;
-
-  &lt;p&gt;Let freedom ring from the snow-capped Rockies of Colorado.&lt;/p&gt;
-
-  &lt;p&gt;Let freedom ring from the curvaceous slopes of California.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;But not only that:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Let freedom ring from Stone Mountain of Georgia.&lt;/p&gt;
-
-  &lt;p&gt;Let freedom ring from Lookout Mountain of Tennessee.&lt;/p&gt;
-
-  &lt;p&gt;Let freedom ring from every hill and molehill of Mississippi.&lt;/p&gt;
-
-  &lt;p&gt;From every mountainside, let freedom ring.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;And when this happens, and when we allow freedom ring, when we let it ring from every village and every hamlet, from every state and every city, we will be able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Free at last! Free at last!&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Thank God Almighty, we are free at last!&lt;/em&gt;&lt;/p&gt;</content><author><name>Martin Luther King</name></author><category term="speeches" /><summary type="html">I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</summary></entry></feed>
+&lt;p&gt;Isn't it beautiful?&lt;/p&gt;</content><author><name>john</name></author><summary type="html">Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.</summary></entry></feed>

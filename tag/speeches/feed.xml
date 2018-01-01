@@ -3,52 +3,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>/jasper2/</title>
+      <title>/</title>
    
-   <link>/jasper2/</link>
+   <link>/</link>
    <description>The professional publishing platform</description>
-   <language>en-uk</language>
+   <language>ko-kr</language>
    
    <title>
-   <![CDATA[ Ghost ]]>
+   <![CDATA[ HASHBOX ]]>
    </title>
    <description>
    <![CDATA[ The professional publishing platform ]]>
    </description>
-   <link>/jasper2/</link>
+   <link>/</link>
    <image>
-   <url>/jasper2/assets/images/favicon.png</url>
-   <title>Ghost</title>
-   <link>/jasper2/</link>
+   <url>//assets/images/favicon.png</url>
+   <title>HASHBOX</title>
+   <link>/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="/jasper2/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>I Have a Dream</title>
-	  <link>/jasper2/i-have-a-dream</link>
+	  <link>/i-have-a-dream</link>
 		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-						<author>Martin Luther King</author>
 				
 		
 	  <pubDate>1963-08-28T10:18:00+00:00</pubDate>
-	  <guid>/jasper2/i-have-a-dream</guid>
+	  <guid>/i-have-a-dream</guid>
 	  <description><![CDATA[
 	     <p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
 
@@ -149,26 +135,12 @@
 
 	<item>
 	  <title>The Purpose of Education</title>
-	  <link>/jasper2/the-purpose-of-education</link>
+	  <link>/the-purpose-of-education</link>
 		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-		
-				
-						<author>Martin Luther King</author>
 				
 		
 	  <pubDate>1948-12-12T10:18:00+00:00</pubDate>
-	  <guid>/jasper2/the-purpose-of-education</guid>
+	  <guid>/the-purpose-of-education</guid>
 	  <description><![CDATA[
 	     <p>As I engage in the so-called “bull sessions” around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the “brethren” think that education should equip them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.</p>
 
