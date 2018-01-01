@@ -11,7 +11,7 @@
 
 
 
-    <title>CentOS7 + Apache + Tomcat8 연동(mod_jk)</title>
+    <title>Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -24,24 +24,24 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="빅데이터 분야에 모험가가 되고 싶은 개발자 블로그" />
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="/Apache-Tomcat-%EC%97%B0%EB%8F%99" />
+    <link rel="canonical" href="/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="HASHBOX" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CentOS7 + Apache + Tomcat8 연동(mod_jk)" />
-    <meta property="og:description" content="개요 이번에는 CentOS7 환경에서 아파치 httpd와 tomcat8을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난" />
-    <meta property="og:url" content="/Apache-Tomcat-%EC%97%B0%EB%8F%99" />
+    <meta property="og:title" content="Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)" />
+    <meta property="og:description" content="개요 Python을 시작하신지 얼마 안되신 분들은 Python을 사용하기 전에 pyenv, virtualenv, autoenv를 설치하는 이유에 대해서 잘 모르실수도 있습니다. 저또한 처음 시작할 때 굳이 번거롭게 설치할 필요가 있나 했던 적이 있습니다. 지금와서 생각해보면 그런 생각을 할 수 밖에 없는 이유는 대부분 Python 단일 프로젝트로 작업하시거나 또는, 그냥 Python의 패키지들을 전역으로 설치해놓코" />
+    <meta property="og:url" content="/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95" />
     <meta property="og:image" content="/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/jinh574" />
     <meta property="article:author" content="https://www.facebook.com/jinh574" />
-    <meta property="article:published_time" content="2017-06-24T10:18:00+00:00" />
-    <meta property="article:modified_time" content="2017-06-24T10:18:00+00:00" />
+    <meta property="article:published_time" content="2017-06-15T10:08:00+00:00" />
+    <meta property="article:modified_time" content="2017-06-15T10:08:00+00:00" />
     <meta property="article:tag" content="Develop" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CentOS7 + Apache + Tomcat8 연동(mod_jk)" />
-    <meta name="twitter:description" content="개요 이번에는 CentOS7 환경에서 아파치 httpd와 tomcat8을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난" />
+    <meta name="twitter:title" content="Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)" />
+    <meta name="twitter:description" content="개요 Python을 시작하신지 얼마 안되신 분들은 Python을 사용하기 전에 pyenv, virtualenv, autoenv를 설치하는 이유에 대해서 잘 모르실수도 있습니다. 저또한 처음 시작할 때 굳이 번거롭게 설치할 필요가 있나 했던 적이 있습니다. 지금와서 생각해보면 그런 생각을 할 수 밖에 없는 이유는 대부분 Python 단일 프로젝트로 작업하시거나 또는, 그냥 Python의 패키지들을 전역으로 설치해놓코" />
     <meta name="twitter:url" content="/" />
     <meta name="twitter:image" content="/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
@@ -62,7 +62,7 @@
         "name": "HASHBOX",
         "logo": "/assets/images/hashbox-logo.png"
     },
-    "url": "/Apache-Tomcat-%EC%97%B0%EB%8F%99",
+    "url": "/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95",
     "image": {
         "@type": "ImageObject",
         "url": "/assets/images/blog-cover.jpg",
@@ -71,9 +71,9 @@
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/Apache-Tomcat-%EC%97%B0%EB%8F%99"
+        "@id": "/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95"
     },
-    "description": "개요 이번에는 CentOS7 환경에서 아파치 httpd와 tomcat8을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난"
+    "description": "개요 Python을 시작하신지 얼마 안되신 분들은 Python을 사용하기 전에 pyenv, virtualenv, autoenv를 설치하는 이유에 대해서 잘 모르실수도 있습니다. 저또한 처음 시작할 때 굳이 번거롭게 설치할 필요가 있나 했던 적이 있습니다. 지금와서 생각해보면 그런 생각을 할 수 밖에 없는 이유는 대부분 Python 단일 프로젝트로 작업하시거나 또는, 그냥 Python의 패키지들을 전역으로 설치해놓코"
 }
     </script>
 
@@ -86,7 +86,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="CentOS7 + Apache + Tomcat8 연동(mod_jk)" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)" href="/feed.xml" />
 
 
 </head>
@@ -148,7 +148,7 @@ into the {body} of the default.hbs template -->
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="24 June 2017">24 June 2017</time>
+                    <time class="post-full-meta-date" datetime="15 June 2017">15 June 2017</time>
                     
                         <span class="date-divider">/</span>
                         
@@ -158,7 +158,7 @@ into the {body} of the default.hbs template -->
                         
                     
                 </section>
-                <h1 class="post-full-title">CentOS7 + Apache + Tomcat8 연동(mod_jk)</h1>
+                <h1 class="post-full-title">Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</h1>
             </header>
 
             
@@ -169,7 +169,7 @@ into the {body} of the default.hbs template -->
 
 <h1 id="개요">개요</h1>
 
-<p>이번에는 CentOS7 환경에서 아파치 <code class="highlighter-rouge">httpd</code>와 <code class="highlighter-rouge">tomcat8</code>을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난 뒤에 필요하신 옵션을 추가해서 사용하세요~! 지금 부터 알아보도록 하겠습니다.</p>
+<p>Python을 시작하신지 얼마 안되신 분들은 Python을 사용하기 전에 <code class="highlighter-rouge">pyenv</code>, <code class="highlighter-rouge">virtualenv</code>, <code class="highlighter-rouge">autoenv</code>를 설치하는 이유에 대해서 잘 모르실수도 있습니다. 저또한 처음 시작할 때 굳이 번거롭게 설치할 필요가 있나 했던 적이 있습니다. 지금와서 생각해보면 그런 생각을 할 수 밖에 없는 이유는 대부분 Python 단일 프로젝트로 작업하시거나 또는, 그냥 Python의 패키지들을 전역으로 설치해놓코 사용하시는데 문제가 없으신 분들이라 생각됩니다. 지금부터  <code class="highlighter-rouge">pyenv</code>, <code class="highlighter-rouge">virtualenv</code>, <code class="highlighter-rouge">autoenv</code>가 왜 필요한지에 대해서 설명드리도록 하겠습니다</p>
 
 <p><br /></p>
 
@@ -177,226 +177,106 @@ into the {body} of the default.hbs template -->
 
 <p><br /></p>
 
-<h2 id="환경을-구축하기-위한-패키지-및-apache-httpd-설치">환경을 구축하기 위한 패키지 및 Apache Httpd 설치</h2>
+<h2 id="기본적인-이유">기본적인 이유</h2>
 
-<p>우선 환경을 구축하기 위해서 필요로 하는 패키지를 한번에 설치하도록 하겠습니다.</p>
+<p>일단 Python을 설치하실 때 2.7버전때와 3.6버전으로 두가지로 나뉘어져 있는 것을 알 수 있습니다. 두 버전간에 매우 큰 변화가 있었기 때문에 기존에 존재하던 패키지들과의 호환이 안맞기도하고 없어진 기능들도 있고 이런 저런 이유들로 공존하고 있는 상황입니다. 그렇기 때문에 처음 설치하실 때도 무엇을 깔아야 하는지 모르신 분들도 많으십니다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install <span class="nt">-y</span> gcc gcc-c++ httpd-devel java-1.8.0-openjdk-devel.x86_64 wget libtool make
-</code></pre></div></div>
-
-<p>기본적으로 <code class="highlighter-rouge">libtool</code>, <code class="highlighter-rouge">gcc</code>환경과 <code class="highlighter-rouge">java jdk</code>가 설치 되어 있어야하며, <code class="highlighter-rouge">wget</code>이나 <code class="highlighter-rouge">make</code>는 설치가 안되 있으신 분들은 위해 넣었습니다. 이와 함께 제일 설치하기 쉬운 아파치 설치는 <code class="highlighter-rouge">httpd-devel</code>을 통해서 설치가 가능합니다. 위 명령어를 이용하면 환경을 구축하는데 있어 필요로하는 패키지들과 <code class="highlighter-rouge">apache</code>가 설치가 완료 하셨습니다.</p>
+<p>이처럼 Python을 설치하는데 있어서도 어떠한 버전을 깔아야할지 헷갈리는 부분들도 있고, 버전에 따라서 호환되는 패키지 버전들도 다르기 때문에 의존성에 굉장히 민감합니다. 프로젝트를 진행하게되면 프로젝트에 따라서 어떤 버전을 사용하고, 어떤 패키지를 사용하고, 또 같은 패키지라도 특정 패키지버전만 호환이 되고 그러한 문제들이 많습니다. 그럴때마다 기존에 Python을 바로 설치해서 사용하시던 분들은 특정 버전으로 Python을 설치해야하기도하며 또는 특정 프로젝트 때문에 상위 버전의 패키지를 사용해야하는데 다른 프로젝트가 패키지를 사용하지 못하는 경우가 발생됩니다. 이를 해결하기 위해서  <code class="highlighter-rouge">pyenv</code>, <code class="highlighter-rouge">virtualenv</code>, <code class="highlighter-rouge">autoenv</code>가 나타나게 됩니다.</p>
 
 <p><br /></p>
 
-<h2 id="tomcat8-설치">Tomcat8 설치</h2>
+<h3 id="pyenv">pyenv</h3>
 
-<p>저는 <code class="highlighter-rouge">tomcat8</code>을 설치 하게 되었는데요. 이는 http://tomcat.apache.org/download-80.cgi에 들어가시면 최신버전의 톰캣 <code class="highlighter-rouge">tar.gz</code>압축 파일을 받으실 수 있습니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://mirror.navercorp.com/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
-<span class="nb">tar </span>zxvf apache-tomcat-8.5.23.tar.gz
-mv apache-tomcat-8.5.23.tar.gz /opt/tomcat
-</code></pre></div></div>
-
-<p>위와 같은 명령어를 통해서 현재 폴더에 톰캣 압축파일을 받아옵니다.  그 후 <code class="highlighter-rouge">tar</code>명령어를 통해 압축을 풀어주고 난 뒤에 해당 폴더를 그대로 <code class="highlighter-rouge">/opt/tomcat</code>으로 이동을 시켜줍니다.</p>
+<p>우선 <code class="highlighter-rouge">pyenv</code>는 시스템 내에 여러 버전의 Python을 설치하고 관리할 수 있는 기능을 제공합니다. 그렇기 때문에 특정 프로젝트는 Python 2.7버전을, 또 다른 프로젝트는 Python 3.6버전을 사용한다면 간단하게 Python 버전을 스위치하듯 바꿔가면서 사용이 가능합니다. 이렇게 되면 Python 버전에 대한 프로젝트 의존성이 해결이 됩니다. <strong>하지만</strong> Python은 기본적으로 각각의 버전마다 패키지를 설치하는 공간을 가지고 있게 되는데 Python을 같은 버전을 사용하더라도 사용하는 패키지의 버전을 다르게 사용의 필요성이 생깁니다. 이를 해결하기 위해 <code class="highlighter-rouge">virtualenv</code>가 나옵니다.</p>
 
 <p><br /></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>groupadd tomcat
-<span class="nb">sudo </span>useradd <span class="nt">-M</span> <span class="nt">-s</span> /bin/nologin <span class="nt">-g</span> tomcat <span class="nt">-d</span> /opt/tomcat tomcat
-<span class="nb">sudo </span>chown <span class="nt">-R</span> tomcat:tomcat /opt/tomcat
-</code></pre></div></div>
+<h3 id="virtualenv">virtualenv</h3>
 
-<p>그 후 톰캣을 사용하는 유저를 지정해주셔야합니다. <code class="highlighter-rouge">tomcat</code>그룹과 <code class="highlighter-rouge">tomcat</code>유저를 생성하면서 구동파일들을 옮겨놨던 <code class="highlighter-rouge">/opt/tomcat</code>을 지정해주고, 해당 폴더의 소유자를 <code class="highlighter-rouge">tomcat</code>으로 변경해주시면 됩니다.</p>
+<p><code class="highlighter-rouge">virtualenv</code>는 프로젝트의 폴더마다 패키지(모듈) 설치하는 공간을 격리해주는 역할을 합니다. 즉, <code class="highlighter-rouge">pyenv</code>로 Python의 버전을 격리하고, <code class="highlighter-rouge">virtualenv</code> 로 격리된 Python버전 내에서 패키지 공간을 격리해주는 역할을 해주게 됩니다. 이를 통해 각각의 프로젝트마다 특정 Python버전과 특정 패키지를 관리할 수 있기 때문에 프로젝트간에 종속성을 없애주는 역할을 합니다. 결과적으로 프로젝트만을 위한 Python 버전과 패키지 버전을 격리된 가상공간에서 사용이 가능하게 됩니다.</p>
 
 <p><br /></p>
 
-<p>그 다음에는 톰캣을 서비스에서 등록하고 서버가 부팅될 때 바로 켜지도록 설정을 할 것입니다. 수동으로 켜고 끄시는 것만 하실 경우에는 서비스만 등록하시고 <code class="highlighter-rouge">chkconfig</code> 명령어만 입력 안하셔도 괜찮습니다.</p>
+<h3 id="autoenv">autoenv</h3>
 
-<h3 id="tomcat-서비스-파일-생성">Tomcat 서비스 파일 생성</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /etc/systemd/system/tomcat.service
-</code></pre></div></div>
-
-<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span>Unit<span class="p">]</span>
-Description<span class="p">=</span>Apache Tomcat Web Application Container
-After<span class="p">=</span>syslog<span class="p">.</span>target network<span class="p">.</span>target
-
-<span class="p">[</span>Service<span class="p">]</span>
-Type<span class="p">=</span>forking
-
-Environment<span class="p">=</span>JAVA_HOME<span class="p">=</span><span class="sr">/usr/</span>lib<span class="sr">/jvm/</span>java<span class="m">-1</span><span class="p">.</span><span class="m">8</span><span class="p">.</span><span class="m">0</span><span class="p">-</span>openjdk<span class="m">-1</span><span class="p">.</span><span class="m">8</span><span class="p">.</span><span class="m">0</span><span class="p">.</span><span class="m">151-1</span><span class="p">.</span>b12<span class="p">.</span>el7_4<span class="p">.</span>x86_64
-Environment<span class="p">=</span>CATALINA_PID<span class="p">=</span><span class="sr">/opt/</span>tomcat<span class="sr">/temp/</span>tomcat<span class="p">.</span>pid
-Environment<span class="p">=</span>CATALINA_HOME<span class="p">=</span><span class="sr">/opt/</span>tomcat
-Environment<span class="p">=</span>CATALINA_BASE<span class="p">=</span><span class="sr">/opt/</span>tomcat
-Environment<span class="p">=</span><span class="s1">'CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'</span>
-Environment<span class="p">=</span><span class="s1">'JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'</span>
-
-ExecStart<span class="p">=</span><span class="sr">/opt/</span>tomcat<span class="sr">/bin/</span>startup<span class="p">.</span><span class="k">sh</span>
-ExecStop<span class="p">=</span><span class="sr">/bin/</span>kill <span class="m">-15</span> $MAINPID
-
-<span class="nb">User</span><span class="p">=</span>tomcat
-Group<span class="p">=</span>tomcat
-UMask<span class="p">=</span><span class="m">0007</span>
-RestartSec<span class="p">=</span><span class="m">10</span>
-Restart<span class="p">=</span>always
-
-<span class="p">[</span>Install<span class="p">]</span>
-WantedBy<span class="p">=</span>multi<span class="p">-</span>user<span class="p">.</span>target
-</code></pre></div></div>
-
-<p><code class="highlighter-rouge">JAVA_HOME</code>과 같은 경우에는 혹시나 다를까 싶어 해당하는 경로를 가져오는 방법까지 첨부합니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>which javac
-readlink <span class="nt">-f</span> <span class="o">{</span>which javac로 나온 경로를 입력<span class="o">}</span>
-</code></pre></div></div>
-
-<p>위와 같은 명령어로 <code class="highlighter-rouge">java</code>가 불려지는 파일 링크의 절대경로를 읽어 올 수 있습니다. 명령어로 얻은 주소에서 <code class="highlighter-rouge">bin</code>경로 전까지의 경로를 <code class="highlighter-rouge">JAVA_HOME</code>에 입력하시면됩니다.</p>
-
-<h3 id="tomcat-서버-부팅시-자동시작">Tomcat 서버 부팅시 자동시작</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chkconfig tomcat on
-</code></pre></div></div>
-
-<p><code class="highlighter-rouge">chkconfig</code>를 통해서 <code class="highlighter-rouge">tomcat</code>서비스가 자동으로 시작되도록 추가해주시면 됩니다.</p>
+<p>마지막으로 <code class="highlighter-rouge">autoenv</code>는 일종의 트윅 같은 역할을 하게 되는데, <code class="highlighter-rouge">pyenv</code>와 <code class="highlighter-rouge">virtualenv</code> 환경을 구축하게 되면 특정 프로젝트를 사용할 때마다 <code class="highlighter-rouge">pyenv</code> 로 격리시킨 Python 버전과 <code class="highlighter-rouge">virtualenv</code>로 격리시킨 패키지 구역을 사용하게다라는 커맨드를 쉘에 입력해야하는 번거로움이 있습니다. <em><del>개발자들에게는 엄청나게 구찮은 일이랍니다..</del></em>  그래서 위와같은 특정한 환경을 필요로하는 프로젝트 폴더 내에 격리시키기 위한 커맨드 관련 파일을 만들어 놓고, 개발자가 해당 프로젝트 폴더에 진입했을 때 해당하는 명령어가 자동으로 실행되게 해주는 역할을 해줍니다. 즉, 굳이 프로젝트마다 어떠한 환경으로 실행하라는 것을 외우지도 않고, 따로 칠 필요도 없이 프로젝트에 진입하게 되면 자동으로 격리시키게끔 만들어주는 역할을 합니다.</p>
 
 <p><br /></p>
 
-<h2 id="apache-httpd와-tomcat-연동mod_jk">Apache Httpd와 Tomcat 연동(mod_jk)</h2>
-
-<p><code class="highlighter-rouge">Apache</code>와 <code class="highlighter-rouge">tomcat</code>을 연동하기 위해서는 모듈이 필요한데요. 가장 많이 사용하는 <code class="highlighter-rouge">mod_jk</code>를 이용해서 연동해보도록 하겠습니다. 우선 <code class="highlighter-rouge">mod_jk</code>를 설치파일을 다운 받아야합니다. 파일은 http://tomcat.apache.org/download-connectors.cgi에서 다운로드 받으실 수 있습니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget http://apache.mirror.cdnetworks.com/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.42-src.tar.gz
-<span class="nb">tar </span>zxvf tomcat-connectors-1.2.42-src.tar.gz
-<span class="nb">cd </span>tomcat-connectors-1.2.42-src/native/
-</code></pre></div></div>
-
-<p>다운로드를 받으신 후 압축을 푸신다음에 해당 폴더에 <code class="highlighter-rouge">native</code>폴더로 들어가셔서 설치를 하셔야 합니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./buildconf.sh
-./configure <span class="nt">--with-apxs</span><span class="o">=</span>/usr/bin/apxs
-make
-make install
-</code></pre></div></div>
-
-<p>위와 같은 순서대로 설치를 진행해주세요. 혹시나 다른 리눅스 환경에서 설치를 하시는 경우에는 <code class="highlighter-rouge">--with-apxs</code>의 폴더 위치가 다를 수 있습니다. 다른 환경에서 진행 시 <code class="highlighter-rouge">apxs</code>를 찾지 못하는 오류가 있으실 경우에는 리눅스 환경에 맞는 경로를 따로 찾으셔서 적용해주세요. CentOS의 경우에는 위 명령어대로 설치하시면 문제 없이 설치가 완료를 할 수 있습니다.</p>
+<hr />
 
 <p><br /></p>
 
-<h3 id="연동-설정">연동 설정</h3>
+<h2 id="설치-및-사용방법">설치 및 사용방법</h2>
 
-<p>설치를 모두 완료 하셨으니 인제 <code class="highlighter-rouge">httpd</code>와 <code class="highlighter-rouge">tomcat</code>간 설정을 해주셔야합니다. 우선 아파치 설정을 잡을 것입니다. CentOS를 사용하시는 경우 아파치 관련 폴더인  <code class="highlighter-rouge">/etc/httpd/</code>에서 폴더 구조가 <code class="highlighter-rouge">conf</code>, <code class="highlighter-rouge">conf.d</code>, <code class="highlighter-rouge">conf.modules.d</code>와 같이 나뉘어져 있습니다. <code class="highlighter-rouge">conf</code>는 아파치의 설정파일만 존재하도록 구성되어있고 추가적인 모듈별 설정 같은 것을 <code class="highlighter-rouge">conf.d</code>에 생성하셔서 사용하시면 자동으로 불러와 적용되어집니다. <code class="highlighter-rouge">conf.modules.d</code>와 같은 경우에는 사용할 모듈을 불러오는 설정만 적용하는 파일들을 관리하는 폴더입니다.</p>
+<blockquote>
+  <p>필자는 macOS에서 작업을 하기 때문에 macOS에서의 사용방법을 알려드리도록 하겠습니다.</p>
+</blockquote>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/httpd/conf.modules.d/
-vim 00-jk.conf
+<h3 id="설치">설치</h3>
+
+<p>각자의 역할을 알았으니 설치하는 방법에 대해서 간단하게 알아보도록 하겠습니다. 기본적으로 macOS를 사용하시는 분들께서는  <a href="https://brew.sh/index_ko.html" title="Homebrew" target="_blank">Homebrew</a>가 깔려 있으실 텐데요, 없으신 경우에는 해당 링크로 가셔서 설치방법대로 설치해주세요~!</p>
+
+<p>설치를 모두 완료하시고 나서는 다음과 같이 설치를 진행합니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew update
+brew install pyenv
+brew install pyenv-virtualenv
+brew install autoenv
 </code></pre></div></div>
 
-<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LoadModule jk_module modules/mod_jk<span class="p">.</span><span class="k">so</span>
-</code></pre></div></div>
+<p>설치가 완료되신 다음에는 프로파일에 몇줄을 추가해주셔야 정상적으로 작동이 가능합니다.</p>
 
-<p>우선 <code class="highlighter-rouge">conf.module.d</code>폴더에 <code class="highlighter-rouge">mod_jk</code>관련 모듈을 불러오기 위해 <code class="highlighter-rouge">00-jk.conf</code>파일을 생성하고 <code class="highlighter-rouge">LoadModule ~~</code>을 입력하고 저장해주세요. 이는 방금전 설치한 <code class="highlighter-rouge">mod_jk</code>모듈을 불러와 <code class="highlighter-rouge">jk_module</code>이라는 이름으로 명명하는 구문입니다.</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'eval "$(pyenv init -)"'</span> <span class="o">&gt;&gt;</span> ~/.bash_profile
+<span class="nb">echo</span> <span class="s1">'eval "$(pyenv virtualenv-init -)"'</span> <span class="o">&gt;&gt;</span> ~/.bash_profile
+<span class="nb">echo</span> <span class="s1">'source $(brew --prefix autoenv)/activate.sh
+</span></code></pre></div></div>
+
+<p>1~2번째 줄은 <code class="highlighter-rouge">pyenv</code>와 <code class="highlighter-rouge">virtualenv</code>의 초기 필요한 작업들을 실행해주는 역할을 합니다. 3번째 줄은 프로젝트 폴더에 진입할 때 <code class="highlighter-rouge">.env</code>파일의 스크립트를 자동으로 실행하게 해주는 스크립트입니다.</p>
 
 <p><br /></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/httpd/conf.d/
-vim httpd-jk.conf
+<h3 id="사용방법">사용방법</h3>
+
+<h4 id="pyenv-1">pyenv</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv versions
 </code></pre></div></div>
 
-<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">&lt;</span>IfModule jk_module<span class="p">&gt;</span>
+<p>위와 같은 명령어를 칠 경우 현재 시스템에 <code class="highlighter-rouge">pyenv</code>를 통해 설치 되어있는 Python 버전들을 모두 보여줍니다. 기본적으로 <code class="highlighter-rouge">system</code>이라는 이름으로 되어있으며 이는 시스템에 설치된 Python을 나타냅니다.</p>
 
-    # We need <span class="k">a</span> workers <span class="k">file</span> exactly once
-    # and <span class="k">in</span> the global server
-    JkWorkersFile <span class="k">conf</span><span class="p">.</span><span class="k">d</span>/workers<span class="p">.</span>properties
-
-    JkLogStampFormat <span class="s2">"[%a %b %d %H:%M:%S %Y] "</span>
-    # Our JK error log
-    # You can <span class="p">(</span>and should<span class="p">)</span> use rotatelogs here
-    JkLogFile logs/mod_jk<span class="p">.</span>log
-
-    # Our JK log level <span class="p">(</span>trace<span class="p">,</span><span class="k">debug</span><span class="p">,</span>info<span class="p">,</span>warn<span class="p">,</span>error<span class="p">)</span>
-    JkLogLevel info
-
-    # Our JK shared memory <span class="k">file</span>
-    JkShmFile logs/mod_jk<span class="p">.</span>shm
-
-    # If you want <span class="k">to</span> <span class="k">put</span> <span class="k">all</span> mounts into an external <span class="k">file</span>
-    # that gets reloaded automatically after <span class="k">changes</span>
-    # <span class="p">(</span>with <span class="k">a</span> default latency of <span class="m">1</span> minute<span class="p">),</span>
-    # you can define the name of the <span class="k">file</span> here<span class="p">.</span>
-    JkMountFile <span class="k">conf</span><span class="p">.</span><span class="k">d</span>/uriworkermap<span class="p">.</span>properties
-
-<span class="p">&lt;</span>/IfModule<span class="p">&gt;</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv install <span class="nt">--list</span>
+pyenv install 3.6.2
 </code></pre></div></div>
 
-<p>그 후 불러온 모듈에 대한 설정을 진행해 줍니다. 주의해서 보셔야 할 것은 <code class="highlighter-rouge">JkWorkersFile</code>과 <code class="highlighter-rouge">JkMountFile</code>입니다. 전자는 톰캣 서버들을 각각 설정하는 역할을 해주며, 후자는 특정 패턴을 가지는 파일을 요청했을 때 서비스하고자 하는 톰캣 서버를 지정하는 역할을 합니다.</p>
+<p>1번째 명령어를 통해 <code class="highlighter-rouge">pyenv</code> 를 통해 설치 가능한 Python버전을 모두 보여주며 필요한 버전을 2번째 명령어와 같이 설치하시면 됩니다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> /etc/httpd/conf.d/
-vim workers.properties
-</code></pre></div></div>
-
-<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>worker<span class="p">.</span>list<span class="p">=</span>instance1<span class="p">,</span>instance2<span class="p">,</span>instance3
-
-worker<span class="p">.</span>instance1<span class="p">.</span>port<span class="p">=</span><span class="m">8109</span>
-worker<span class="p">.</span>instance1<span class="p">.</span>host<span class="p">=</span>localhost
-worker<span class="p">.</span>instance1<span class="p">.</span>type<span class="p">=</span>ajp13
-worker<span class="p">.</span>instance1<span class="p">.</span>lbfactor<span class="p">=</span><span class="m">1</span>
-
-worker<span class="p">.</span>instance2<span class="p">.</span>port<span class="p">=</span><span class="m">8209</span>
-worker<span class="p">.</span>instance2<span class="p">.</span>host<span class="p">=</span>localhost
-worker<span class="p">.</span>instance2<span class="p">.</span>type<span class="p">=</span>ajp13
-worker<span class="p">.</span>instance2<span class="p">.</span>lbfactor<span class="p">=</span><span class="m">1</span>
-
-worker<span class="p">.</span>instance3<span class="p">.</span>port<span class="p">=</span><span class="m">8309</span>
-worker<span class="p">.</span>instance3<span class="p">.</span>host<span class="p">=</span>localhost
-worker<span class="p">.</span>instance3<span class="p">.</span>type<span class="p">=</span>ajp13
-worker<span class="p">.</span>instance3<span class="p">.</span>lbfactor<span class="p">=</span><span class="m">1</span>
-</code></pre></div></div>
-
-<p><code class="highlighter-rouge">workers.properties</code>파일은 위와같이 톰캣서버가 3개일 경우 톰캣서버의 이름들을 설정하고 해당 서버에 대한 설정을 이루도록 되어있습니다. 구축하시려는 환경에 맞게 옵션을 설정해주시면 됩니다.</p>
+<p>단지 <code class="highlighter-rouge">pyenv </code> 를 통해 Python버전만을 바꾸고 싶다면 <code class="highlighter-rouge">pyenv</code>를 통해 Python을 설치한 후  <code class="highlighter-rouge">pyenv shell 3.6.2</code>와 같이 설치한 Python버전으로 사용하는 Python의 버전을 바꿀 수 있습니다.</p>
 
 <p><br /></p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim uriworkermap.properties
+<h4 id="virtualenv-1">virtualenv</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv virtualenv 3.6.2 MyProject
+virtualenv versions
 </code></pre></div></div>
 
-<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*<span class="p">.</span>jsp<span class="p">=</span>instance1
-/*<span class="p">.</span>png<span class="p">=</span>instance2
-/*<span class="p">.</span>css<span class="p">=</span>instance3
-</code></pre></div></div>
+<p>모듈을 격리시키고 싶은 프로젝트의 최상위 폴더에서 1번째 명령어를 입력하면 별명이 ‘MyProject’인 가상 격리공간이 만들어지게 됩니다. 2번째 명령어를 입력함으로써 현재 격리시킨 모든 프로젝트를 보실 수 있습니다.</p>
 
-<p><code class="highlighter-rouge">uriworkermap.properties</code>에는 특정 파일에 대해서 어떤 톰캣서버가 서비스할 것인지 맵핑하실 수 있습니다. 해당하는 파일들을 따로 나누어 관리하는 이유는 톰캣이 기본 10분마다 다시불러와 적용하기 때문에 톰캣 설정 변경을 위해 서비스를 재시작하지 않으셔도 적용이 가능하다는 이점이있기 때문입니다.</p>
+<p>기본적으로 <code class="highlighter-rouge">autoenv</code>를 사용하지 않을 경우 해당하는 프로젝트로 이동한 후에 <code class="highlighter-rouge">pyenv activate</code>를 입력함으로써 해당하는 가상 격리 공간 상태로 바뀌도록 할 수 있습니다. 위에서 얘기 드렸듯이 매 프로젝트 폴더마다 <code class="highlighter-rouge">pyenv activate</code>를 입력할 경우 많이 귀찮겠죠?</p>
 
 <p><br /></p>
 
-<h2 id="서비스-재시작">서비스 재시작</h2>
+<h4 id="autoenv-1">autoenv</h4>
 
-<p>인제 모든 설정을 마무리했습니다. <code class="highlighter-rouge">httpd</code>서비스와 <code class="highlighter-rouge">tomcat</code>서비스를 재시작하셔서 설정된 내용들을 적용하시면 됩니다.</p>
+<p><code class="highlighter-rouge">virtualenv</code>를 통해서 격리시킨 프로젝트 최상위 폴더내에 <code class="highlighter-rouge">.env</code>파일을 생성하고 다음과 같이 입력하고 저장한다.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service httpd restart
-service tomcat restart
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"Python Pyenv &gt; MyProject 진입"</span>
+pyenv shell MyProject
+pyenv activate
 </code></pre></div></div>
 
-<p><br /></p>
-
-<h3 id="팁1-연동-설정이-정상적으로-적용이-되는지-확인하는-방법">팁1: 연동 설정이 정상적으로 적용이 되는지 확인하는 방법</h3>
-
-<p>아파치 <code class="highlighter-rouge">httpd</code>에는 정상적으로 설정파일들이 정상적인 Syntax를 가지고 있는지 확인하는 명령어를 내장하고 있습니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>apachectl configtest
-</code></pre></div></div>
-
-<h3 id="팁2-톰캣-인코딩설정">팁2: 톰캣 인코딩설정</h3>
-
-<p>톰캣에서 한글을 사용할 때 인코딩 문제로 깨지는 문제가 발생하실 수 있기 때문에 인코딩을 설정을 하셔야 합니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vim /opt/tomcat/conf/server.xml
-</code></pre></div></div>
-
-<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span>생략<span class="p">)</span>
-<span class="p">&lt;</span>Connector port<span class="p">=</span><span class="s2">"8009"</span> protocol<span class="p">=</span><span class="s2">"AJP/1.3"</span> redirectPort<span class="p">=</span><span class="s2">"8443"</span> URIEncoding<span class="p">=</span><span class="s2">"UTF-8"</span> /<span class="p">&gt;</span>
-<span class="p">(</span>생략<span class="p">)</span>
-</code></pre></div></div>
-
-<p>위와 같이 AJP 커넥터에 <code class="highlighter-rouge">URIEncoding="UTF-8"</code>을 적용하시면 됩니다.</p>
+<p>위에서 설명했듯이 해당하는 프로젝트 폴더로 들어올 경우 <code class="highlighter-rouge">.env</code>의 입력된 스크립트를 실행하도록 되어있기 때문에 자동으로 격리공간으로 진입하여 프로젝트마다 따로 명령어를 치실 필요가 없습게 되었습니다.</p>
 
 <p><br /></p>
 
@@ -406,7 +286,7 @@ service tomcat restart
 
 <h1 id="마치며">마치며</h1>
 
-<p>매번 환경을 구축할 때마다 괜한 곳에서 헤매는 경우가 많아 제가 많이 사용하는 서버환경에서 구축하는 방법을 정리해보았습니다. 여러번 시도하면서 군더더기 없는 설치를 위해 여러번을 엎고 다시 기록했습니다. 많은 분들께서 도움이 되셨으면 좋겠습니다. 감사합니다!</p>
+<p>Python 개발 환경을 구축할 때마다 매번 반복하는 구축이라 저 또한 참고하고자 포스트를 쓰게 되었습니다. 이를 통해서 많은 분들이 Python 개발환경을 왜 구축하게 되고, 구축하는데 쉽게 따라하실 수 있으셔서 도움이 많이 돼시면 좋겠습니다. 감사합니다.</p>
 
                 </div>
             </section>
@@ -492,9 +372,19 @@ service tomcat restart
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/Apache-Tomcat-%EC%97%B0%EB%8F%99-2">CentOS7 + Apache + Tomcat8 연동(mod_jk)</a></li>
+                                        
+                                    
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                            <li><a href="/Apache-Tomcat-%EC%97%B0%EB%8F%99">CentOS7 + Apache + Tomcat8 연동(mod_jk)</a></li>
+                                        
                                     
                                   
                                 
@@ -509,18 +399,11 @@ service tomcat restart
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95">Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</a></li>
-                                        
-                                    
                                   
                                 
                                   
                                     
                                         
-                                        
-                                            <li><a href="/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4">macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)</a></li>
                                         
                                     
                                   
@@ -602,7 +485,7 @@ service tomcat restart
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Apache-Tomcat-%EC%97%B0%EB%8F%99-2">
+            <a class="post-card-content-link" href="/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0">
                 <header class="post-card-header">
                     
                         
@@ -612,10 +495,10 @@ service tomcat restart
                         
                     
 
-                    <h2 class="post-card-title">CentOS7 + Apache + Tomcat8 연동(mod_jk)</h2>
+                    <h2 class="post-card-title">Java의 Static 바로알기</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p># 개요 이번에는 CentOS7 환경에서 아파치 `httpd`와 `tomcat8`을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을</p>
+                    <p># 개요 Java를 처음 배우게 되는 것 중에 하나는 `static`이라는 키워드일것입니다. 또한 Java에 Main 클래스에서 항상 존재하는 `static` 키워드는 누구나 익숙하실 겁니다. 하지만 생각보다 `static`키워드에 대해서 어쩔때 쓴다 정도는 모두 알고 계시지만 깊이있는</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -634,7 +517,7 @@ service tomcat restart
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0">
+            <a class="post-card-content-link" href="/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4">
                 <header class="post-card-header">
                     
                         
@@ -644,10 +527,10 @@ service tomcat restart
                         
                     
 
-                    <h2 class="post-card-title">Java의 Static 바로알기</h2>
+                    <h2 class="post-card-title">macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>개요 Java를 처음 배우게 되는 것 중에 하나는 static이라는 키워드일것입니다. 또한 Java에 Main 클래스에서 항상 존재하는 static 키워드는 누구나 익숙하실 겁니다. 하지만 생각보다 static키워드에 대해서 어쩔때 쓴다 정도는 모두 알고 계시지만 깊이있는 특성을</p>
+                    <p>개요 macOS를 사용하면서 터미널에서 제가 많이 사용하는 명령어가 있습니다. 하지만, 다른 개발자분들과 얘기하다보면 생각보다 모르는 분들이 많은 것같아 간단하게 소개시켜 드릴려고 합니다. 제가 소개 시켜드릴려는 명령어는 pbcopy, pbpaste, rsync 입니다. pbcopy, pbpaste는 맥에서만</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -675,18 +558,18 @@ service tomcat restart
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">CentOS7 + Apache + Tomcat8 연동(mod_jk)</div>
+    <div class="floating-header-title">Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=CentOS7+%2B+Apache+%2B+Tomcat8+%EC%97%B0%EB%8F%99%28mod_jk%29&amp;url=https://hashbox.github.io/Apache-Tomcat-%EC%97%B0%EB%8F%99"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Python+%EA%B8%B0%EB%B3%B8+%ED%99%98%EA%B2%BD+%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0%28pyenv%2C+virtualenv%2C+autoenv%29&amp;url=https://hashbox.github.io/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/Apache-Tomcat-%EC%97%B0%EB%8F%99"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

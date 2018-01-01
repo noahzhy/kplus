@@ -11,7 +11,7 @@
 
 
 
-    <title>Advanced Markdown tips</title>
+    <title>macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -24,30 +24,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="빅데이터 분야에 모험가가 되고 싶은 개발자 블로그" />
     <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="/advanced-markdown" />
+    <link rel="canonical" href="/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="HASHBOX" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Advanced Markdown tips" />
-    <meta property="og:description" content="There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about" />
-    <meta property="og:url" content="/advanced-markdown" />
-    <meta property="og:image" content="/assets/images/advanced.jpg" />
+    <meta property="og:title" content="macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)" />
+    <meta property="og:description" content="개요 macOS를 사용하면서 터미널에서 제가 많이 사용하는 명령어가 있습니다. 하지만, 다른 개발자분들과 얘기하다보면 생각보다 모르는 분들이 많은 것같아 간단하게 소개시켜 드릴려고 합니다. 제가 소개 시켜드릴려는 명령어는 pbcopy, pbpaste, rsync 입니다. pbcopy, pbpaste는 맥에서만 제공되어지는 기능이고, rsync는 리눅스에서 제공되는 기능으로 맥에도 기본으로 제공하고 있습니다. 지금부터 차근차근 알아보도록 하겠습니다. pbcopy, pbpaste 우선" />
+    <meta property="og:url" content="/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4" />
+    <meta property="og:image" content="/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/jinh574" />
     <meta property="article:author" content="https://www.facebook.com/jinh574" />
-    <meta property="article:published_time" content="2017-07-27T05:00:00+00:00" />
-    <meta property="article:modified_time" content="2017-07-27T05:00:00+00:00" />
-    <meta property="article:tag" content="Getting Started" />
+    <meta property="article:published_time" content="2017-06-11T09:12:00+00:00" />
+    <meta property="article:modified_time" content="2017-06-11T09:12:00+00:00" />
+    <meta property="article:tag" content="Develop" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Advanced Markdown tips" />
-    <meta name="twitter:description" content="There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about" />
+    <meta name="twitter:title" content="macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)" />
+    <meta name="twitter:description" content="개요 macOS를 사용하면서 터미널에서 제가 많이 사용하는 명령어가 있습니다. 하지만, 다른 개발자분들과 얘기하다보면 생각보다 모르는 분들이 많은 것같아 간단하게 소개시켜 드릴려고 합니다. 제가 소개 시켜드릴려는 명령어는 pbcopy, pbpaste, rsync 입니다. pbcopy, pbpaste는 맥에서만 제공되어지는 기능이고, rsync는 리눅스에서 제공되는 기능으로 맥에도 기본으로 제공하고 있습니다. 지금부터 차근차근 알아보도록 하겠습니다. pbcopy, pbpaste 우선" />
     <meta name="twitter:url" content="/" />
-    <meta name="twitter:image" content="/assets/images/advanced.jpg" />
+    <meta name="twitter:image" content="/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="HASHBOX" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Getting Started" />
+    <meta name="twitter:data2" content="Develop" />
     <meta name="twitter:site" content="@jinh574" />
     <meta name="twitter:creator" content="@jinh574" />
     <meta property="og:image:width" content="1400" />
@@ -62,18 +62,18 @@
         "name": "HASHBOX",
         "logo": "/assets/images/hashbox-logo.png"
     },
-    "url": "/advanced-markdown",
+    "url": "/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4",
     "image": {
         "@type": "ImageObject",
-        "url": "/assets/images/advanced.jpg",
+        "url": "/assets/images/blog-cover.jpg",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/advanced-markdown"
+        "@id": "/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4"
     },
-    "description": "There are lots of powerful things you can do with the Ghost editor If you've gotten pretty comfortable with all the basics of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown! As with the last post about"
+    "description": "개요 macOS를 사용하면서 터미널에서 제가 많이 사용하는 명령어가 있습니다. 하지만, 다른 개발자분들과 얘기하다보면 생각보다 모르는 분들이 많은 것같아 간단하게 소개시켜 드릴려고 합니다. 제가 소개 시켜드릴려는 명령어는 pbcopy, pbpaste, rsync 입니다. pbcopy, pbpaste는 맥에서만 제공되어지는 기능이고, rsync는 리눅스에서 제공되는 기능으로 맥에도 기본으로 제공하고 있습니다. 지금부터 차근차근 알아보도록 하겠습니다. pbcopy, pbpaste 우선"
 }
     </script>
 
@@ -86,7 +86,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Advanced Markdown tips" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)" href="/feed.xml" />
 
 
 </head>
@@ -144,73 +144,96 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full post tag-getting-started ">
+        <article class="post-full post tag-develop no-image">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="27 July 2017">27 July 2017</time>
+                    <time class="post-full-meta-date" datetime="11 June 2017">11 June 2017</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/getting-started/'>GETTING STARTED</a>
+                               <a href='/tag/develop/'>DEVELOP</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Advanced Markdown tips</h1>
+                <h1 class="post-full-title">macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)</h1>
             </header>
 
-            
-            <figure class="post-full-image" style="background-image: url(/assets/images/advanced.jpg)">
-            </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p>There are lots of powerful things you can do with the Ghost editor</p>
-<p>If you've gotten pretty comfortable with <a href="/the-editor/">all the basics</a> of writing in Ghost, then you may enjoy some more advanced tips about the types of things you can do with Markdown!</p>
-<p>As with the last post about the editor, you'll want to be actually editing this post as you read it so that you can see all the Markdown code we're using.</p>
-<h2 id="specialformatting">Special formatting</h2>
-<p>As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:</p>
-<ul>
-<li><s>strike through</s></li>
-<li><mark>highlight</mark></li>
-<li>*escaped characters*</li>
-</ul>
-<h2 id="writingcodeblocks">Writing code blocks</h2>
-<p>There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, <code>like this</code>. Larger snippets of code can be displayed across multiple lines using triple back ticks:</p>
-<pre><code>.my-link {
-    text-decoration: underline;
-}
-</code></pre>
-<p>If you want to get really fancy, you can even add syntax highlighting using <a href="http://prismjs.com/">Prism.js</a>.</p>
-<h2 id="fullbleedimages">Full bleed images</h2>
-<p>One neat trick which you can use in Markdown to distinguish between different types of images is to add a <code>#hash</code> value to the end of the source URL, and then target images containing the hash with special styling. For example:</p>
-<p><img src="https://casper.ghost.org/v1.0.0/images/walking.jpg#full" alt="walking"></p>
-<p>which is styled with...</p>
-<pre><code>img[src$=&quot;#full&quot;] {
-    max-width: 100vw;
-}
-</code></pre>
-<p>This creates full-bleed images in the Casper theme, which stretch beyond their usual boundaries right up to the edge of the window. Every theme handles these types of things slightly differently, but it's a great trick to play with if you want to have a variety of image sizes and styles.</p>
-<h2 id="referencelists">Reference lists</h2>
-<p><strong>The quick brown <a href="https://en.wikipedia.org/wiki/Fox" title="Wikipedia: Fox">fox</a>, jumped over the lazy <a href="https://en.wikipedia.org/wiki/Dog" title="Wikipedia: Dog">dog</a>.</strong></p>
-<p>Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.</p>
-<h2 id="creatingfootnotes">Creating footnotes</h2>
-<p>The quick brown fox<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> jumped over the lazy dog<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>.</p>
-<p>Footnotes are a great way to add additional contextual details when appropriate. Ghost will automatically add footnote content to the very end of your post.</p>
-<h2 id="fullhtml">Full HTML</h2>
-<p>Perhaps the best part of Markdown is that you're never limited to just Markdown. You can write HTML directly in the Ghost editor and it will just work as HTML usually does. No limits! Here's a standard YouTube embed code as an example:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>Foxes are red <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn2" class="footnote-item"><p>Dogs are usually not red <a href="#fnref2" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
+                    <p></p>
+
+<h1 id="개요">개요</h1>
+
+<p>macOS를 사용하면서 터미널에서 제가 많이 사용하는 명령어가 있습니다. 하지만, 다른 개발자분들과 얘기하다보면 생각보다 모르는 분들이 많은 것같아 간단하게 소개시켜 드릴려고 합니다. 제가 소개 시켜드릴려는 명령어는 <code class="highlighter-rouge">pbcopy</code>, <code class="highlighter-rouge">pbpaste</code>, <code class="highlighter-rouge">rsync</code> 입니다. <code class="highlighter-rouge">pbcopy</code>, <code class="highlighter-rouge">pbpaste</code>는 맥에서만 제공되어지는 기능이고, <code class="highlighter-rouge">rsync</code>는 리눅스에서 제공되는 기능으로 맥에도 기본으로 제공하고 있습니다. 지금부터 차근차근 알아보도록 하겠습니다.</p>
+
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h2 id="pbcopy-pbpaste">pbcopy, pbpaste</h2>
+
+<p>우선 명령어만 보셔도 바로 기능이 무엇인지 아실것 같지 않으시나요? 맞습니다. <code class="highlighter-rouge">pbcopy</code>는 클립보드에 복사해 오는 것이고, <code class="highlighter-rouge">pbpaste</code>는 클리보드에 있는 내용을 붙여넣기하는 기능입니다.</p>
+
+<p><br /></p>
+
+<h3 id="pbcopy">pbcopy</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>logs.log | pbcopy
+</code></pre></div></div>
+
+<p>위와 같은 명령어는 <code class="highlighter-rouge">logs.log</code>라는 파일의 내용을 모두 클립보드에 복사하라는 의미로 사용하실 수 있습니다. iTerm과 같은 프로그램에서 그냥 드래그하셔서 복사하실 수 있지 않나라고 생각하실 수도 있지만, 저와 같은 경우엔  <code class="highlighter-rouge">vim</code>으로 사용하고 있을 경우 <code class="highlighter-rouge">set nu</code>로 설정하여 줄넘버를 표시하도록 사용하고 있습니다. 이 경우 복사하고 붙여넣었을 때 줄넘버도 같이 복사해서 결국은 다시 코드를 포맷팅 해야하는 귀찮은 작업을 하곤 했습니다. 하지만 <code class="highlighter-rouge">pbcopy</code>와 같은 명령어를 사용할 경우 바로 붙여 넣을 수도 있습니다. 뿐만아니라 터미널에서 작업한 내용을 GUI환경에서 붙여 넣을 때 동안 사용할 수 있기 때문에 알고 있으면 굉장히 편합니다.</p>
+
+<p><br /></p>
+
+<h3 id="pbpaste">pbpaste</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pbpaste | test.txt
+</code></pre></div></div>
+
+<p>위와 같은 명령어는 클립보드에 있는 내용으로 <code class="highlighter-rouge">test.txt</code>  파일을 생성하라는 명령어입니다. 즉, 코드를 복사하거나 기본 파일을 만들 때, 클립보드에 있는 내용을 기반으로 <code class="highlighter-rouge">vim</code>과 같은 텍스트 편집기를 열지 않고 바로 생성할 수 있습니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pbpaste | <span class="nb">grep</span> <span class="s2">"바보"</span>
+</code></pre></div></div>
+
+<p>또 위와 같은 명령어는 클립보드에 있는 내용에서 <em>바보</em>라는 내용이 있으면 출력해 달라는 구문으로 클립보드 내에서 간단하게 검색도 가능합니다.</p>
+
+<p>이처럼 생각보다 <code class="highlighter-rouge">pbcopy</code>와 <code class="highlighter-rouge">pbpaste</code>는 간단하지만 활용할수록 무궁무진한 응용성과 빠른 편의성을 제공합니다.</p>
+
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h2 id="rsync">rsync</h2>
+
+<p><code class="highlighter-rouge">rsync</code> 는 기본적으로 리눅스에서도 사용되어지는 명령어인데요. 특정 폴더를 다른 폴더내에 똑같이 동기화 시켜주는 역할을 해주는 명령어라 생각하시면 됩니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-av</span> /path/imoportant/ /home/important/
+</code></pre></div></div>
+
+<p>위와 같은 명령어는 <code class="highlighter-rouge">/path/important/</code>의 디렉토리 내에 있는 파일을 <code class="highlighter-rouge">/home/important/</code>에 똑같이 파일을 동기화하라는 명령어입니다. 여기서 문제는 위와 같은 명령어는 생성한 파일들에 대해서는 동기화를 해주지만 <code class="highlighter-rouge">/path/importatnt/</code>에 있는 파일이 삭제될 경우에는 동기화하지 않아 <code class="highlighter-rouge">/home/important/</code>에는 존재합니다. 물론 모든 파일들을 보존하는 차원에서는 위와 같은 명령어를 사용하시면 되지만, 완전히 똑같이 동기화하고 싶은 경우네느 다음과 같은 명령어를 추가해주면 됩니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-av</span> <span class="nt">--delete</span> /path/important/ /home/important/
+</code></pre></div></div>
+
+<p>위와 같이 <code class="highlighter-rouge">--delete</code>를 추가하면 두 디렉토리를 똑같이 동기화할 수 있습니다. 이처럼 같은 로컬 내에서 폴더를 동기화를 하는 방법에 대해서 알아보았지만 원격에 있는 서버에 동기화하고 싶은 경우는 안되는걸까요? 다행히도 원격에도 동기화가 가능합니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-av</span> <span class="nt">--delete</span> /path/important/ root@192.168.0.2:/home/important/
+</code></pre></div></div>
+
+<p>위와 같이 <code class="highlighter-rouge">ssh</code> 에 접속하듯이 명명을 해주면 원격에 있는 서버와 동기화도 가능합니다. 단, 원격 서버가 <code class="highlighter-rouge">ssh</code> 포트에 대한 접근이 허용되어 있어야 가능합니다.</p>
+
+<p><br /></p>
+<hr />
+<p><br /></p>
+
+<h1 id="마무리">마무리</h1>
+
+<p>세 개의 명령어에 대해서 알아보았습니다. 생각보다 간단한 기능이면서 강력한 편의성을 제공해주는 명령어지만 macOS에서 기본으로 제공하는지 모르는 분들이 많습니다. 제 글을 통해서 기본 기능에 대해서 알고 무궁무진하게 활용할 수 있으시면 좋겠습니다.</p>
 
                 </div>
             </section>
@@ -285,7 +308,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; HASHBOX &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/getting-started/">Getting started</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/develop/">Develop</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -298,7 +321,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/welcome">Welcome to Ghost</a></li>
+                                            <li><a href="/Apache-Tomcat-%EC%97%B0%EB%8F%99-2">CentOS7 + Apache + Tomcat8 연동(mod_jk)</a></li>
                                         
                                     
                                   
@@ -307,7 +330,7 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/the-editor">Using the Ghost editor</a></li>
+                                            <li><a href="/Apache-Tomcat-%EC%97%B0%EB%8F%99">CentOS7 + Apache + Tomcat8 연동(mod_jk)</a></li>
                                         
                                     
                                   
@@ -316,26 +339,8 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/using-tags">Organising your content with tags</a></li>
+                                            <li><a href="/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0">Java의 Static 바로알기</a></li>
                                         
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
                                     
                                   
                                 
@@ -347,7 +352,37 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                  
                                 
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                                   
@@ -362,14 +397,28 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                 
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/getting-started/">
+                            <a href="/tag/develop/">
                                 
-                                    See all 6 posts  →
+                                    See all 10 posts  →
                                 
                             </a>
                         </footer>
@@ -380,27 +429,23 @@ into the {body} of the default.hbs template -->
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/private-sites">
-                <div class="post-card-image" style="background-image: url(/assets/images/locked.jpg)"></div>
-            </a>
+    <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/private-sites">
+            <a class="post-card-content-link" href="/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AD%EC%B6%95">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Getting started</span>
+                                <span class="post-card-tags">Develop</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Making your site private</h2>
+                    <h2 class="post-card-title">Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>Sometimes you might want to put your site behind closed doors If you've got a publication that you don't want the world to see yet because it's not ready to launch, you can</p>
+                    <p># 개요 Python을 시작하신지 얼마 안되신 분들은 Python을 사용하기 전에 `pyenv`, `virtualenv`, `autoenv`를 설치하는 이유에 대해서 잘 모르실수도 있습니다. 저또한 처음 시작할 때 굳이 번거롭게 설치할 필요가 있나 했던 적이 있습니다. 지금와서 생각해보면</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -416,27 +461,23 @@ into the {body} of the default.hbs template -->
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/themes">
-                <div class="post-card-image" style="background-image: url(/assets/images/design.jpg)"></div>
-            </a>
+    <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/themes">
+            <a class="post-card-content-link" href="/Crontab-%EC%82%AC%EC%9A%A9%EB%B0%A9%EB%B2%95">
                 <header class="post-card-header">
                     
                         
                             
-                                <span class="post-card-tags">Getting started</span>
+                                <span class="post-card-tags">Develop</span>
                             
                         
                     
 
-                    <h2 class="post-card-title">Setting up your own Ghost theme</h2>
+                    <h2 class="post-card-title">리눅스 Crontab 사용방법</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>Creating a totally custom design for your publication Ghost comes with a beautiful default theme called Casper, which is designed to be a clean, readable publication layout and can be easily adapted for</p>
+                    <p>개요 리눅스 환경에서 일정 시간마다 반복된 작업을 스케쥴링을 해야하는 경우가 있습니다. 프로그래밍 내에서 sleep과 같은 함수를 써서 대기 후 사용하는 무식한 방법도 있지만, 그것 보다 더 좋은 방법은 바로 리눅스 자체의 crontab을 사용하는</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -464,18 +505,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Advanced Markdown tips</div>
+    <div class="floating-header-title">macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Advanced+Markdown+tips&amp;url=https://hashbox.github.io/advanced-markdown"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=macOS+%EC%95%8C%EC%A7%9C%EB%B0%B0%EA%B8%B0+%EB%AA%85%EB%A0%B9%EC%96%B4%28pbcopy%2C+pbpaste%2C+rsync%29&amp;url=https://hashbox.github.io/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/advanced-markdown"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

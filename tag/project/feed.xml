@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>/</title>
+   
+   <link>/</link>
+   <description>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</description>
+   <language>ko-kr</language>
+   
+   <title>
+   <![CDATA[ HASHBOX ]]>
+   </title>
+   <description>
+   <![CDATA[ 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 ]]>
+   </description>
+   <link>/</link>
+   <image>
+   <url>/assets/images/favicon.png</url>
+   <title>HASHBOX</title>
+   <link>/</link>
+   </image>
+   <generator>Jekyll 3.6.2</generator>
+   <lastBuildDate></lastBuildDate>
+   <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+   <ttl>60</ttl>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>2017 대통령 선거 빅데이터 분석</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</link>
+		
+				
+		
+	  <pubDate>2017-05-23T16:01:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/6m3VTA0ejGTeTp" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<h1 id="개요">개요</h1>
+<p>이전 프로젝트인 <a href="/portfolio/프로젝트-공영주차장실시간예측/">공영주차장 실시간 예측</a> 프로젝트에서 분산파일시스템에 대한 필요성을 뼈저리게 느꼈던 적이 있습니다. 해당 프로젝트로 인해 하둡 시스템이 만들어지고 발전하게된 이유를 그 누구보다도 잘 알게 되었습니다. 사실 저는 학문에 익히고 이해하는데 있어서 발생 원리와 발전 과정을 알아야 해당하는 학문을 더 깊이 있고 넓게 익힐 수 있다고 생각하기에 하둡에 대한 공부는 그 어느때보다도 재밌었던 것 같습니다.</p>
+
+<p>하둡에 대한 작동원리와 하둡 에코시스템을 이해를 위해 이론 뿐만아니라 실제 실무적인 경험을 얻기 위해 프로젝트를 기획하게 되었습니다. 때마침 대한민국 헌정사상 최초로 탄핵이 이루어지면서 대통령 선거가 필요하게 되었고 이는 빅데이터를 수집하고 분석하고 싶다는 생각이 들었습니다. 이에 대통령 후보자들이 언급되는 빈도에 따라 후보자에 대한 관심도와 나아가 언론사별로 지지하는 후보자를 알 수 있을 거란 생각이 들었습니다. 개인이 수집한 데이터의 양이기 때문에 생각보다 많은 데이터의 양은 아니였지만 충분히 의미있는 분석을 할 수 있었습니다.</p>
+
+<p>무엇보다도 하둡 에코시스템을 직접 구축하고 운영하면서 한번! 수집된 데이터를 통해 재미있는 정보를 분석을 명령하고 결과가 도출 됐을때 한번! 두번의 즐거움은 이루 말할 수 없었던 것 같습니다. 무엇보다도 저에게 뜻깊은 프로젝트였습니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>Ubuntu 14.04(하둡 시스템) * 4, Ubuntu 16.04(웹서버)</li>
+  <li>Hadoop 2.7.2</li>
+  <li>Hive 2.1.1</li>
+  <li>Zookeeper 3.4.10</li>
+  <li>Flume 1.7</li>
+  <li>Sqoop 1.4.6</li>
+  <li>MySQL 5.6</li>
+  <li>Spring Boot 1.3
+    <ul>
+      <li>Spring Web, Spring Security, Spring JDBC</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 1개월(2017.04 ~ 2017.05)</p>
+<hr />
+<h1 id="소스코드-및-서비스">소스코드 및 서비스</h1>
+<p><span><a href="https://github.com/jinh574/java-CollectRssData" class="btn btn-info">Github</a></span>
+<span><a href="http://dev.freakylab.com" class="btn btn-success" role="button" disabled="disabled">웹서비스</a></span></p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>공영주차장 실시간 예측</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1</link>
+		
+				
+		
+	  <pubDate>2017-05-22T15:33:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/2KTbf9MNEBOARj" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<h1 id="개요">개요</h1>
+<p>빅데이터 분야로 나아가기 위해 아이디어를 내고 구현하게 된 첫번째 프로젝트로 중요한 의미가 있는 프로젝트였습니다. 당시 <em>알파고</em>가 큰 이슈를 가지고 있었고 기계학습에 대해 큰 관심이 주목되던 시기였습니다.
+사실 <em>알파고</em>에 의해 주목되기 이전부터 Tensorflow를 공부하고 구현을 하고자 했었고, 이쪽 분야에 대한 정보들이 많이 쏟아져 나오면서 프로젝트를 실습하는데 필요한 정보들을 찾는데 어려움을 겪고 있던 찰나에 기계학습에 대한 정보에 이목이 집중되면서 기계학습에 관한 자료들을 얻는데 쉬워졌었습니다. 처음엔 데이터마이닝에 대한 강의와 인공지능 강의를 수강하면서 습득한 이론과 여러 기계학습 이론들을 익히고 실습하면서 많은
+수행착오가 있었고 결과적으로 90% 이상의 정확도를 가진 모델을 학습할 수 있었지만 새로운 문제에 봉착하게 되었습니다. 당시 하둡과 같은 분산파일시스템에 대한 필요성의 이유를 모르고 있었기에 MongoDB를 이용하여
+데이터를 수집하여 초기 데이터의 양이 비교적 적을 땐 모델 학습이 가능했었던 것이였습니다. 데이터의 양이 많아지면서 학습모델을 학습하는데 문제를 알게 되었고 하둡과 같은 분산파일시스템의 필요성을 절실히 느끼게 되었던 프로젝트였습니다.</p>
+
+<p>결론적으로, 비교적 데이터의 양이 적을때는 성공한 프로젝트였지만 데이터의 양이 많아지면서 학습모델을 사용할 수가 없어 실패한 프로젝트였습니다. 하지만, 이를 통해 하둡과 같은 분산파일시스템의 필요성과 하둡에 대한 깊이 있는 학문을 갈구하게 되는 계기가 되었습니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>Python Tensorflow Library</li>
+  <li>Node.js + Express.js 프레임워크
+    <ul>
+      <li>Cron Module</li>
+    </ul>
+  </li>
+  <li>R</li>
+  <li>MongoDB</li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 1개월(2016.03 ~ 2016.04)</p>
+<hr />
+<h1 id="소스코드">소스코드</h1>
+<blockquote>
+  <p>서비스하는 서버의 문제로 소스코드가 누락되었습니다ㅠ</p>
+</blockquote>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>IoTivity 화재감지 시스템</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C</link>
+		
+				
+		
+	  <pubDate>2017-05-21T15:55:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/elc4mcgv1lID8F" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<h1 id="개요">개요</h1>
+<p>졸업작품 프로젝트로 IoT간 통신에 대한 표준을 지향하는 IoTivity 라이브러리를 사용하여 화재감지시스템을 설계 구축했습니다. 처음 프로젝트 주제로 BLE만을 사용하여 디바이스간 통신 네트워크 구축을 계획했었습니다.
+하지만, 블루투스의 기술스펙이나 아이디어 구현에 한계가 있는 와중에 교수님의 제안으로 IoTivity를 이용한 화재감지 시스템과 기존 블루투스 아이디어 중 일부를 접목하여 프로젝트를 설계하게 되었습니다.</p>
+
+<p>기본적으로 라즈베리파이로 센서와 컨트롤러를 구현가능하도록 하여 설치가 용이하고 저단가로 구성할 수 있도록 하였습니다. 처음으로 IoTivity 오픈소스 라이브러리에 참여할 수 있는 기회였습니다. 비록 컨트리뷰트는 성공하지 못했지만 오픈소스에 대한 분석과 이슈 트랙을 하면서 크게 성장할 수 있는 경험이였습니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>C/C++ 기반 IoTivity Open Source Library</li>
+  <li>JsonCPP Library for C++</li>
+  <li>MQTT Library for C++</li>
+  <li>Android 5.0+(Bluetooth 4.0+)</li>
+  <li>Raspbian Jessie Linux</li>
+  <li>Node.js + Express.js
+    <ul>
+      <li>Web, Web Socket, MQTT, BLE Modules</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 7개월(2016.04 ~ 2016.11)</p>
+<hr />
+<h1 id="소스코드">소스코드</h1>
+<div><a href="https://github.com/jinh574/graduateproject-iotivity" class="btn btn-info">Github</a></div>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>IOCP 소켓통신을 이용한 채팅프로그램</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</link>
+		
+				
+		
+	  <pubDate>2017-05-19T20:22:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/Bhm7gKPLJQLIuJ" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<h1 id="개요">개요</h1>
+<p>네트워크 프로그래밍에 대해서 공부를 하게 되면 기본적으로 <em>동기 소켓통신</em>을 시작으로 <em>비동기 소켓통신</em>을 배우고 프로그래밍 프로젝트 과제를 하게 됩니다. 어떻게 보면 소켓통신을 하는데 있어서
+기본적인 원리와 소켓통신을 하면서 이루어지는 통신과 확인과정에 대한 이해를 돕는데 가장 간단한 방법이고 배우는 시간이 오래 걸리지 않기 때문에 그런것 같습니다. 하지만 저는 MMORPG를 봤을 때
+몇십 만명이나 되는 인원들이 마다 소켓을 할당해줄 경우 메모리가 남아 나지 않을 텐데 어떻게 구현이 가능하지라는 의문을 가지게 되었고, 해결방법을 찾다가 IOCP 소켓통신에 대해 알게 되었습니다.</p>
+
+<p><em>동기 통신</em>과 <em>비동기 통신</em>으로 구현된 채팅 프로그램 소스를 IOCP로 개선하여 통신의 종류마다 테스트를 통해 성능의 차이와 IOCP 구동원리에 대한 이해와 구현까지 실습하면서 네트워크 프로그래밍의
+깊이 있는 이해를 하고자 프로젝트를 시작하게 되었습니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>Windows 7 환경</li>
+  <li>VC++ MFC</li>
+  <li>JsonCPP Library for C++</li>
+  <li>Windows IOCP Socket Library</li>
+  <li>MySQL 5.2</li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 1개월(2013.01 ~ 2013.02)</p>
+<hr />
+<h1 id="소스코드">소스코드</h1>
+<div><a href="https://github.com/jinh574/cpp-iocpchat" class="btn btn-info">Github</a></div>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>사진형SNS '인스플'</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C</link>
+		
+				
+		
+	  <pubDate>2017-05-18T11:42:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/4vNkAmw6rZuhH7" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<h1 id="개요">개요</h1>
+<p>사진형SNS <strong>‘인스플’</strong>은 2011년 10년지기 친구와 함께 시작하게 된 스타트업 프로젝트의 일환입니다. 당시 대한민국은 소셜네트워크 서비스로 왕좌로 군림했던 싸이월드가 페이스북의 출현으로 왕좌의 자리가 변하고 있던 시기입니다.
+그 당시 페이스북은 글을 통해서만 글을 게시하고, <em>뉴스피드</em>라는 친구의 글을 한눈에 보는 서비스와 <em>친구찾기</em>라는 자신의 정보를 기반으로 친구를 찾아주는 서비스로 큰 인기를 끌었습니다.</p>
+
+<p>저 또한 트렌드에 따라 페이스북을 사용하게 되었지만 조금은 아쉬운 부분이 많았었습니다. 무엇보다도 개인적인 생각으로 한국인들은 감성적이고 자신의 앨범을 정리하고 뽐내기를 좋아하기에 싸이월드가 큰 성공을 거둔것이라 생각하고 있습니다.
+그렇기에 페이스북에 글로만 표현되는 자신의 감정은 조금 부족하다는 생각이 많이 들었습니다. 이런 점을 개선하고 조금 더 한국형에 맞는 소셜네트워크 서비스를 제공하자는 데 뜻을 모아 프로젝트를 시작하게 되었습니다.
+글만 게시되던 페이스북과는 달리 사진이 주가 되는 뉴스피드와 자신의 앨범을 폴더로 저장하고 관리가 가능하며, 친구와 공유앨범으로 사용도 가능합니다. 뿐만아니라 겔러리라는 기능으로 친구가 아닌 타인과 사진취미를 같이하고 그룹을 만들 수 있으며,
+이를 통해서 최근 이슈나 트랜드를 상위 노출 시켜 트랜드 분석이 가능한 서비스로 설계 및 구현되었습니다.</p>
+
+<p>최종적으로 프론트앤드부터 백앤드까지 A to Z를 모두 설계 및 구현하고 나아가 운영까지하는 중대한 경험을 한 프로젝트로 저에게는 크나큰 성장을 선물해준 의미있는 프로젝트입니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>PHP</li>
+  <li>HTML5</li>
+  <li>Javascript + jQuery</li>
+  <li>MySQL 5.4(uCloud Biz Database)</li>
+  <li>CentOS 5.6 Server(uCloud Biz Platform)</li>
+  <li>Image Storage(uCloud Biz Storage)</li>
+  <li>Image Caching(uCloud Biz CDN)</li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 1년(2012.01 ~ 2013.01)</p>
+<hr />
+<h1 id="소스코드">소스코드</h1>
+<blockquote>
+  <p>해당 소스는 데이터베이스나 내부구조를 공개를 할 수 없어 생략합니다.</p>
+</blockquote>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>화면 공유 협업 프로그램</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EB%B0%94-%ED%99%94%EB%A9%B4%ED%98%91%EC%97%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</link>
+		
+				
+		
+	  <pubDate>2017-05-17T14:25:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EB%B0%94-%ED%99%94%EB%A9%B4%ED%98%91%EC%97%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/NKIAjw7PDjZG3Y" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+
+<h1 id="개요">개요</h1>
+<p>팀프로젝트를 진행할 시 서로의 화면을 공유하고 회의를 하거나, 개발을 해야할 경우가 있습니다. 내부 네트워크에서 클라이언트의 화면을 선택함으로써 화면을 다같이 공유하여 팀프로젝트 능률 향상에 목적을 가지고 개발하게 되었습니다.</p>
+
+<p>서버 클라이언트 구조의 프로그램이며 서버 역할을 하는 팀장이 공유하고자 하는 클라이언트를 선택을 함으로써 클라이언트들끼리 같은 화면을 공유할 수 있도록 구현하였습니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>Java 1.7</li>
+  <li>Swing Library로 Cross platform 환경</li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 1개월</p>
+<hr />
+<h1 id="소스코드">소스코드</h1>
+<div><a href="https://github.com/jinh574/java-screenshare" class="btn btn-info">Github</a></div>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>리눅스 도난 방지 모듈</title>
+	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%BB%A4%EB%84%90-%EC%BC%84%EC%8B%B1%ED%84%B4%EB%9D%BD</link>
+		
+				
+		
+	  <pubDate>2017-05-16T18:18:00+00:00</pubDate>
+	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%BB%A4%EB%84%90-%EC%BC%84%EC%8B%B1%ED%84%B4%EB%9D%BD</guid>
+	  <description><![CDATA[
+	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/CohyECfls1PZID" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""></iframe>
+
+<h1 id="개요">개요</h1>
+<p>최근에 출시되는 노트북은 얇고 가벼움을 추구하다보니 켄싱턴락 지원하지 않는 노트북이 많았습니다. 이에 전원을 사용하고 있다면
+전원 케이블 길이 만큼의 반경에서 사용을 해야하므로 이를 이용한다면 켄싱턴락과 같은 역할을 할 수 있겠다라는 생각을 하게 되었습니다.</p>
+
+<p>이에 모듈 실행 시 전원 케이블 상태를 감지하는 모듈을 구현하고, 전원이 차단됨을 감지할 경우 모든 키보드를 잠그고 경고음을 내뱉습니다.
+도난 방지 모듈을 내리기 위해서는 지정된 비밀번호 사용하는 방법으로 구현했습니다.</p>
+<hr />
+<h1 id="개발환경">개발환경</h1>
+<ul>
+  <li>Fedora 15</li>
+  <li>Kernel 2.6.38</li>
+  <li>gcc</li>
+  <li>C Language</li>
+</ul>
+
+<hr />
+<h1 id="프로젝트-기간">프로젝트 기간</h1>
+<p>총 1개월</p>
+<hr />
+<h1 id="소스코드">소스코드</h1>
+<div><a href="https://github.com/jinh574/kernel-kensingtonlock" class="btn btn-info">Github</a></div>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>
