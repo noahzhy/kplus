@@ -5,15 +5,15 @@ paginate: 100 # it will paginate after this number
 language: 'ko-kr'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: '/'
+baseurl: /
 
 # Website info
 title: HASHBOX
 description: The professional publishing platform
-cover: assets/images/blog-cover.jpg
-logo: assets/images/blog-icon.png
-logo_dark: assets/images/favicon.png
-favicon: assets/images/favicon.png
+cover: /assets/images/blog-cover.jpg
+logo: /assets/images/blog-icon.png
+logo_dark: /assets/images/favicon.png
+favicon: /assets/images/favicon.png
 production_url: https://hashbox.github.io/
 source_url: https://github.com/hashbox/hashbox.github.io/
 
