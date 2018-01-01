@@ -4,7 +4,7 @@ current: post
 cover: False
 navigation: True
 title: CentOS7 + Apache + Tomcat8 연동(mod_jk)
-date: 2017-06-24 10:18:00
+date: 2017-06-24 21:10:00
 tags: develop
 class: post-template
 subclass: 'post tag-develop'
