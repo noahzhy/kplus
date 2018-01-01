@@ -9,7 +9,7 @@ baseurl: /
 
 # Website info
 title: HASHBOX
-description: The professional publishing platform
+description: 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 - 개발자의 일상, 끄적임
 cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
@@ -30,11 +30,11 @@ disqus: True
 disqus_shortname: hashbox # replace with your disqus username
 
 # Google Analytics
-google_analytics: UA-69281367-1 # replace with your GA tracking identifier
+google_analytics: UA-99247778-1 # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
-permalink: /author/:author
+# permalink: /author/:author
 # permalink: /tag/:tag
 
 # Authors' info in `_data/authors.yml`
