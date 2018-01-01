@@ -1,6 +1,6 @@
 develop:
   name: develop
-  description: 개발에 관하 모든것.
+  description: 개발에 관한 모든것.
   cover: False
 life:
   name: life
