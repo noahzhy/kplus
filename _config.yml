@@ -69,7 +69,7 @@ safe: False
 lsi: False
 username: hashbox
 repo: hashbox.github.io
-branch: master
+branch: main
 relative_source: ../hashbox/
 destination: ../hashbox-pages/
 production_url:  https://hashbox.github.io/
