@@ -70,7 +70,7 @@ lsi: False
 username: hashbox
 repo: hashbox.github.io
 branch: master
-relative_source: ../hashbox
+relative_source: ../hashbox/
 destination: ../hashbox-pages/
 production_url:  https://hashbox.github.io/
 source_url:  https://github.com/hashbox/hashbox.github.io/
