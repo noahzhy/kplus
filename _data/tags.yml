@@ -14,3 +14,7 @@ getting-started:
   name: getting-started
   description: False
   cover: False
+develop:
+  name: develop
+  description: 개발 일지
+  cover: False
