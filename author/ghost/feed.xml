@@ -11,16 +11,16 @@
    
       
             
-      
+               
+               
+                  <managingEditor>Ghost</managingEditor>
             
-               
-               
-                  <managingEditor>Hannah Wolfe</managingEditor>
+      
             
       
    
    <title>
-   <![CDATA[ Hannah Wolfe - HASHBOX ]]>
+   <![CDATA[ Ghost - HASHBOX ]]>
    </title>
    <description>
    <![CDATA[ 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 ]]>
@@ -28,12 +28,12 @@
    <link>https://hashbox.github.io/</link>
    <image>
    <url>https://hashbox.github.io/assets/images/favicon.png</url>
-   <title>Hannah Wolfe - HASHBOX</title>
+   <title>Ghost - HASHBOX</title>
    <link>https://hashbox.github.io/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="https://hashbox.github.io/author/hannah/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="https://hashbox.github.io/author/ghost/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
