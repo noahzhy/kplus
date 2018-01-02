@@ -1,3 +1,7 @@
+project:
+  name: project
+  description: 즐거운 나의 프로젝트 Log.
+  cover: assets/images/project.jpg
 develop:
   name: develop
   description: 개발에 관한 모든것.
