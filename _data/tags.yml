@@ -1,8 +1,8 @@
 develop:
   name: develop
   description: 개발에 관한 모든것.
-  cover: False
+  cover: assets/images/develop.jpg
 life:
   name: life
   description: 개인적인 끄적임.
-  cover: False
+  cover: assets/images/life.jpg
