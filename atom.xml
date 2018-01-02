@@ -274,7 +274,7 @@ public syncronized void get() {
       <item>
         <title>마크다운 이미지 중앙 정렬 방법</title>
         
-          <description>&lt;p&gt;마크다운으로 작성시 &lt;code class=&quot;highlighter-rouge&quot;&gt;![설명](http://https://hashbox.github.io/images/example.jpg)&lt;/code&gt;를 통해 이미지를 등록하게 됩니다.&lt;/p&gt;
+          <description>&lt;p&gt;마크다운으로 작성시 &lt;code class=&quot;highlighter-rouge&quot;&gt;![설명](https://hashbox.github.io/images/example.jpg)&lt;/code&gt;를 통해 이미지를 등록하게 됩니다.&lt;/p&gt;
 
 </description>
         
