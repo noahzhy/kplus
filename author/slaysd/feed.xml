@@ -13,10 +13,14 @@
             
       
             
+               
+               
+                  <managingEditor>한지승(Jee Seung, Han)</managingEditor>
+            
       
    
    <title>
-   <![CDATA[ HASHBOX ]]>
+   <![CDATA[ 한지승(Jee Seung, Han) - HASHBOX ]]>
    </title>
    <description>
    <![CDATA[ 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 ]]>
@@ -24,12 +28,12 @@
    <link>https://hashbox.github.io/</link>
    <image>
    <url>https://hashbox.github.io/assets/images/favicon.png</url>
-   <title>HASHBOX</title>
+   <title>한지승(Jee Seung, Han) - HASHBOX</title>
    <link>https://hashbox.github.io/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="https://hashbox.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="https://hashbox.github.io/author/slaysd/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
@@ -39,6 +43,8 @@
 		
 				
 		
+				
+						<author>한지승(Jee Seung, Han)</author>
 				
 		
 	  <pubDate>2018-01-01T22:18:00+00:00</pubDate>
@@ -63,6 +69,8 @@
 		
 				
 		
+				
+						<author>한지승(Jee Seung, Han)</author>
 				
 		
 	  <pubDate>2017-06-24T10:18:00+00:00</pubDate>
@@ -319,6 +327,8 @@ service tomcat restart
 				
 		
 				
+						<author>한지승(Jee Seung, Han)</author>
+				
 		
 	  <pubDate>2017-06-20T20:10:00+00:00</pubDate>
 	  <guid>https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0</guid>
@@ -403,6 +413,8 @@ service tomcat restart
 		
 				
 		
+				
+						<author>한지승(Jee Seung, Han)</author>
 				
 		
 	  <pubDate>2017-06-15T10:08:00+00:00</pubDate>
@@ -539,6 +551,8 @@ pyenv activate
 				
 		
 				
+						<author>한지승(Jee Seung, Han)</author>
+				
 		
 	  <pubDate>2017-06-11T09:12:00+00:00</pubDate>
 	  <guid>https://hashbox.github.io/macOS-%EB%AA%85%EB%A0%B9%EC%96%B4</guid>
@@ -620,6 +634,8 @@ pyenv activate
 		
 				
 		
+				
+						<author>한지승(Jee Seung, Han)</author>
 				
 		
 	  <pubDate>2017-06-08T11:42:00+00:00</pubDate>
@@ -707,6 +723,8 @@ pyenv activate
 				
 		
 				
+						<author>한지승(Jee Seung, Han)</author>
+				
 		
 	  <pubDate>2017-05-27T13:54:00+00:00</pubDate>
 	  <guid>https://hashbox.github.io/Java-Syncronized-and-method</guid>
@@ -764,6 +782,8 @@ pyenv activate
 				
 		
 				
+						<author>한지승(Jee Seung, Han)</author>
+				
 		
 	  <pubDate>2017-05-24T12:55:00+00:00</pubDate>
 	  <guid>https://hashbox.github.io/Git-%EB%AF%B8%EB%9F%AC%EB%A7%81%EB%B0%A9%EB%B2%95</guid>
@@ -791,6 +811,8 @@ pyenv activate
 		
 				
 		
+				
+						<author>한지승(Jee Seung, Han)</author>
 				
 		
 	  <pubDate>2017-05-23T16:01:00+00:00</pubDate>
@@ -865,6 +887,8 @@ eproject.jar에 기본 Manifest 속성이 없습니다.
 		
 				
 		
+				
+						<author>한지승(Jee Seung, Han)</author>
 				
 		
 	  <pubDate>2017-05-23T16:01:00+00:00</pubDate>
