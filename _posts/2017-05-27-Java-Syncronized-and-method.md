@@ -11,9 +11,6 @@ subclass: 'post tag-develop'
 logo: assets/images/slaysd.png
 author: slaysd
 ---
-
-<p></p>
-
 # 개요
 자바를 사용하면서 쓰레드를 사용한 개발이 필요할 때가 있습니다. 그럴때마다 따라오게 되는 것이 `syncronized`와 `wait`, `notify`, `notifyAll`이 있습니다. 어쩔 때 사용한다는 것은 알지만 정확한 작동 원리를 알지 못하고 무분별하게 쓰는 것 같아 자세한 내용을 공부하고 글을 남기게 되었습니다.
 * * *
