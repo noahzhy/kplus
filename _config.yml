@@ -6,6 +6,7 @@ language: 'ko-kr'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
+url: https://hashbox.github.io
 
 # Website info
 title: HASHBOX
