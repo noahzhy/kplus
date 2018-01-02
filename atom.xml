@@ -8,6 +8,21 @@
     
       
       <item>
+        <title>블로그 디자인 개편했습니다.</title>
+        
+          <description>&lt;p&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 01 Jan 2018 22:18:00 +0000</pubDate>
+        <link>
+        /%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</link>
+        <guid isPermaLink="true">/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>CentOS7 + Apache + Tomcat8 연동(mod_jk)</title>
         
           <description>&lt;p&gt;&lt;/p&gt;
@@ -193,23 +208,11 @@
       <item>
         <title>실시간 대중교통 경로 탐색</title>
         
-          <description>&lt;hr /&gt;
-&lt;p&gt;layout: post
-current: post
-cover: False
-navigation: True
-title: 실시간 대중교통 경로 탐색
-date: 2017-05-20 14:32:00
-tags: project
-class: post-template
-subclass: ‘post tag-project’
-logo: assets/images/slaysd.png
-author: slaysd
-—&lt;/p&gt;
+          <description>&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/haOudYeT4yJHLS&quot; width=&quot;640&quot; height=&quot;522&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
 
 </description>
         
-        <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 20 May 2017 14:32:00 +0000</pubDate>
         <link>
         /%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C</link>
         <guid isPermaLink="true">/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C</guid>
