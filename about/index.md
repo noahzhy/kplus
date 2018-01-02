@@ -3,15 +3,49 @@ layout: page
 current: about
 title: About
 navigation: true
-logo: 'assets/images/ghost.png'
+logo: False
 class: page-template
 subclass: 'post page'
 ---
 
-Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.
+![Profile](../assets/images/slaysd.jpg)
+> 안녕하세요, 데이터 분야에서 최고가 되기위해 항해하는 한지승입니다. 데이터의 힘은 무궁무진합니다. 저는 그 데이터의 힘을 최고로 끌어 올리기 위해 노력할 것입니다.
 
-> If you'd like to set up a site like this for yourself, head over to [Ghost.org](https://ghost.org/) and start a free 14 day trial to give Ghost a try!
 
-If you're a developer: Ghost is a completely open source (MIT) Node.js application built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite, and is publicly available [on Github](https://github.com/TryGhost/ghost).
+## 인적사항
+**이름** :
+한 지승(Jee Seung, Han)
 
-If you need help with using Ghost, you'll find a ton of useful articles on [our knowledgebase](https://help.ghost.org/), as well as extensive [developer documentation](https://docs.ghost.org/).
+**생년월일** :
+1991년 4월 12일
+
+**좌우명** :
+> 즐겨라, 즐기는 자를 이길 수 없다.
+
+
+## Education
+- 건국대학교 정보통신대학 컴퓨터공학부 학사 졸업(2010년 3월 ~ 2017년 2월)
+- 경복고등학교 제 85회 졸업(2007년 3월 ~ 2010년 2월)
+
+
+## Career
+- 서울지방경찰청 성동경찰서 방범순찰대 수경 만기전역(2014년 4월 23일 ~ 2016년 1월 23일)
+- 건국대학교 정보통신대학 단과대회장(2012년 3월 ~ 2012년 12월)
+- 건국대학교 총학생회 IT국장(2011년 3월 ~ 2011년 12월)
+- 건국대학교 정보통신대학 컴퓨터공학부 1학년 과대(2010년 3월 ~ 2011년 2월)
+
+## Projects
+- [2017 대통령 선거 빅데이터 분석](/프로젝트-2017대선-빅데이터분석)
+- [공영주차장 실시간 예측](/프로젝트-공영주차장실시간예측)
+- [IoTivity 화재 감지 시스템](/프로젝트-IoTivity-화재감지시스템)
+- [실시간 대중교통 경로 탐색](/프로젝트-실시간대중교통추천)
+- [IOCP 소켓통신을 이용한 채팅프로그램](/프로젝트-IOCP-채팅프로그램)
+- [사진형SNS '인스플'](/프로젝트-사진형SNS-인스플)
+- [화면 공유 협업 프로그램](/프로젝트-자바-화면협업프로그램)
+- [리눅스 도난 방지 모듈](/프로젝트-리눅스커널-켄싱턴락)
+
+[See more projects..](/tag/project)
+
+
+
+
