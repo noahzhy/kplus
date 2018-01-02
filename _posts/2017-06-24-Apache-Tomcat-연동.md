@@ -25,7 +25,7 @@ author: slaysd
 
 우선 환경을 구축하기 위해서 필요로 하는 패키지를 한번에 설치하도록 하겠습니다.
 
-~~~ bash
+~~~bash
 yum install -y gcc gcc-c++ httpd-devel java-1.8.0-openjdk-devel.x86_64 wget libtool make
 ~~~
 
