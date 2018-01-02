@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-02T05:41:09+00:00</updated><id>/</id><title type="html">HASHBOX</title><subtitle>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</subtitle><entry><title type="html">블로그 디자인 개편했습니다.</title><link href="/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8" rel="alternate" type="text/html" title="블로그 디자인 개편했습니다." /><published>2018-01-01T22:18:00+00:00</published><updated>2018-01-01T22:18:00+00:00</updated><id>/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</id><content type="html" xml:base="/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8">&lt;p&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-01-02T05:56:49+00:00</updated><id>/</id><title type="html">HASHBOX</title><subtitle>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</subtitle><entry><title type="html">블로그 디자인 개편했습니다.</title><link href="/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8" rel="alternate" type="text/html" title="블로그 디자인 개편했습니다." /><published>2018-01-01T22:18:00+00:00</published><updated>2018-01-01T22:18:00+00:00</updated><id>/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</id><content type="html" xml:base="/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8">&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;새로운-테마-적용&quot;&gt;새로운 테마 적용&lt;/h1&gt;
 &lt;p&gt;안녕하세요, SlaysD입니다. 이전 블로그 디자인에 문제도 좀 많고 가독성이 떨어지는 느낌이 있었는데, 뭐처럼 시간이 생겨서 블로그 디자인 개편을 진행했습니다.&lt;/p&gt;
@@ -7,248 +7,7 @@
 
 &lt;p&gt;또 오른쪽 밑에 검색 버튼이 생겼습니다. 게시글 제목을 바로 검색해서 게시글에 접근할 수 있는 기능으로 &lt;strong&gt;HASHBOX&lt;/strong&gt;라는 블로그 이름에 걸맞게 빠르고 쉽게 접근할 수 있도록 했습니다.&lt;/p&gt;
 
-&lt;p&gt;아직 부족하지만 제가 알게 되는 것들을 잘 정리해서 올릴 수 있도록 하겠습니다. 블로그를 통해 정리를 하면서 알게 된 내용을 머릿속에 잘 정리하고, 나아가 나중에 다시 찾아 활용할 수 있는 그런 블로그를 만들고 싶습니다.&lt;/p&gt;</content><author><name>한지승</name></author><category term="life" /><summary type="html"></summary></entry><entry><title type="html">CentOS7 + Apache + Tomcat8 연동(mod_jk)</title><link href="/Apache-Tomcat-%EC%97%B0%EB%8F%99-2" rel="alternate" type="text/html" title="CentOS7 + Apache + Tomcat8 연동(mod_jk)" /><published>2017-06-24T21:10:00+00:00</published><updated>2017-06-24T21:10:00+00:00</updated><id>/Apache-Tomcat-%EC%97%B0%EB%8F%99%202</id><content type="html" xml:base="/Apache-Tomcat-%EC%97%B0%EB%8F%99-2">&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
-
-&lt;p&gt;이번에는 CentOS7 환경에서 아파치 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat8&lt;/code&gt;을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난 뒤에 필요하신 옵션을 추가해서 사용하세요~! 지금 부터 알아보도록 하겠습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;환경을-구축하기-위한-패키지-및-apache-httpd-설치&quot;&gt;환경을 구축하기 위한 패키지 및 Apache Httpd 설치&lt;/h2&gt;
-
-&lt;p&gt;우선 환경을 구축하기 위해서 필요로 하는 패키지를 한번에 설치하도록 하겠습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;yum install &lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt; gcc gcc-c++ httpd-devel java-1.8.0-openjdk-devel.x86_64 wget libtool make
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;기본적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;libtool&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;gcc&lt;/code&gt;환경과 &lt;code class=&quot;highlighter-rouge&quot;&gt;java jdk&lt;/code&gt;가 설치 되어 있어야하며, &lt;code class=&quot;highlighter-rouge&quot;&gt;wget&lt;/code&gt;이나 &lt;code class=&quot;highlighter-rouge&quot;&gt;make&lt;/code&gt;는 설치가 안되 있으신 분들은 위해 넣었습니다. 이와 함께 제일 설치하기 쉬운 아파치 설치는 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd-devel&lt;/code&gt;을 통해서 설치가 가능합니다. 위 명령어를 이용하면 환경을 구축하는데 있어 필요로하는 패키지들과 &lt;code class=&quot;highlighter-rouge&quot;&gt;apache&lt;/code&gt;가 설치가 완료 하셨습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;tomcat8-설치&quot;&gt;Tomcat8 설치&lt;/h2&gt;
-
-&lt;p&gt;저는 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat8&lt;/code&gt;을 설치 하게 되었는데요. 이는 http://tomcat.apache.org/download-80.cgi에 들어가시면 최신버전의 톰캣 &lt;code class=&quot;highlighter-rouge&quot;&gt;tar.gz&lt;/code&gt;압축 파일을 받으실 수 있습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://mirror.navercorp.com/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
-&lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;zxvf apache-tomcat-8.5.23.tar.gz
-mv apache-tomcat-8.5.23.tar.gz /opt/tomcat
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와 같은 명령어를 통해서 현재 폴더에 톰캣 압축파일을 받아옵니다.  그 후 &lt;code class=&quot;highlighter-rouge&quot;&gt;tar&lt;/code&gt;명령어를 통해 압축을 풀어주고 난 뒤에 해당 폴더를 그대로 &lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/tomcat&lt;/code&gt;으로 이동을 시켜줍니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;groupadd tomcat
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;useradd &lt;span class=&quot;nt&quot;&gt;-M&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; /bin/nologin &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; tomcat &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; /opt/tomcat tomcat
-&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;chown &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; tomcat:tomcat /opt/tomcat
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;그 후 톰캣을 사용하는 유저를 지정해주셔야합니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;그룹과 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;유저를 생성하면서 구동파일들을 옮겨놨던 &lt;code class=&quot;highlighter-rouge&quot;&gt;/opt/tomcat&lt;/code&gt;을 지정해주고, 해당 폴더의 소유자를 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;으로 변경해주시면 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;그 다음에는 톰캣을 서비스에서 등록하고 서버가 부팅될 때 바로 켜지도록 설정을 할 것입니다. 수동으로 켜고 끄시는 것만 하실 경우에는 서비스만 등록하시고 &lt;code class=&quot;highlighter-rouge&quot;&gt;chkconfig&lt;/code&gt; 명령어만 입력 안하셔도 괜찮습니다.&lt;/p&gt;
-
-&lt;h3 id=&quot;tomcat-서비스-파일-생성&quot;&gt;Tomcat 서비스 파일 생성&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /etc/systemd/system/tomcat.service
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;Unit&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-Description&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;Apache Tomcat Web Application Container
-After&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;syslog&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;target network&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;target
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;Service&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-Type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;forking
-
-Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;JAVA_HOME&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/usr/&lt;/span&gt;lib&lt;span class=&quot;sr&quot;&gt;/jvm/&lt;/span&gt;java&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;openjdk&lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;151-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;b12&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;el7_4&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;x86_64
-Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;CATALINA_PID&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat&lt;span class=&quot;sr&quot;&gt;/temp/&lt;/span&gt;tomcat&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;pid
-Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;CATALINA_HOME&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat
-Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;CATALINA_BASE&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat
-Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC'&lt;/span&gt;
-Environment&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'JAVA_OPTS=-Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom'&lt;/span&gt;
-
-ExecStart&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/opt/&lt;/span&gt;tomcat&lt;span class=&quot;sr&quot;&gt;/bin/&lt;/span&gt;startup&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;sh&lt;/span&gt;
-ExecStop&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/bin/&lt;/span&gt;kill &lt;span class=&quot;m&quot;&gt;-15&lt;/span&gt; $MAINPID
-
-&lt;span class=&quot;nb&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;tomcat
-Group&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;tomcat
-UMask&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0007&lt;/span&gt;
-RestartSec&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;
-Restart&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;always
-
-&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;Install&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-WantedBy&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;multi&lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;user&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;target
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JAVA_HOME&lt;/code&gt;과 같은 경우에는 혹시나 다를까 싶어 해당하는 경로를 가져오는 방법까지 첨부합니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;which javac
-readlink &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;which javac로 나온 경로를 입력&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와 같은 명령어로 &lt;code class=&quot;highlighter-rouge&quot;&gt;java&lt;/code&gt;가 불려지는 파일 링크의 절대경로를 읽어 올 수 있습니다. 명령어로 얻은 주소에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;경로 전까지의 경로를 &lt;code class=&quot;highlighter-rouge&quot;&gt;JAVA_HOME&lt;/code&gt;에 입력하시면됩니다.&lt;/p&gt;
-
-&lt;h3 id=&quot;tomcat-서버-부팅시-자동시작&quot;&gt;Tomcat 서버 부팅시 자동시작&lt;/h3&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chkconfig tomcat on
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;chkconfig&lt;/code&gt;를 통해서 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;서비스가 자동으로 시작되도록 추가해주시면 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;apache-httpd와-tomcat-연동mod_jk&quot;&gt;Apache Httpd와 Tomcat 연동(mod_jk)&lt;/h2&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Apache&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;을 연동하기 위해서는 모듈이 필요한데요. 가장 많이 사용하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;를 이용해서 연동해보도록 하겠습니다. 우선 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;를 설치파일을 다운 받아야합니다. 파일은 http://tomcat.apache.org/download-connectors.cgi에서 다운로드 받으실 수 있습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget http://apache.mirror.cdnetworks.com/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.42-src.tar.gz
-&lt;span class=&quot;nb&quot;&gt;tar &lt;/span&gt;zxvf tomcat-connectors-1.2.42-src.tar.gz
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;tomcat-connectors-1.2.42-src/native/
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;다운로드를 받으신 후 압축을 푸신다음에 해당 폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;native&lt;/code&gt;폴더로 들어가셔서 설치를 하셔야 합니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./buildconf.sh
-./configure &lt;span class=&quot;nt&quot;&gt;--with-apxs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/bin/apxs
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와 같은 순서대로 설치를 진행해주세요. 혹시나 다른 리눅스 환경에서 설치를 하시는 경우에는 &lt;code class=&quot;highlighter-rouge&quot;&gt;--with-apxs&lt;/code&gt;의 폴더 위치가 다를 수 있습니다. 다른 환경에서 진행 시 &lt;code class=&quot;highlighter-rouge&quot;&gt;apxs&lt;/code&gt;를 찾지 못하는 오류가 있으실 경우에는 리눅스 환경에 맞는 경로를 따로 찾으셔서 적용해주세요. CentOS의 경우에는 위 명령어대로 설치하시면 문제 없이 설치가 완료를 할 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;연동-설정&quot;&gt;연동 설정&lt;/h3&gt;
-
-&lt;p&gt;설치를 모두 완료 하셨으니 인제 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;간 설정을 해주셔야합니다. 우선 아파치 설정을 잡을 것입니다. CentOS를 사용하시는 경우 아파치 관련 폴더인  &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/httpd/&lt;/code&gt;에서 폴더 구조가 &lt;code class=&quot;highlighter-rouge&quot;&gt;conf&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.modules.d&lt;/code&gt;와 같이 나뉘어져 있습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conf&lt;/code&gt;는 아파치의 설정파일만 존재하도록 구성되어있고 추가적인 모듈별 설정 같은 것을 &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;에 생성하셔서 사용하시면 자동으로 불러와 적용되어집니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.modules.d&lt;/code&gt;와 같은 경우에는 사용할 모듈을 불러오는 설정만 적용하는 파일들을 관리하는 폴더입니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/httpd/conf.modules.d/
-vim 00-jk.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;LoadModule jk_module modules/mod_jk&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;so&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;우선 &lt;code class=&quot;highlighter-rouge&quot;&gt;conf.module.d&lt;/code&gt;폴더에 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;관련 모듈을 불러오기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;00-jk.conf&lt;/code&gt;파일을 생성하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;LoadModule ~~&lt;/code&gt;을 입력하고 저장해주세요. 이는 방금전 설치한 &lt;code class=&quot;highlighter-rouge&quot;&gt;mod_jk&lt;/code&gt;모듈을 불러와 &lt;code class=&quot;highlighter-rouge&quot;&gt;jk_module&lt;/code&gt;이라는 이름으로 명명하는 구문입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/httpd/conf.d/
-vim httpd-jk.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;IfModule jk_module&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-
-    # We need &lt;span class=&quot;k&quot;&gt;a&lt;/span&gt; workers &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt; exactly once
-    # and &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; the global server
-    JkWorkersFile &lt;span class=&quot;k&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;d&lt;/span&gt;/workers&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;properties
-
-    JkLogStampFormat &lt;span class=&quot;s2&quot;&gt;&quot;[%a %b %d %H:%M:%S %Y] &quot;&lt;/span&gt;
-    # Our JK error log
-    # You can &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;and should&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; use rotatelogs here
-    JkLogFile logs/mod_jk&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;log
-
-    # Our JK log level &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;trace&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;info&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;warn&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;error&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    JkLogLevel info
-
-    # Our JK shared memory &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt;
-    JkShmFile logs/mod_jk&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;shm
-
-    # If you want &lt;span class=&quot;k&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;put&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;all&lt;/span&gt; mounts into an external &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt;
-    # that gets reloaded automatically after &lt;span class=&quot;k&quot;&gt;changes&lt;/span&gt;
-    # &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;with &lt;span class=&quot;k&quot;&gt;a&lt;/span&gt; default latency of &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; minute&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-    # you can define the name of the &lt;span class=&quot;k&quot;&gt;file&lt;/span&gt; here&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
-    JkMountFile &lt;span class=&quot;k&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;d&lt;/span&gt;/uriworkermap&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;properties
-
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;/IfModule&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;그 후 불러온 모듈에 대한 설정을 진행해 줍니다. 주의해서 보셔야 할 것은 &lt;code class=&quot;highlighter-rouge&quot;&gt;JkWorkersFile&lt;/code&gt;과 &lt;code class=&quot;highlighter-rouge&quot;&gt;JkMountFile&lt;/code&gt;입니다. 전자는 톰캣 서버들을 각각 설정하는 역할을 해주며, 후자는 특정 패턴을 가지는 파일을 요청했을 때 서비스하고자 하는 톰캣 서버를 지정하는 역할을 합니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; /etc/httpd/conf.d/
-vim workers.properties
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;list&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;instance3
-
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8109&lt;/span&gt;
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;host&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;localhost
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;ajp13
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance1&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;lbfactor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
-
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8209&lt;/span&gt;
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;host&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;localhost
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;ajp13
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance2&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;lbfactor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
-
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;8309&lt;/span&gt;
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;host&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;localhost
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;type&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;ajp13
-worker&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;instance3&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;lbfactor&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;workers.properties&lt;/code&gt;파일은 위와같이 톰캣서버가 3개일 경우 톰캣서버의 이름들을 설정하고 해당 서버에 대한 설정을 이루도록 되어있습니다. 구축하시려는 환경에 맞게 옵션을 설정해주시면 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim uriworkermap.properties
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/*&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;jsp&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance1
-/*&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;png&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance2
-/*&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;css&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;instance3
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;uriworkermap.properties&lt;/code&gt;에는 특정 파일에 대해서 어떤 톰캣서버가 서비스할 것인지 맵핑하실 수 있습니다. 해당하는 파일들을 따로 나누어 관리하는 이유는 톰캣이 기본 10분마다 다시불러와 적용하기 때문에 톰캣 설정 변경을 위해 서비스를 재시작하지 않으셔도 적용이 가능하다는 이점이있기 때문입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;서비스-재시작&quot;&gt;서비스 재시작&lt;/h2&gt;
-
-&lt;p&gt;인제 모든 설정을 마무리했습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;서비스와 &lt;code class=&quot;highlighter-rouge&quot;&gt;tomcat&lt;/code&gt;서비스를 재시작하셔서 설정된 내용들을 적용하시면 됩니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;service httpd restart
-service tomcat restart
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;팁1-연동-설정이-정상적으로-적용이-되는지-확인하는-방법&quot;&gt;팁1: 연동 설정이 정상적으로 적용이 되는지 확인하는 방법&lt;/h3&gt;
-
-&lt;p&gt;아파치 &lt;code class=&quot;highlighter-rouge&quot;&gt;httpd&lt;/code&gt;에는 정상적으로 설정파일들이 정상적인 Syntax를 가지고 있는지 확인하는 명령어를 내장하고 있습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apachectl configtest
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;팁2-톰캣-인코딩설정&quot;&gt;팁2: 톰캣 인코딩설정&lt;/h3&gt;
-
-&lt;p&gt;톰캣에서 한글을 사용할 때 인코딩 문제로 깨지는 문제가 발생하실 수 있기 때문에 인코딩을 설정을 하셔야 합니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim /opt/tomcat/conf/server.xml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-vim highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;생략&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;Connector port&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8009&quot;&lt;/span&gt; protocol&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;AJP/1.3&quot;&lt;/span&gt; redirectPort&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;8443&quot;&lt;/span&gt; URIEncoding&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt; /&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;생략&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와 같이 AJP 커넥터에 &lt;code class=&quot;highlighter-rouge&quot;&gt;URIEncoding=&quot;UTF-8&quot;&lt;/code&gt;을 적용하시면 됩니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;마치며&quot;&gt;마치며&lt;/h1&gt;
-
-&lt;p&gt;매번 환경을 구축할 때마다 괜한 곳에서 헤매는 경우가 많아 제가 많이 사용하는 서버환경에서 구축하는 방법을 정리해보았습니다. 여러번 시도하면서 군더더기 없는 설치를 위해 여러번을 엎고 다시 기록했습니다. 많은 분들께서 도움이 되셨으면 좋겠습니다. 감사합니다!&lt;/p&gt;</content><author><name>한지승</name></author><category term="develop" /><summary type="html"></summary></entry><entry><title type="html">CentOS7 + Apache + Tomcat8 연동(mod_jk)</title><link href="/Apache-Tomcat-%EC%97%B0%EB%8F%99" rel="alternate" type="text/html" title="CentOS7 + Apache + Tomcat8 연동(mod_jk)" /><published>2017-06-24T10:18:00+00:00</published><updated>2017-06-24T10:18:00+00:00</updated><id>/Apache-Tomcat-%EC%97%B0%EB%8F%99</id><content type="html" xml:base="/Apache-Tomcat-%EC%97%B0%EB%8F%99">&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;아직 부족하지만 제가 알게 되는 것들을 잘 정리해서 올릴 수 있도록 하겠습니다. 블로그를 통해 정리를 하면서 알게 된 내용을 머릿속에 잘 정리하고, 나아가 나중에 다시 찾아 활용할 수 있는 그런 블로그를 만들고 싶습니다.&lt;/p&gt;</content><author><name>한지승</name></author><category term="life" /><summary type="html"></summary></entry><entry><title type="html">CentOS7 + Apache + Tomcat8 연동(mod_jk)</title><link href="/Apache-Tomcat-%EC%97%B0%EB%8F%99" rel="alternate" type="text/html" title="CentOS7 + Apache + Tomcat8 연동(mod_jk)" /><published>2017-06-24T10:18:00+00:00</published><updated>2017-06-24T10:18:00+00:00</updated><id>/Apache-Tomcat-%EC%97%B0%EB%8F%99</id><content type="html" xml:base="/Apache-Tomcat-%EC%97%B0%EB%8F%99">&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
 
@@ -908,4 +667,63 @@ pyenv activate
 &lt;hr /&gt;
 &lt;h1 id=&quot;소스코드-및-서비스&quot;&gt;소스코드 및 서비스&lt;/h1&gt;
 &lt;p&gt;&lt;span&gt;&lt;a href=&quot;https://github.com/jinh574/java-CollectRssData&quot; class=&quot;btn btn-info&quot;&gt;Github&lt;/a&gt;&lt;/span&gt;
-&lt;span&gt;&lt;a href=&quot;http://dev.freakylab.com&quot; class=&quot;btn btn-success&quot; role=&quot;button&quot; disabled=&quot;disabled&quot;&gt;웹서비스&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>한지승</name></author><category term="project" /><summary type="html"></summary></entry></feed>
+&lt;span&gt;&lt;a href=&quot;http://dev.freakylab.com&quot; class=&quot;btn btn-success&quot; role=&quot;button&quot; disabled=&quot;disabled&quot;&gt;웹서비스&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>한지승</name></author><category term="project" /><summary type="html"></summary></entry><entry><title type="html">Maven으로 실행가능Jar 빌드 방법</title><link href="/Maven-JAR%ED%8C%8C%EC%9D%BC%EB%B9%8C%EB%93%9C-%EB%B0%A9%EB%B2%95" rel="alternate" type="text/html" title="Maven으로 실행가능Jar 빌드 방법" /><published>2017-05-23T16:01:00+00:00</published><updated>2017-05-23T16:01:00+00:00</updated><id>/Maven-JAR%ED%8C%8C%EC%9D%BC%EB%B9%8C%EB%93%9C-%EB%B0%A9%EB%B2%95</id><content type="html" xml:base="/Maven-JAR%ED%8C%8C%EC%9D%BC%EB%B9%8C%EB%93%9C-%EB%B0%A9%EB%B2%95">&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Maven으로 프로젝트 생성 후 Install 타겟으로 만들어진 Jar파일을 실행할 때 다음과 같은 메세지를 보신적이 많으실 겁니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;JS-Macbook:target js&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;java &lt;span class=&quot;nt&quot;&gt;-jar&lt;/span&gt; eproject.jar
+eproject.jar에 기본 Manifest 속성이 없습니다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이는 Maven으로 프로젝트 생성 시 빌드 정보를 생략하고 만들어진 경우 대부분 발생됩니다. 이를 해결하기 위해서는
+&lt;code class=&quot;highlighter-rouge&quot;&gt;pom.xml&lt;/code&gt;파일에 빌드 정보를 입력 해 주어야 합니다.
+&lt;br /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;해결방법&quot;&gt;해결방법&lt;/h1&gt;
+&lt;p&gt;다음은 기본적으로 사용하는 최소한의 빌드 정보입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;pom.xml&lt;/code&gt;파일 내용 중 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;plugins&amp;gt;&lt;/code&gt; 태그 안에다가 추가해주시면 됩니다. 만약 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;plugins&amp;gt;&lt;/code&gt; 속성이 없다면 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;project&amp;gt;&lt;/code&gt;의 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;build&amp;gt;&lt;/code&gt; 속성안에다가 생성해주시면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;project&amp;gt;&lt;/span&gt;
+    ...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;build&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;plugins&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+                ...
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/plugins&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/build&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/project&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.apache.maven.plugins&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;maven-jar-plugin&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;archive&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;manifest&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;addClasspath&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/addClasspath&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;classpathPrefix&amp;gt;&lt;/span&gt;lib/&lt;span class=&quot;nt&quot;&gt;&amp;lt;/classpathPrefix&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;mainClass&amp;gt;&lt;/span&gt;com.example&lt;span class=&quot;nt&quot;&gt;&amp;lt;/mainClass&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/manifest&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/archive&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.apache.maven.plugins&lt;span class=&quot;nt&quot;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;maven-dependency-plugin&lt;span class=&quot;nt&quot;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;executions&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;execution&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;id&amp;gt;&lt;/span&gt;copy&lt;span class=&quot;nt&quot;&gt;&amp;lt;/id&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;phase&amp;gt;&lt;/span&gt;install&lt;span class=&quot;nt&quot;&gt;&amp;lt;/phase&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;goals&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;goal&amp;gt;&lt;/span&gt;copy-dependencies&lt;span class=&quot;nt&quot;&gt;&amp;lt;/goal&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/goals&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;configuration&amp;gt;&lt;/span&gt;
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;outputDirectory&amp;gt;&lt;/span&gt;
+                    ${project.build.directory}/lib
+                &lt;span class=&quot;nt&quot;&gt;&amp;lt;/outputDirectory&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;/configuration&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/execution&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/executions&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;manifest&amp;gt;&lt;/code&gt; 속성 중 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;mainClass&amp;gt;&lt;/code&gt;는 프로젝트의 패키지로 맞게 변경해주시면 됩니다.&lt;/p&gt;</content><author><name>한지승</name></author><category term="develop" /><summary type="html">Maven으로 프로젝트 생성 후 Install 타겟으로 만들어진 Jar파일을 실행할 때 다음과 같은 메세지를 보신적이 많으실 겁니다.</summary></entry></feed>
