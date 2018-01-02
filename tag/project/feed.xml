@@ -3,9 +3,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>/</title>
+      <title>https://hashbox.github.io/</title>
    
-   <link>/</link>
+   <link>https://hashbox.github.io/</link>
    <description>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</description>
    <language>ko-kr</language>
    
@@ -15,31 +15,31 @@
    <description>
    <![CDATA[ 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 ]]>
    </description>
-   <link>/</link>
+   <link>https://hashbox.github.io/</link>
    <image>
-   <url>/assets/images/favicon.png</url>
+   <url>https://hashbox.github.io/assets/images/favicon.png</url>
    <title>HASHBOX</title>
-   <link>/</link>
+   <link>https://hashbox.github.io/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="https://hashbox.github.io/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>2017 대통령 선거 빅데이터 분석</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</link>
 		
 				
 		
 	  <pubDate>2017-05-23T16:01:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/6m3VTA0ejGTeTp" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
 <h1 id="개요">개요</h1>
-<p>이전 프로젝트인 <a href="/portfolio/프로젝트-공영주차장실시간예측/">공영주차장 실시간 예측</a> 프로젝트에서 분산파일시스템에 대한 필요성을 뼈저리게 느꼈던 적이 있습니다. 해당 프로젝트로 인해 하둡 시스템이 만들어지고 발전하게된 이유를 그 누구보다도 잘 알게 되었습니다. 사실 저는 학문에 익히고 이해하는데 있어서 발생 원리와 발전 과정을 알아야 해당하는 학문을 더 깊이 있고 넓게 익힐 수 있다고 생각하기에 하둡에 대한 공부는 그 어느때보다도 재밌었던 것 같습니다.</p>
+<p>이전 프로젝트인 <a href="https://hashbox.github.io/portfolio/프로젝트-공영주차장실시간예측/">공영주차장 실시간 예측</a> 프로젝트에서 분산파일시스템에 대한 필요성을 뼈저리게 느꼈던 적이 있습니다. 해당 프로젝트로 인해 하둡 시스템이 만들어지고 발전하게된 이유를 그 누구보다도 잘 알게 되었습니다. 사실 저는 학문에 익히고 이해하는데 있어서 발생 원리와 발전 과정을 알아야 해당하는 학문을 더 깊이 있고 넓게 익힐 수 있다고 생각하기에 하둡에 대한 공부는 그 어느때보다도 재밌었던 것 같습니다.</p>
 
 <p>하둡에 대한 작동원리와 하둡 에코시스템을 이해를 위해 이론 뿐만아니라 실제 실무적인 경험을 얻기 위해 프로젝트를 기획하게 되었습니다. 때마침 대한민국 헌정사상 최초로 탄핵이 이루어지면서 대통령 선거가 필요하게 되었고 이는 빅데이터를 수집하고 분석하고 싶다는 생각이 들었습니다. 이에 대통령 후보자들이 언급되는 빈도에 따라 후보자에 대한 관심도와 나아가 언론사별로 지지하는 후보자를 알 수 있을 거란 생각이 들었습니다. 개인이 수집한 데이터의 양이기 때문에 생각보다 많은 데이터의 양은 아니였지만 충분히 의미있는 분석을 할 수 있었습니다.</p>
 
@@ -74,12 +74,12 @@
 
 	<item>
 	  <title>공영주차장 실시간 예측</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1</link>
 		
 				
 		
 	  <pubDate>2017-05-22T15:33:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/2KTbf9MNEBOARj" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
@@ -117,12 +117,12 @@
 
 	<item>
 	  <title>IoTivity 화재감지 시스템</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C</link>
 		
 				
 		
 	  <pubDate>2017-05-21T15:55:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/elc4mcgv1lID8F" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
@@ -158,12 +158,12 @@
 
 	<item>
 	  <title>실시간 대중교통 경로 탐색</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C</link>
 		
 				
 		
 	  <pubDate>2017-05-20T14:32:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/haOudYeT4yJHLS" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
@@ -194,12 +194,12 @@
 
 	<item>
 	  <title>IOCP 소켓통신을 이용한 채팅프로그램</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</link>
 		
 				
 		
 	  <pubDate>2017-05-19T20:22:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/Bhm7gKPLJQLIuJ" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
@@ -232,12 +232,12 @@
 
 	<item>
 	  <title>사진형SNS '인스플'</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C</link>
 		
 				
 		
 	  <pubDate>2017-05-18T11:42:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/4vNkAmw6rZuhH7" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
@@ -277,12 +277,12 @@
 
 	<item>
 	  <title>화면 공유 협업 프로그램</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EB%B0%94-%ED%99%94%EB%A9%B4%ED%98%91%EC%97%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EB%B0%94-%ED%99%94%EB%A9%B4%ED%98%91%EC%97%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</link>
 		
 				
 		
 	  <pubDate>2017-05-17T14:25:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EB%B0%94-%ED%99%94%EB%A9%B4%ED%98%91%EC%97%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%9E%90%EB%B0%94-%ED%99%94%EB%A9%B4%ED%98%91%EC%97%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/NKIAjw7PDjZG3Y" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
 
@@ -309,12 +309,12 @@
 
 	<item>
 	  <title>리눅스 도난 방지 모듈</title>
-	  <link>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%BB%A4%EB%84%90-%EC%BC%84%EC%8B%B1%ED%84%B4%EB%9D%BD</link>
+	  <link>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%BB%A4%EB%84%90-%EC%BC%84%EC%8B%B1%ED%84%B4%EB%9D%BD</link>
 		
 				
 		
 	  <pubDate>2017-05-16T18:18:00+00:00</pubDate>
-	  <guid>/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%BB%A4%EB%84%90-%EC%BC%84%EC%8B%B1%ED%84%B4%EB%9D%BD</guid>
+	  <guid>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A6%AC%EB%88%85%EC%8A%A4%EC%BB%A4%EB%84%90-%EC%BC%84%EC%8B%B1%ED%84%B4%EB%9D%BD</guid>
 	  <description><![CDATA[
 	     <iframe src="//www.slideshare.net/slideshow/embed_code/key/CohyECfls1PZID" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""></iframe>
 

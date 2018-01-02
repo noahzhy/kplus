@@ -3,9 +3,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
    
-      <title>/</title>
+      <title>https://hashbox.github.io/</title>
    
-   <link>/</link>
+   <link>https://hashbox.github.io/</link>
    <description>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</description>
    <language>ko-kr</language>
    
@@ -15,26 +15,26 @@
    <description>
    <![CDATA[ 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 ]]>
    </description>
-   <link>/</link>
+   <link>https://hashbox.github.io/</link>
    <image>
-   <url>/assets/images/favicon.png</url>
+   <url>https://hashbox.github.io/assets/images/favicon.png</url>
    <title>HASHBOX</title>
-   <link>/</link>
+   <link>https://hashbox.github.io/</link>
    </image>
    <generator>Jekyll 3.6.2</generator>
    <lastBuildDate></lastBuildDate>
-   <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+   <atom:link href="https://hashbox.github.io/rss.xml" rel="self" type="application/rss+xml"/>
    <ttl>60</ttl>
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
 	  <title>블로그 디자인 개편했습니다.</title>
-	  <link>/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</link>
+	  <link>https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</link>
 		
 				
 		
 	  <pubDate>2018-01-01T22:18:00+00:00</pubDate>
-	  <guid>/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</guid>
+	  <guid>https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</guid>
 	  <description><![CDATA[
 	     <p></p>
 
