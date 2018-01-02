@@ -15,11 +15,8 @@ author: slaysd
 
 이번에는 CentOS7 환경에서 아파치 `httpd`와 `tomcat8`을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을 만들면서 설치 순서를 기록으로 남겼습니다. 기본적인 환경 구축만을 목표로 하기 때문에 간단하고 추가되는 설정은 없습니다. 환경을 구축하고 난 뒤에 필요하신 옵션을 추가해서 사용하세요~! 지금 부터 알아보도록 하겠습니다.
 
-<br/>
-
 *   *   *
 
-<br/>
 
 ## 환경을 구축하기 위한 패키지 및 Apache Httpd 설치
 
@@ -31,7 +28,6 @@ yum install -y gcc gcc-c++ httpd-devel java-1.8.0-openjdk-devel.x86_64 wget libt
 
 기본적으로 `libtool`, `gcc`환경과 `java jdk`가 설치 되어 있어야하며, `wget`이나 `make`는 설치가 안되 있으신 분들은 위해 넣었습니다. 이와 함께 제일 설치하기 쉬운 아파치 설치는 `httpd-devel`을 통해서 설치가 가능합니다. 위 명령어를 이용하면 환경을 구축하는데 있어 필요로하는 패키지들과 `apache`가 설치가 완료 하셨습니다.
 
-<br/>
 
 ## Tomcat8 설치
 
@@ -45,7 +41,6 @@ mv apache-tomcat-8.5.23.tar.gz /opt/tomcat
 
 위와 같은 명령어를 통해서 현재 폴더에 톰캣 압축파일을 받아옵니다.  그 후 `tar`명령어를 통해 압축을 풀어주고 난 뒤에 해당 폴더를 그대로 `/opt/tomcat`으로 이동을 시켜줍니다.
 
-<br/>
 
 ~~~ bash
 sudo groupadd tomcat
@@ -55,7 +50,6 @@ sudo chown -R tomcat:tomcat /opt/tomcat
 
 그 후 톰캣을 사용하는 유저를 지정해주셔야합니다. `tomcat`그룹과 `tomcat`유저를 생성하면서 구동파일들을 옮겨놨던 `/opt/tomcat`을 지정해주고, 해당 폴더의 소유자를 `tomcat`으로 변경해주시면 됩니다.
 
-<br/>
 
 그 다음에는 톰캣을 서비스에서 등록하고 서버가 부팅될 때 바로 켜지도록 설정을 할 것입니다. 수동으로 켜고 끄시는 것만 하실 경우에는 서비스만 등록하시고 `chkconfig` 명령어만 입력 안하셔도 괜찮습니다.
 
@@ -112,7 +106,6 @@ chkconfig tomcat on
 
 `chkconfig`를 통해서 `tomcat`서비스가 자동으로 시작되도록 추가해주시면 됩니다.
 
-<br/>
 
 ## Apache Httpd와 Tomcat 연동(mod_jk)
 
@@ -135,7 +128,6 @@ make install
 
 위와 같은 순서대로 설치를 진행해주세요. 혹시나 다른 리눅스 환경에서 설치를 하시는 경우에는 `--with-apxs`의 폴더 위치가 다를 수 있습니다. 다른 환경에서 진행 시 `apxs`를 찾지 못하는 오류가 있으실 경우에는 리눅스 환경에 맞는 경로를 따로 찾으셔서 적용해주세요. CentOS의 경우에는 위 명령어대로 설치하시면 문제 없이 설치가 완료를 할 수 있습니다.
 
-<br/>
 
 ### 연동 설정
 
@@ -152,7 +144,6 @@ LoadModule jk_module modules/mod_jk.so
 
 우선 `conf.module.d`폴더에 `mod_jk`관련 모듈을 불러오기 위해 `00-jk.conf`파일을 생성하고 `LoadModule ~~`을 입력하고 저장해주세요. 이는 방금전 설치한 `mod_jk`모듈을 불러와 `jk_module`이라는 이름으로 명명하는 구문입니다.
 
-<br/>
 
 ~~~ bash
 cd /etc/httpd/conf.d/
@@ -214,7 +205,6 @@ worker.instance3.lbfactor=1
 
 `workers.properties`파일은 위와같이 톰캣서버가 3개일 경우 톰캣서버의 이름들을 설정하고 해당 서버에 대한 설정을 이루도록 되어있습니다. 구축하시려는 환경에 맞게 옵션을 설정해주시면 됩니다.
 
-<br/>
 
 ~~~ bash
 vim uriworkermap.properties
@@ -228,7 +218,6 @@ vim uriworkermap.properties
 
 `uriworkermap.properties`에는 특정 파일에 대해서 어떤 톰캣서버가 서비스할 것인지 맵핑하실 수 있습니다. 해당하는 파일들을 따로 나누어 관리하는 이유는 톰캣이 기본 10분마다 다시불러와 적용하기 때문에 톰캣 설정 변경을 위해 서비스를 재시작하지 않으셔도 적용이 가능하다는 이점이있기 때문입니다.
 
-<br/>
 
 ## 서비스 재시작
 
@@ -239,7 +228,6 @@ service httpd restart
 service tomcat restart
 ~~~
 
-<br/>
 
 ### 팁1: 연동 설정이 정상적으로 적용이 되는지 확인하는 방법
 
@@ -265,11 +253,9 @@ vim /opt/tomcat/conf/server.xml
 
 위와 같이 AJP 커넥터에 `URIEncoding="UTF-8"`을 적용하시면 됩니다.
 
-<br/>
 
 *   *   *
 
-<br/>
 
 # 마치며
 
