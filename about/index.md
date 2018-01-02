@@ -2,12 +2,11 @@
 layout: page
 current: about
 title: About
-navigation: true
+navigation: True
 logo: False
 class: page-template
 subclass: 'post page'
 ---
-
 ![Profile](../assets/images/slaysd.jpg)
 > 안녕하세요, 데이터 분야에서 최고가 되기위해 항해하는 한지승입니다. 데이터의 힘은 무궁무진합니다. 저는 그 데이터의 힘을 최고로 끌어 올리기 위해 노력할 것입니다.
 
