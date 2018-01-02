@@ -164,8 +164,7 @@ into the {body} of the default.hbs template -->
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <p></p>
-<p>MySQL을 처음 설치하고 사용하실 때에 한글 데이터가 깨져 나오는걸 경험하신 분이 많으실 거라 생각합니다. 한글 문자열이 <code class="highlighter-rouge">???</code>와 같은 형태로 나오는 이유는 바로 MySQL이 기본적으로 문자셋이 <code class="highlighter-rouge">latin1</code> 문자셋이 기본으로 사용되기 있기 때문인데요, 이를 해결하기 위해서는 문자셋을 <code class="highlighter-rouge">utf-8</code>으로 바꾸어 주셔야 합니다.</p>
+                    <p>MySQL을 처음 설치하고 사용하실 때에 한글 데이터가 깨져 나오는걸 경험하신 분이 많으실 거라 생각합니다. 한글 문자열이 <code class="highlighter-rouge">???</code>와 같은 형태로 나오는 이유는 바로 MySQL이 기본적으로 문자셋이 <code class="highlighter-rouge">latin1</code> 문자셋이 기본으로 사용되기 있기 때문인데요, 이를 해결하기 위해서는 문자셋을 <code class="highlighter-rouge">utf-8</code>으로 바꾸어 주셔야 합니다.</p>
 
 <pre><code class="language-mysql">mysql&gt; SELECT * FROM member;
 +----+------+

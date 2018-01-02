@@ -9,7 +9,8 @@
       <item>
         <title>블로그 디자인 개편했습니다.</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;새로운-테마-적용&quot;&gt;새로운 테마 적용&lt;/h1&gt;
+&lt;p&gt;안녕하세요, SlaysD입니다. 이전 블로그 디자인에 문제도 좀 많고 가독성이 떨어지는 느낌이 있었는데, 뭐처럼 시간이 생겨서 블로그 디자인 개편을 진행했습니다.&lt;/p&gt;
 
 </description>
         
@@ -23,7 +24,7 @@
       <item>
         <title>CentOS7 + Apache + Tomcat8 연동(mod_jk)</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
 
 </description>
         
@@ -37,7 +38,7 @@
       <item>
         <title>Java의 Static 바로알기</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
 
 </description>
         
@@ -51,7 +52,7 @@
       <item>
         <title>Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
 
 </description>
         
@@ -65,7 +66,7 @@
       <item>
         <title>macOS 알짜배기 명령어(pbcopy, pbpaste, rsync)</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
 
 </description>
         
@@ -79,7 +80,8 @@
       <item>
         <title>리눅스 Crontab 사용방법</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
+&lt;p&gt;리눅스 환경에서 일정 시간마다 반복된 작업을 스케쥴링을 해야하는 경우가 있습니다. 프로그래밍 내에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;sleep&lt;/code&gt;과 같은 함수를 써서 대기 후 사용하는 무식한 방법도 있지만, 그것 보다 더 좋은 방법은 바로 리눅스 자체의 &lt;code class=&quot;highlighter-rouge&quot;&gt;crontab&lt;/code&gt;을 사용하는 방법이 있습니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;crontab&lt;/code&gt;을 사용하는 방법에 대해서 알아보도록 하겠습니다. &lt;em&gt;현재 저는 CentOS를 기반으로 글을 쓰고 있습니다.&lt;/em&gt;&lt;/p&gt;
 
 </description>
         
@@ -93,7 +95,17 @@
       <item>
         <title>Java syncronized, wait, notify, notifyAll에 대하여</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
+          <description>&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
+&lt;p&gt;자바를 사용하면서 쓰레드를 사용한 개발이 필요할 때가 있습니다. 그럴때마다 따라오게 되는 것이 &lt;code class=&quot;highlighter-rouge&quot;&gt;syncronized&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;wait&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;notify&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;notifyAll&lt;/code&gt;이 있습니다. 어쩔 때 사용한다는 것은 알지만 정확한 작동 원리를 알지 못하고 무분별하게 쓰는 것 같아 자세한 내용을 공부하고 글을 남기게 되었습니다.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;syncronized&quot;&gt;Syncronized&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;syncronized&lt;/code&gt;는 쓰레드를 사용할 때 동기화가 필요한 부분 즉, 임계영역을 설정할 때 사용합니다. 자바에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;syncronized&lt;/code&gt;를 사용하는 방법은 두가지가 있는데요.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id=&quot;함수에-명시하는-방법&quot;&gt;함수에 명시하는 방법&lt;/h2&gt;
+&lt;p&gt;```java
+public syncronized void get() {
+    …
+}&lt;/p&gt;
 
 </description>
         
@@ -107,8 +119,7 @@
       <item>
         <title>Gitlab to Github 미러링 방법(Git Repo간 미러링)</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;기존에 사용하고 있던 Repo에서 다른 Repo로 커밋히스토리 그대로 복사가 필요할 때가 있습니다. 저와 같은 경우엔 Private Repo를 무료로 지원해주는 Gitlab을 사용했습니다.
+          <description>&lt;p&gt;기존에 사용하고 있던 Repo에서 다른 Repo로 커밋히스토리 그대로 복사가 필요할 때가 있습니다. 저와 같은 경우엔 Private Repo를 무료로 지원해주는 Gitlab을 사용했습니다.
 하지만, Github에서 학생들에게는 무료로 Private Repo를 지원해주는 것을 알게 되면서 Github를 사용하기 시작했습니다.&lt;/p&gt;
 
 </description>
@@ -137,8 +148,7 @@
       <item>
         <title>Maven으로 실행가능Jar 빌드 방법</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Maven으로 프로젝트 생성 후 Install 타겟으로 만들어진 Jar파일을 실행할 때 다음과 같은 메세지를 보신적이 많으실 겁니다.&lt;/p&gt;
+          <description>&lt;p&gt;Maven으로 프로젝트 생성 후 Install 타겟으로 만들어진 Jar파일을 실행할 때 다음과 같은 메세지를 보신적이 많으실 겁니다.&lt;/p&gt;
 
 </description>
         
@@ -236,8 +246,7 @@
       <item>
         <title>MySQL 한글 UTF-8 설정[한글 깨짐 현상 해결 방법]</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;MySQL을 처음 설치하고 사용하실 때에 한글 데이터가 깨져 나오는걸 경험하신 분이 많으실 거라 생각합니다. 한글 문자열이 &lt;code class=&quot;highlighter-rouge&quot;&gt;???&lt;/code&gt;와 같은 형태로 나오는 이유는 바로 MySQL이 기본적으로 문자셋이 &lt;code class=&quot;highlighter-rouge&quot;&gt;latin1&lt;/code&gt; 문자셋이 기본으로 사용되기 있기 때문인데요, 이를 해결하기 위해서는 문자셋을 &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;으로 바꾸어 주셔야 합니다.&lt;/p&gt;
+          <description>&lt;p&gt;MySQL을 처음 설치하고 사용하실 때에 한글 데이터가 깨져 나오는걸 경험하신 분이 많으실 거라 생각합니다. 한글 문자열이 &lt;code class=&quot;highlighter-rouge&quot;&gt;???&lt;/code&gt;와 같은 형태로 나오는 이유는 바로 MySQL이 기본적으로 문자셋이 &lt;code class=&quot;highlighter-rouge&quot;&gt;latin1&lt;/code&gt; 문자셋이 기본으로 사용되기 있기 때문인데요, 이를 해결하기 위해서는 문자셋을 &lt;code class=&quot;highlighter-rouge&quot;&gt;utf-8&lt;/code&gt;으로 바꾸어 주셔야 합니다.&lt;/p&gt;
 
 </description>
         
@@ -265,8 +274,7 @@
       <item>
         <title>마크다운 이미지 중앙 정렬 방법</title>
         
-          <description>&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;마크다운으로 작성시 &lt;code class=&quot;highlighter-rouge&quot;&gt;![설명](http://https://hashbox.github.io/images/example.jpg)&lt;/code&gt;를 통해 이미지를 등록하게 됩니다.&lt;/p&gt;
+          <description>&lt;p&gt;마크다운으로 작성시 &lt;code class=&quot;highlighter-rouge&quot;&gt;![설명](http://https://hashbox.github.io/images/example.jpg)&lt;/code&gt;를 통해 이미지를 등록하게 됩니다.&lt;/p&gt;
 
 </description>
         
