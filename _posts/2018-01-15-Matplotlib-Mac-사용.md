@@ -4,7 +4,7 @@ current: post
 cover: False
 navigation: True
 title: 맥에서 Python Matplotlib Import문제 해결 방법
-date: 2018-01-16 14:22:00
+date: 2018-01-15 14:22:00
 tags: develop solution
 class: post-template
 subclass: 'post tag-develop'
