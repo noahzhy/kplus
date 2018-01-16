@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://hashbox.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hashbox.github.io/" rel="alternate" type="text/html" /><updated>2018-01-16T05:24:42+00:00</updated><id>https://hashbox.github.io/</id><title type="html">HASHBOX</title><subtitle>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</subtitle><entry><title type="html">PyTorch에 관하여</title><link href="https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC" rel="alternate" type="text/html" title="PyTorch에 관하여" /><published>2018-01-08T10:18:00+00:00</published><updated>2018-01-08T10:18:00+00:00</updated><id>https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC</id><content type="html" xml:base="https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC">&lt;h1 id=&quot;pytorch에-관하여&quot;&gt;PyTorch에 관하여&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://hashbox.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hashbox.github.io/" rel="alternate" type="text/html" /><updated>2018-01-16T05:25:22+00:00</updated><id>https://hashbox.github.io/</id><title type="html">HASHBOX</title><subtitle>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</subtitle><entry><title type="html">PyTorch에 관하여</title><link href="https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC" rel="alternate" type="text/html" title="PyTorch에 관하여" /><published>2018-01-08T10:18:00+00:00</published><updated>2018-01-08T10:18:00+00:00</updated><id>https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC</id><content type="html" xml:base="https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC">&lt;h1 id=&quot;pytorch에-관하여&quot;&gt;PyTorch에 관하여&lt;/h1&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;기존 딥러닝 라이브러리를 Google의 Tensorflow를 사용했었습니다. &lt;del&gt;많이 사용해본 것은 아닙니다ㅠ&lt;/del&gt; 그러던 중 PyTorch라는 새로운 라이브러리를 알게 되었고 조금씩 공부해가면서 충분히 매리트가 더 있다는게 느껴졌습니다. 그래서 공부하며 정리한 내용을 포스팅할 예정입니다. 아직은 미숙한 내용이나 틀린 내용이 있을 수 있습니다. 수정해야할 내용이 보인다면 알려주시면 감사하겠습니다.&lt;/p&gt;
@@ -28,36 +28,7 @@
 
 &lt;h1 id=&quot;마치며&quot;&gt;마치며&lt;/h1&gt;
 
-&lt;p&gt;이번 포스팅에는 간단하게 PyTorch에 장점에 대해서 알아보았습니다. PyTorch를 공부하면서 Tensorflow보다 더 직관적이고 빠른 성능에 더 깊이있게 공부하고 싶다는 생각이 들었습니다. 다음에는 더 자세한 내용으로 찾아 뵙겠습니다. 감사합니다.&lt;/p&gt;</content><author><name>한지승(Jee Seung, Han)</name></author><category term="develop" /><category term="pytorch" /><summary type="html">PyTorch에 관하여</summary></entry><entry><title type="html">맥에서 Python Matplotlib Import문제 해결 방법</title><link href="https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9" rel="alternate" type="text/html" title="맥에서 Python Matplotlib Import문제 해결 방법" /><published>2018-01-01T22:18:00+00:00</published><updated>2018-01-01T22:18:00+00:00</updated><id>https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</id><content type="html" xml:base="https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9">&lt;blockquote&gt;
-  &lt;p&gt;필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;을 설치하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt;를 하는 구문에서 다음과 같은 에러가 나타났습니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to &lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;correctly &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;Python is not installed as a framework. See the Python documentation &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;more information on installing Python as a framework on Mac OS X. Please either reinstall Python as a framework, or try one of the other backends. If you are using &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;Ana&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;Conda please install python.app and replace the use of &lt;span class=&quot;s1&quot;&gt;'python'&lt;/span&gt; with &lt;span class=&quot;s1&quot;&gt;'pythonw'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; See &lt;span class=&quot;s1&quot;&gt;'Working with Matplotlib on OSX'&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the Matplotlib FAQ &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;more information.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;맥에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;를 사용하는데 있어서 추가적인 조치가 필요하다는 것을 찾았고 해결방법을 찾았습니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;해결방법1-스크립트-내-명기&quot;&gt;해결방법#1 스크립트 내 명기&lt;/h2&gt;
-
-&lt;p&gt;Python 스크립트 내에서 사용할 때마다 매번 추가해주는 방법으로 해결이 가능합니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;matplotlib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'TkAgg'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;의 backend를 &lt;code class=&quot;highlighter-rouge&quot;&gt;TkAgg&lt;/code&gt;로 설정을 하면 오류를 해결할 수 있습니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;해결방법2-설정파일-명기&quot;&gt;해결방법#2 설정파일 명기&lt;/h2&gt;
-
-&lt;p&gt;저와 같은 경우에는 이 방법을 사용하고 있습니다.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;backend: TkAgg&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.matplotlib/matplotlibrc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이 방법은 한번 설정만 하면 매 스크립트마다 추가를 해줄 필요가 없기 때문에 가장 편한 방법으로 생각됩니다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;독자분들도 같은 오류를 뿜어낸다면 위와 같은 방법으로 모두 해결되리라 생각됩니다. 감사합니다.&lt;/p&gt;</content><author><name>한지승(Jee Seung, Han)</name></author><category term="develop" /><category term="solution" /><summary type="html">필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 matplotlib을 설치하고 import를 하는 구문에서 다음과 같은 에러가 나타났습니다.</summary></entry><entry><title type="html">블로그 디자인 개편했습니다.</title><link href="https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8" rel="alternate" type="text/html" title="블로그 디자인 개편했습니다." /><published>2018-01-01T22:18:00+00:00</published><updated>2018-01-01T22:18:00+00:00</updated><id>https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</id><content type="html" xml:base="https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8">&lt;h1 id=&quot;새로운-테마-적용&quot;&gt;새로운 테마 적용&lt;/h1&gt;
+&lt;p&gt;이번 포스팅에는 간단하게 PyTorch에 장점에 대해서 알아보았습니다. PyTorch를 공부하면서 Tensorflow보다 더 직관적이고 빠른 성능에 더 깊이있게 공부하고 싶다는 생각이 들었습니다. 다음에는 더 자세한 내용으로 찾아 뵙겠습니다. 감사합니다.&lt;/p&gt;</content><author><name>한지승(Jee Seung, Han)</name></author><category term="develop" /><category term="pytorch" /><summary type="html">PyTorch에 관하여</summary></entry><entry><title type="html">블로그 디자인 개편했습니다.</title><link href="https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8" rel="alternate" type="text/html" title="블로그 디자인 개편했습니다." /><published>2018-01-01T22:18:00+00:00</published><updated>2018-01-01T22:18:00+00:00</updated><id>https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8</id><content type="html" xml:base="https://hashbox.github.io/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%94%94%EC%9E%90%EC%9D%B8%EA%B0%9C%ED%8E%B8">&lt;h1 id=&quot;새로운-테마-적용&quot;&gt;새로운 테마 적용&lt;/h1&gt;
 &lt;p&gt;안녕하세요, SlaysD입니다. 이전 블로그 디자인에 문제도 좀 많고 가독성이 떨어지는 느낌이 있었는데, 뭐처럼 시간이 생겨서 블로그 디자인 개편을 진행했습니다.&lt;/p&gt;
 
 &lt;p&gt;개편으로 인해 기존 블로그 게시글의 주소가 변경되면서 기존에 북마크 하셨던 게시글들은 아마 모두 &lt;strong&gt;&lt;em&gt;404&lt;/em&gt;&lt;/strong&gt; 페이지를 띄울 것같습니다. &lt;em&gt;&lt;del&gt;북마크를 하신 분은 많이 없으시겠지만…&lt;/del&gt;&lt;/em&gt;
@@ -655,4 +626,35 @@ pyenv activate
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push –mirror https://github.com/jinh574/new-repository.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;이와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;-mirror&lt;/code&gt; 옵션을 지정해주면 저장소 통채로 옮길 수 있습니다. 나아가 hook을 이용한다면 두개의 Repo를 동시에 운영할 수도 있습니다.&lt;/p&gt;</content><author><name>한지승(Jee Seung, Han)</name></author><category term="develop" /><summary type="html">기존에 사용하고 있던 Repo에서 다른 Repo로 커밋히스토리 그대로 복사가 필요할 때가 있습니다. 저와 같은 경우엔 Private Repo를 무료로 지원해주는 Gitlab을 사용했습니다. 하지만, Github에서 학생들에게는 무료로 Private Repo를 지원해주는 것을 알게 되면서 Github를 사용하기 시작했습니다.</summary></entry></feed>
+&lt;p&gt;이와 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;-mirror&lt;/code&gt; 옵션을 지정해주면 저장소 통채로 옮길 수 있습니다. 나아가 hook을 이용한다면 두개의 Repo를 동시에 운영할 수도 있습니다.&lt;/p&gt;</content><author><name>한지승(Jee Seung, Han)</name></author><category term="develop" /><summary type="html">기존에 사용하고 있던 Repo에서 다른 Repo로 커밋히스토리 그대로 복사가 필요할 때가 있습니다. 저와 같은 경우엔 Private Repo를 무료로 지원해주는 Gitlab을 사용했습니다. 하지만, Github에서 학생들에게는 무료로 Private Repo를 지원해주는 것을 알게 되면서 Github를 사용하기 시작했습니다.</summary></entry><entry><title type="html">2017 대통령 선거 빅데이터 분석</title><link href="https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D" rel="alternate" type="text/html" title="2017 대통령 선거 빅데이터 분석" /><published>2017-05-23T16:01:00+00:00</published><updated>2017-05-23T16:01:00+00:00</updated><id>https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D</id><content type="html" xml:base="https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D">&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/6m3VTA0ejGTeTp&quot; width=&quot;640&quot; height=&quot;522&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+
+&lt;h1 id=&quot;개요&quot;&gt;개요&lt;/h1&gt;
+&lt;p&gt;이전 프로젝트인 &lt;a href=&quot;https://hashbox.github.io/portfolio/프로젝트-공영주차장실시간예측/&quot;&gt;공영주차장 실시간 예측&lt;/a&gt; 프로젝트에서 분산파일시스템에 대한 필요성을 뼈저리게 느꼈던 적이 있습니다. 해당 프로젝트로 인해 하둡 시스템이 만들어지고 발전하게된 이유를 그 누구보다도 잘 알게 되었습니다. 사실 저는 학문에 익히고 이해하는데 있어서 발생 원리와 발전 과정을 알아야 해당하는 학문을 더 깊이 있고 넓게 익힐 수 있다고 생각하기에 하둡에 대한 공부는 그 어느때보다도 재밌었던 것 같습니다.&lt;/p&gt;
+
+&lt;p&gt;하둡에 대한 작동원리와 하둡 에코시스템을 이해를 위해 이론 뿐만아니라 실제 실무적인 경험을 얻기 위해 프로젝트를 기획하게 되었습니다. 때마침 대한민국 헌정사상 최초로 탄핵이 이루어지면서 대통령 선거가 필요하게 되었고 이는 빅데이터를 수집하고 분석하고 싶다는 생각이 들었습니다. 이에 대통령 후보자들이 언급되는 빈도에 따라 후보자에 대한 관심도와 나아가 언론사별로 지지하는 후보자를 알 수 있을 거란 생각이 들었습니다. 개인이 수집한 데이터의 양이기 때문에 생각보다 많은 데이터의 양은 아니였지만 충분히 의미있는 분석을 할 수 있었습니다.&lt;/p&gt;
+
+&lt;p&gt;무엇보다도 하둡 에코시스템을 직접 구축하고 운영하면서 한번! 수집된 데이터를 통해 재미있는 정보를 분석을 명령하고 결과가 도출 됐을때 한번! 두번의 즐거움은 이루 말할 수 없었던 것 같습니다. 무엇보다도 저에게 뜻깊은 프로젝트였습니다.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id=&quot;개발환경&quot;&gt;개발환경&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ubuntu 14.04(하둡 시스템) * 4, Ubuntu 16.04(웹서버)&lt;/li&gt;
+  &lt;li&gt;Hadoop 2.7.2&lt;/li&gt;
+  &lt;li&gt;Hive 2.1.1&lt;/li&gt;
+  &lt;li&gt;Zookeeper 3.4.10&lt;/li&gt;
+  &lt;li&gt;Flume 1.7&lt;/li&gt;
+  &lt;li&gt;Sqoop 1.4.6&lt;/li&gt;
+  &lt;li&gt;MySQL 5.6&lt;/li&gt;
+  &lt;li&gt;Spring Boot 1.3
+    &lt;ul&gt;
+      &lt;li&gt;Spring Web, Spring Security, Spring JDBC&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h1 id=&quot;프로젝트-기간&quot;&gt;프로젝트 기간&lt;/h1&gt;
+&lt;p&gt;총 1개월(2017.04 ~ 2017.05)&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1 id=&quot;소스코드-및-서비스&quot;&gt;소스코드 및 서비스&lt;/h1&gt;
+&lt;p&gt;&lt;span&gt;&lt;a href=&quot;https://github.com/jinh574/java-CollectRssData&quot; class=&quot;btn btn-info&quot;&gt;Github&lt;/a&gt;&lt;/span&gt;
+&lt;span&gt;&lt;a href=&quot;http://dev.freakylab.com&quot; class=&quot;btn btn-success&quot; role=&quot;button&quot; disabled=&quot;disabled&quot;&gt;웹서비스&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>한지승(Jee Seung, Han)</name></author><category term="project" /><summary type="html"></summary></entry></feed>

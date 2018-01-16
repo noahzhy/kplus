@@ -76,53 +76,6 @@
 	</item>
 
 	<item>
-	  <title>맥에서 Python Matplotlib Import문제 해결 방법</title>
-	  <link>https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</link>
-		
-				
-		
-				
-						<author>한지승(Jee Seung, Han)</author>
-				
-		
-	  <pubDate>2018-01-01T22:18:00+00:00</pubDate>
-	  <guid>https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</guid>
-	  <description><![CDATA[
-	     <blockquote>
-  <p>필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 <code class="highlighter-rouge">matplotlib</code>을 설치하고 <code class="highlighter-rouge">import</code>를 하는 구문에서 다음과 같은 에러가 나타났습니다.</p>
-</blockquote>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to <span class="k">function </span>correctly <span class="k">if </span>Python is not installed as a framework. See the Python documentation <span class="k">for </span>more information on installing Python as a framework on Mac OS X. Please either reinstall Python as a framework, or try one of the other backends. If you are using <span class="o">(</span>Ana<span class="o">)</span>Conda please install python.app and replace the use of <span class="s1">'python'</span> with <span class="s1">'pythonw'</span><span class="nb">.</span> See <span class="s1">'Working with Matplotlib on OSX'</span> <span class="k">in </span>the Matplotlib FAQ <span class="k">for </span>more information.
-</code></pre></div></div>
-
-<p>맥에서는 <code class="highlighter-rouge">matplotlib</code>를 사용하는데 있어서 추가적인 조치가 필요하다는 것을 찾았고 해결방법을 찾았습니다.</p>
-
-<h2 id="해결방법1-스크립트-내-명기">해결방법#1 스크립트 내 명기</h2>
-
-<p>Python 스크립트 내에서 사용할 때마다 매번 추가해주는 방법으로 해결이 가능합니다.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s">'TkAgg'</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>위와 같이 <code class="highlighter-rouge">matplotlib</code>의 backend를 <code class="highlighter-rouge">TkAgg</code>로 설정을 하면 오류를 해결할 수 있습니다.</p>
-
-<h2 id="해결방법2-설정파일-명기">해결방법#2 설정파일 명기</h2>
-
-<p>저와 같은 경우에는 이 방법을 사용하고 있습니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"backend: TkAgg"</span> <span class="o">&gt;&gt;</span> ~/.matplotlib/matplotlibrc
-</code></pre></div></div>
-<p>이 방법은 한번 설정만 하면 매 스크립트마다 추가를 해줄 필요가 없기 때문에 가장 편한 방법으로 생각됩니다.</p>
-
-<hr />
-
-<p>독자분들도 같은 오류를 뿜어낸다면 위와 같은 방법으로 모두 해결되리라 생각됩니다. 감사합니다.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
 	  <title>CentOS7 + Apache + Tomcat8 연동(mod_jk)</title>
 	  <link>https://hashbox.github.io/Apache-Tomcat-%EC%97%B0%EB%8F%99</link>
 		
@@ -910,6 +863,74 @@ eproject.jar에 기본 Manifest 속성이 없습니다.
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">&lt;manifest&gt;</code> 속성 중 <code class="highlighter-rouge">&lt;mainClass&gt;</code>는 프로젝트의 패키지로 맞게 변경해주시면 됩니다.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
+	  <title>MySQL 한글 UTF-8 설정[한글 깨짐 현상 해결 방법]</title>
+	  <link>https://hashbox.github.io/Mysql-UTF8-%ED%95%9C%EA%B8%80%EC%84%A4%EC%A0%95</link>
+		
+				
+		
+				
+						<author>한지승(Jee Seung, Han)</author>
+				
+		
+	  <pubDate>2017-05-16T19:18:00+00:00</pubDate>
+	  <guid>https://hashbox.github.io/Mysql-UTF8-%ED%95%9C%EA%B8%80%EC%84%A4%EC%A0%95</guid>
+	  <description><![CDATA[
+	     <p>MySQL을 처음 설치하고 사용하실 때에 한글 데이터가 깨져 나오는걸 경험하신 분이 많으실 거라 생각합니다. 한글 문자열이 <code class="highlighter-rouge">???</code>와 같은 형태로 나오는 이유는 바로 MySQL이 기본적으로 문자셋이 <code class="highlighter-rouge">latin1</code> 문자셋이 기본으로 사용되기 있기 때문인데요, 이를 해결하기 위해서는 문자셋을 <code class="highlighter-rouge">utf-8</code>으로 바꾸어 주셔야 합니다.</p>
+
+<pre><code class="language-mysql">mysql&gt; SELECT * FROM member;
++----+------+
+| id | name |
++----+------+
+|  1 | ???  |
+|  2 | ???  |
++----+------+
+2 rows in set (0.01 sec)
+</code></pre>
+<p><em>한글이 깨져 나오는 테이블 예시</em>
+<br /></p>
+<hr />
+<p><br /></p>
+<h1 id="해결방법">해결방법</h1>
+<p>이를 해결하기 위해서는 MySQL 설정파일을 수정해주셔야 합니다.</p>
+
+<p><em>MySQL버전이 5.5미만인 경우</em>(경로 : <code class="highlighter-rouge">/etc/my.cnf</code>)</p>
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[<span class="n">client</span>]
+..
+<span class="n">default</span>-<span class="n">character</span>-<span class="n">set</span> = <span class="n">utf8</span>
+
+[<span class="n">mysqld</span>]
+..
+<span class="n">init_connect</span>=<span class="s2">"SET collation_connection = utf8_general_ci"</span>
+<span class="n">init_connect</span>=<span class="s2">"SET NAMES utf8"</span>
+<span class="n">default</span>-<span class="n">character</span>-<span class="n">set</span> = <span class="n">utf8</span>
+<span class="n">character</span>-<span class="n">set</span>-<span class="n">server</span> = <span class="n">utf8</span>
+<span class="n">collation</span>-<span class="n">server</span> = <span class="n">utf8_general_ci</span>
+
+[<span class="n">mysql</span>]
+..
+<span class="n">default</span>-<span class="n">character</span>-<span class="n">set</span> = <span class="n">utf8</span>
+
+[<span class="n">mysqldump</span>]
+..
+<span class="n">default</span>-<span class="n">character</span>-<span class="n">set</span> = <span class="n">utf8</span>
+</code></pre></div></div>
+<p><br /><br />
+<em>MySQL버전이 5.5이상인 경우</em>(경로 : <code class="highlighter-rouge">/etc/mysql/mysql.conf.d/my.cnf</code>)</p>
+<div class="language-conf highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[<span class="n">mysqld</span>]
+..
+<span class="n">collation</span>-<span class="n">server</span> = <span class="n">utf8_unicode_ci</span>
+<span class="n">character</span>-<span class="n">set</span>-<span class="n">server</span> = <span class="n">utf8</span>
+<span class="n">skip</span>-<span class="n">character</span>-<span class="n">set</span>-<span class="n">client</span>-<span class="n">handshake</span>
+</code></pre></div></div>
+
+<p>위와 같이 MySQL 설정 파일을 바꿔주신 후 MySQL 데몬을 재시작해주시면 됩니다.</p>
+
+<p>우분투의 경우 <code class="highlighter-rouge">service mysql restart</code>를 입력해주시면 재시작 후 설정값이 적용이 됩니다.</p>
 
 	  ]]></description>
 	</item>
