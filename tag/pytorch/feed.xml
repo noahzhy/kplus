@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+   
+      <title>https://hashbox.github.io/</title>
+   
+   <link>https://hashbox.github.io/</link>
+   <description>빅데이터 분야에 모험가가 되고 싶은 개발자 블로그</description>
+   <language>ko-kr</language>
+   
+   <title>
+   <![CDATA[ HASHBOX ]]>
+   </title>
+   <description>
+   <![CDATA[ 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그 ]]>
+   </description>
+   <link>https://hashbox.github.io/</link>
+   <image>
+   <url>https://hashbox.github.io/assets/images/favicon.ico</url>
+   <title>HASHBOX</title>
+   <link>https://hashbox.github.io/</link>
+   </image>
+   <generator>Jekyll 3.6.2</generator>
+   <lastBuildDate></lastBuildDate>
+   <atom:link href="https://hashbox.github.io/rss.xml" rel="self" type="application/rss+xml"/>
+   <ttl>60</ttl>
+   <atom:link href="rss" rel="self" type="application/rss+xml" />
+   
+	<item>
+	  <title>PyTorch에 관하여</title>
+	  <link>https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC</link>
+		
+				
+		
+				
+						<author>한지승(Jee Seung, Han)</author>
+				
+		
+	  <pubDate>2018-01-08T10:18:00+00:00</pubDate>
+	  <guid>https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC</guid>
+	  <description><![CDATA[
+	     <h1 id="pytorch에-관하여">PyTorch에 관하여</h1>
+
+<blockquote>
+  <p>기존 딥러닝 라이브러리를 Google의 Tensorflow를 사용했었습니다. <del>많이 사용해본 것은 아닙니다ㅠ</del> 그러던 중 PyTorch라는 새로운 라이브러리를 알게 되었고 조금씩 공부해가면서 충분히 매리트가 더 있다는게 느껴졌습니다. 그래서 공부하며 정리한 내용을 포스팅할 예정입니다. 아직은 미숙한 내용이나 틀린 내용이 있을 수 있습니다. 수정해야할 내용이 보인다면 알려주시면 감사하겠습니다.</p>
+</blockquote>
+
+<h2 id="python-first">Python First</h2>
+
+<p><a href="http://pytorch.org/about/">PyTorch</a>에서 확인을 할 수 있듯이 PyTorch에서 가장 강조하는 부분은 <strong>“Python first”</strong>입니다. 기존에 사용하던 Tensorflow와는 다르게 PyTorch는 Python에 친화적입니다. Tensorflow는 대부분의 라이브러리가 C/C++로 구현이 되어있고 인터페이스를 통해 Python에서 돌아가고 있습니다. 반면에, PyTorch는 텐서연산(C/C++구현)을 제외하고는 직접 구현되어있다 합니다. 그렇기 때문에 다른 Python의 다른 패키지 사용이 자유롭습니다.</p>
+
+<h2 id="직관적인-흐름">직관적인 흐름</h2>
+
+<p>Tensorflow와는 다르다고 느꼈던 점은 네트워크를 구성할 때 구성하는 내용의 흐름이 보인다는 것입니다. 단계적으로 어떤 네트워크를 사용했고, 어떤 활성화 함수를 적용했으며, 순서가 어떻게 되는지 직관적으로 한번에 이해할 수 있었습니다. 현재는 <code class="highlighter-rouge">nn.Sequencial()</code> 함수를 통해 순서를 정해주거나, <code class="highlighter-rouge">nn.Module</code>을 상속받은 클래스 내에 <code class="highlighter-rouge">forward()</code> 함수를 오버라이딩해서 네트워크가 어떻게 구성되었는지 알 수 있습니다. 결론적으로는 직관적인 흐름으로 표현이 가능하고, 코드가 간결하기 때문에 구현하는데 있어서 다른 프레임워크들 보다 엄청난 장점으로 작용합니다.</p>
+
+<blockquote>
+  <p>아직까지는 이 두가지 방법이 어떻게 다르며, 어쩔때 사용하는 것이 좋은지 아니면 단순 구현방법의 차이인지 더 자세히 알아보고 내용을 추가하도록 하겠습니다.</p>
+</blockquote>
+
+<h2 id="그래디언트를-자동-계산">그래디언트를 자동 계산</h2>
+
+<p>Tensorflow와는 다르게 PyTorch는 Tensor 변수를 <code class="highlighter-rouge">nn.autograd</code>패키지 안에 있는 <code class="highlighter-rouge">Variable()</code>이라는 함수로 wrapping하여 사용합니다. 이는 Tensor의 변화를 자동으로 기록하고 그래디언트를 자동으로 계산해주는 역할을 해줍니다.</p>
+
+<h2 id="빠른-연산속도">빠른 연산속도</h2>
+
+<p>PyTorch는 다른 프레임워크들보다 메모리를 효율적으로 사용하기 때문이라고 합니다. 뿐만아니라 DCG(Dynamic Computation Graph)를 지원하기 때문에 CPU연산에서는 <em>10배</em>, GPU연산에서 <em>100배</em> 의 차이를 보인다고 합니다.</p>
+
+<hr />
+
+<h1 id="마치며">마치며</h1>
+
+<p>이번 포스팅에는 간단하게 PyTorch에 장점에 대해서 알아보았습니다. PyTorch를 공부하면서 Tensorflow보다 더 직관적이고 빠른 성능에 더 깊이있게 공부하고 싶다는 생각이 들었습니다. 다음에는 더 자세한 내용으로 찾아 뵙겠습니다. 감사합니다.</p>
+
+	  ]]></description>
+	</item>
+
+
+</channel>
+</rss>

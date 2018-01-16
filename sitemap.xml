@@ -77,6 +77,10 @@
 <lastmod>2018-01-01T22:18:00+00:00</lastmod>
 </url>
 <url>
+<loc>https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC</loc>
+<lastmod>2018-01-08T10:18:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://hashbox.github.io/</loc>
 </url>
 <url>
@@ -93,5 +97,11 @@
 </url>
 <url>
 <loc>https://hashbox.github.io/tag/life/</loc>
+</url>
+<url>
+<loc>https://hashbox.github.io/tag/develop,/</loc>
+</url>
+<url>
+<loc>https://hashbox.github.io/tag/pytorch/</loc>
 </url>
 </urlset>
