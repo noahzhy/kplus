@@ -112,6 +112,53 @@
 	</item>
 
 	<item>
+	  <title>맥에서 Python Matplotlib Import문제 해결 방법</title>
+	  <link>https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</link>
+		
+				
+		
+				
+						<author>한지승(Jee Seung, Han)</author>
+				
+		
+	  <pubDate>2018-01-01T22:18:00+00:00</pubDate>
+	  <guid>https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</guid>
+	  <description><![CDATA[
+	     <blockquote>
+  <p>필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 <code class="highlighter-rouge">matplotlib</code>을 설치하고 <code class="highlighter-rouge">import</code>를 하는 구문에서 다음과 같은 에러가 나타났습니다.</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RuntimeError: Python is not installed as a framework. The Mac OS X backend will not be able to <span class="k">function </span>correctly <span class="k">if </span>Python is not installed as a framework. See the Python documentation <span class="k">for </span>more information on installing Python as a framework on Mac OS X. Please either reinstall Python as a framework, or try one of the other backends. If you are using <span class="o">(</span>Ana<span class="o">)</span>Conda please install python.app and replace the use of <span class="s1">'python'</span> with <span class="s1">'pythonw'</span><span class="nb">.</span> See <span class="s1">'Working with Matplotlib on OSX'</span> <span class="k">in </span>the Matplotlib FAQ <span class="k">for </span>more information.
+</code></pre></div></div>
+
+<p>맥에서는 <code class="highlighter-rouge">matplotlib</code>를 사용하는데 있어서 추가적인 조치가 필요하다는 것을 찾았고 해결방법을 찾았습니다.</p>
+
+<h2 id="해결방법1-스크립트-내-명기">해결방법#1 스크립트 내 명기</h2>
+
+<p>Python 스크립트 내에서 사용할 때마다 매번 추가해주는 방법으로 해결이 가능합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s">'TkAgg'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>위와 같이 <code class="highlighter-rouge">matplotlib</code>의 backend를 <code class="highlighter-rouge">TkAgg</code>로 설정을 하면 오류를 해결할 수 있습니다.</p>
+
+<h2 id="해결방법2-설정파일-명기">해결방법#2 설정파일 명기</h2>
+
+<p>저와 같은 경우에는 이 방법을 사용하고 있습니다.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"backend: TkAgg"</span> <span class="o">&gt;&gt;</span> ~/.matplotlib/matplotlibrc
+</code></pre></div></div>
+<p>이 방법은 한번 설정만 하면 매 스크립트마다 추가를 해줄 필요가 없기 때문에 가장 편한 방법으로 생각됩니다.</p>
+
+<hr />
+
+<p>독자분들도 같은 오류를 뿜어낸다면 위와 같은 방법으로 모두 해결되리라 생각됩니다. 감사합니다.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>CentOS7 + Apache + Tomcat8 연동(mod_jk)</title>
 	  <link>https://hashbox.github.io/Apache-Tomcat-%EC%97%B0%EB%8F%99</link>
 		
@@ -823,82 +870,6 @@ pyenv activate
 </code></pre></div></div>
 
 <p>이와 같이 <code class="highlighter-rouge">-mirror</code> 옵션을 지정해주면 저장소 통채로 옮길 수 있습니다. 나아가 hook을 이용한다면 두개의 Repo를 동시에 운영할 수도 있습니다.</p>
-
-	  ]]></description>
-	</item>
-
-	<item>
-	  <title>Maven으로 실행가능Jar 빌드 방법</title>
-	  <link>https://hashbox.github.io/Maven-JAR%ED%8C%8C%EC%9D%BC%EB%B9%8C%EB%93%9C-%EB%B0%A9%EB%B2%95</link>
-		
-				
-		
-				
-						<author>한지승(Jee Seung, Han)</author>
-				
-		
-	  <pubDate>2017-05-23T16:01:00+00:00</pubDate>
-	  <guid>https://hashbox.github.io/Maven-JAR%ED%8C%8C%EC%9D%BC%EB%B9%8C%EB%93%9C-%EB%B0%A9%EB%B2%95</guid>
-	  <description><![CDATA[
-	     <p>Maven으로 프로젝트 생성 후 Install 타겟으로 만들어진 Jar파일을 실행할 때 다음과 같은 메세지를 보신적이 많으실 겁니다.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>JS-Macbook:target js<span class="nv">$ </span>java <span class="nt">-jar</span> eproject.jar
-eproject.jar에 기본 Manifest 속성이 없습니다.
-</code></pre></div></div>
-
-<p>이는 Maven으로 프로젝트 생성 시 빌드 정보를 생략하고 만들어진 경우 대부분 발생됩니다. 이를 해결하기 위해서는
-<code class="highlighter-rouge">pom.xml</code>파일에 빌드 정보를 입력 해 주어야 합니다.
-<br /></p>
-<hr />
-<p><br /></p>
-<h1 id="해결방법">해결방법</h1>
-<p>다음은 기본적으로 사용하는 최소한의 빌드 정보입니다. <code class="highlighter-rouge">pom.xml</code>파일 내용 중 <code class="highlighter-rouge">&lt;plugins&gt;</code> 태그 안에다가 추가해주시면 됩니다. 만약 <code class="highlighter-rouge">&lt;plugins&gt;</code> 속성이 없다면 <code class="highlighter-rouge">&lt;project&gt;</code>의 <code class="highlighter-rouge">&lt;build&gt;</code> 속성안에다가 생성해주시면 됩니다.</p>
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;project&gt;</span>
-    ...
-    <span class="nt">&lt;build&gt;</span>
-        <span class="nt">&lt;plugins&gt;</span>
-            <span class="nt">&lt;plugin&gt;</span>
-                ...
-            <span class="nt">&lt;/plugin&gt;</span>
-        <span class="nt">&lt;/plugins&gt;</span>
-    <span class="nt">&lt;/build&gt;</span>
-<span class="nt">&lt;/project&gt;</span>
-</code></pre></div></div>
-
-<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;plugin&gt;</span>
-    <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-    <span class="nt">&lt;artifactId&gt;</span>maven-jar-plugin<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;configuration&gt;</span>
-        <span class="nt">&lt;archive&gt;</span>
-            <span class="nt">&lt;manifest&gt;</span>
-                <span class="nt">&lt;addClasspath&gt;</span>true<span class="nt">&lt;/addClasspath&gt;</span>
-                <span class="nt">&lt;classpathPrefix&gt;</span>lib/<span class="nt">&lt;/classpathPrefix&gt;</span>
-                <span class="nt">&lt;mainClass&gt;</span>com.example<span class="nt">&lt;/mainClass&gt;</span>
-            <span class="nt">&lt;/manifest&gt;</span>
-        <span class="nt">&lt;/archive&gt;</span>
-    <span class="nt">&lt;/configuration&gt;</span>
-<span class="nt">&lt;/plugin&gt;</span>
-<span class="nt">&lt;plugin&gt;</span>
-    <span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
-    <span class="nt">&lt;artifactId&gt;</span>maven-dependency-plugin<span class="nt">&lt;/artifactId&gt;</span>
-    <span class="nt">&lt;executions&gt;</span>
-        <span class="nt">&lt;execution&gt;</span>
-            <span class="nt">&lt;id&gt;</span>copy<span class="nt">&lt;/id&gt;</span>
-            <span class="nt">&lt;phase&gt;</span>install<span class="nt">&lt;/phase&gt;</span>
-            <span class="nt">&lt;goals&gt;</span>
-                <span class="nt">&lt;goal&gt;</span>copy-dependencies<span class="nt">&lt;/goal&gt;</span>
-            <span class="nt">&lt;/goals&gt;</span>
-            <span class="nt">&lt;configuration&gt;</span>
-                <span class="nt">&lt;outputDirectory&gt;</span>
-                    ${project.build.directory}/lib
-                <span class="nt">&lt;/outputDirectory&gt;</span>
-            <span class="nt">&lt;/configuration&gt;</span>
-        <span class="nt">&lt;/execution&gt;</span>
-    <span class="nt">&lt;/executions&gt;</span>
-<span class="nt">&lt;/plugin&gt;</span>
-</code></pre></div></div>
-
-<p><code class="highlighter-rouge">&lt;manifest&gt;</code> 속성 중 <code class="highlighter-rouge">&lt;mainClass&gt;</code>는 프로젝트의 패키지로 맞게 변경해주시면 됩니다.</p>
 
 	  ]]></description>
 	</item>

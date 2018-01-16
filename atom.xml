@@ -21,6 +21,22 @@
     
       
       <item>
+        <title>맥에서 Python Matplotlib Import문제 해결 방법</title>
+        
+          <description>&lt;blockquote&gt;
+  &lt;p&gt;필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 &lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib&lt;/code&gt;을 설치하고 &lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt;를 하는 구문에서 다음과 같은 에러가 나타났습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+</description>
+        
+        <pubDate>Mon, 01 Jan 2018 22:18:00 +0000</pubDate>
+        <link>https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</link>
+        <guid isPermaLink="true">https://hashbox.github.io/Matplotlib-Mac-%EC%82%AC%EC%9A%A9</guid>
+      </item>
+      
+    
+      
+      <item>
         <title>블로그 디자인 개편했습니다.</title>
         
           <description>&lt;h1 id=&quot;새로운-테마-적용&quot;&gt;새로운 테마 적용&lt;/h1&gt;
