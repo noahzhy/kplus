@@ -10,11 +10,12 @@
                 <header class="post-card-header">
                     {% if page.previous.tags.size > 0 %}
                         {% for tag in page.previous.tags %}
-                            {% if forloop.index == page.previous.tags.size %}
+                            <!-- {% if forloop.index == page.previous.tags.size %}
                                 <span class="post-card-tags">{{ tag | capitalize }}</span>
                             {% else %}
                                <span class="post-card-tags">{{ tag | capitalize }}</span>
-                            {% endif %}
+                            {% endif %} -->
+                            <span class="post-card-tags" style="display: inline;">{{ tag | capitalize }}</span>
                         {% endfor %}
                     {% endif %}
 
