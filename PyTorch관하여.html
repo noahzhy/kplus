@@ -192,6 +192,12 @@ into the {body} of the default.hbs template -->
   <p>아직까지는 이 두가지 방법이 어떻게 다르며, 어쩔때 사용하는 것이 좋은지 아니면 단순 구현방법의 차이인지 더 자세히 알아보고 내용을 추가하도록 하겠습니다.</p>
 </blockquote>
 
+<h4 id="내용-추가">내용 추가</h4>
+
+<blockquote>
+  <p>기능상 <code class="highlighter-rouge">nn.Sequencial()</code>하고 <code class="highlighter-rouge">forward()</code>하고의 차이점은 크게 없으나 <code class="highlighter-rouge">nn.Sequencial()</code>과 같은 경우에는 레이어와 레이어 사이에 중간처리가 필요하지 않은 작업일 경우 사용해도 무방하지만, 예를들어 레이어와 레이어 사이에 차원의 변경이 필요한다든지(<code class="highlighter-rouge">view()</code>와 같은 작업이라든지) 중간처리가 필요할 경우에는 <code class="highlighter-rouge">forward()</code>에서 작업을 해야하는 부분 때문에 필요한걸 확인했습니다. 위와같은 문제 이외에는 어떠한 부분으로 구현을 하는지에 대한 부분은 개인의 취향에 따라 결정하시면 될 것 같습니다.</p>
+</blockquote>
+
 <h2 id="그래디언트를-자동-계산">그래디언트를 자동 계산</h2>
 
 <p>Tensorflow와는 다르게 PyTorch는 Tensor 변수를 <code class="highlighter-rouge">nn.autograd</code>패키지 안에 있는 <code class="highlighter-rouge">Variable()</code>이라는 함수로 wrapping하여 사용합니다. 이는 Tensor의 변화를 자동으로 기록하고 그래디언트를 자동으로 계산해주는 역할을 해줍니다.</p>
@@ -301,6 +307,15 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2">PyTorch 기본 사용법[1/2]</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
                                   
                                 
                                   
@@ -317,8 +332,6 @@ into the {body} of the default.hbs template -->
                                   
                                     
                                         
-                                        
-                                            <li><a href="/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0">Java의 Static 바로알기</a></li>
                                         
                                     
                                   
@@ -400,7 +413,7 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="/tag/develop/">
                                 
-                                    See all 11 posts  →
+                                    See all 12 posts  →
                                 
                             </a>
                         </footer>
@@ -411,10 +424,14 @@ into the {body} of the default.hbs template -->
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template no-image">
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2">
+                <div class="post-card-image" style="background-image: url(/assets/images/pytorch.png)"></div>
+            </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Matplotlib-Mac-%EC%82%AC%EC%9A%A9">
+            <a class="post-card-content-link" href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2">
                 <header class="post-card-header">
                     
                         
@@ -424,16 +441,16 @@ into the {body} of the default.hbs template -->
                             <span class="post-card-tags" style="display: inline;">Develop</span>
                         
                             <!-- 
-                                <span class="post-card-tags">Solution</span>
+                                <span class="post-card-tags">Pytorch</span>
                              -->
-                            <span class="post-card-tags" style="display: inline;">Solution</span>
+                            <span class="post-card-tags" style="display: inline;">Pytorch</span>
                         
                     
 
-                    <h2 class="post-card-title">맥에서 Python Matplotlib Import문제 해결 방법</h2>
+                    <h2 class="post-card-title">PyTorch 기본 사용법[1/2]</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>> 필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 `matplotlib`을 설치하고 `import`를 하는 구문에서 다음과 같은 에러가 나타났습니다. ~~~ bash RuntimeError: Python is not installed as a framework. The</p>
+                    <p># 개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. * *</p>
                 </section>
             </a>
             <footer class="post-card-meta">

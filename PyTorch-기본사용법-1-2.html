@@ -11,7 +11,7 @@
 
 
 
-    <title>IOCP 소켓통신을 이용한 채팅프로그램</title>
+    <title>PyTorch 기본 사용법[1/2]</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -24,30 +24,30 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="빅데이터 분야에 모험가가 되고 싶은 개발자 블로그" />
     <link rel="shortcut icon" href="https://hashbox.github.io/assets/images/favicon.ico" type="image/ico" />
-    <link rel="canonical" href="https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8" />
+    <link rel="canonical" href="https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="HASHBOX" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="IOCP 소켓통신을 이용한 채팅프로그램" />
-    <meta property="og:description" content="개요 네트워크 프로그래밍에 대해서 공부를 하게 되면 기본적으로 동기 소켓통신을 시작으로 비동기 소켓통신을 배우고 프로그래밍 프로젝트 과제를 하게 됩니다. 어떻게 보면 소켓통신을 하는데 있어서 기본적인 원리와 소켓통신을 하면서 이루어지는 통신과 확인과정에 대한 이해를 돕는데 가장 간단한 방법이고 배우는 시간이 오래 걸리지 않기 때문에 그런것 같습니다. 하지만 저는 MMORPG를 봤을 때" />
-    <meta property="og:url" content="https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8" />
-    <meta property="og:image" content="https://hashbox.github.io/assets/images/project-iocp-chat.jpg" />
+    <meta property="og:title" content="PyTorch 기본 사용법[1/2]" />
+    <meta property="og:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의" />
+    <meta property="og:url" content="https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2" />
+    <meta property="og:image" content="https://hashbox.github.io/assets/images/pytorch.png" />
     <meta property="article:publisher" content="https://www.facebook.com/jinh574" />
     <meta property="article:author" content="https://www.facebook.com/jinh574" />
-    <meta property="article:published_time" content="2017-05-19T20:22:00+00:00" />
-    <meta property="article:modified_time" content="2017-05-19T20:22:00+00:00" />
-    <meta property="article:tag" content="Project" />
+    <meta property="article:published_time" content="2018-01-11T10:45:00+00:00" />
+    <meta property="article:modified_time" content="2018-01-11T10:45:00+00:00" />
+    <meta property="article:tag" content="Develop" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="IOCP 소켓통신을 이용한 채팅프로그램" />
-    <meta name="twitter:description" content="개요 네트워크 프로그래밍에 대해서 공부를 하게 되면 기본적으로 동기 소켓통신을 시작으로 비동기 소켓통신을 배우고 프로그래밍 프로젝트 과제를 하게 됩니다. 어떻게 보면 소켓통신을 하는데 있어서 기본적인 원리와 소켓통신을 하면서 이루어지는 통신과 확인과정에 대한 이해를 돕는데 가장 간단한 방법이고 배우는 시간이 오래 걸리지 않기 때문에 그런것 같습니다. 하지만 저는 MMORPG를 봤을 때" />
+    <meta name="twitter:title" content="PyTorch 기본 사용법[1/2]" />
+    <meta name="twitter:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의" />
     <meta name="twitter:url" content="https://hashbox.github.io/" />
-    <meta name="twitter:image" content="https://hashbox.github.io/assets/images/project-iocp-chat.jpg" />
+    <meta name="twitter:image" content="https://hashbox.github.io/assets/images/pytorch.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="HASHBOX" />
     <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Project" />
+    <meta name="twitter:data2" content="Develop" />
     <meta name="twitter:site" content="@jinh574" />
     <meta name="twitter:creator" content="@jinh574" />
     <meta property="og:image:width" content="1400" />
@@ -62,18 +62,18 @@
         "name": "HASHBOX",
         "logo": "https://hashbox.github.io/assets/images/hashbox-logo.png"
     },
-    "url": "https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8",
+    "url": "https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2",
     "image": {
         "@type": "ImageObject",
-        "url": "https://hashbox.github.io/assets/images/project-iocp-chat.jpg",
+        "url": "https://hashbox.github.io/assets/images/pytorch.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8"
+        "@id": "https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2"
     },
-    "description": "개요 네트워크 프로그래밍에 대해서 공부를 하게 되면 기본적으로 동기 소켓통신을 시작으로 비동기 소켓통신을 배우고 프로그래밍 프로젝트 과제를 하게 됩니다. 어떻게 보면 소켓통신을 하는데 있어서 기본적인 원리와 소켓통신을 하면서 이루어지는 통신과 확인과정에 대한 이해를 돕는데 가장 간단한 방법이고 배우는 시간이 오래 걸리지 않기 때문에 그런것 같습니다. 하지만 저는 MMORPG를 봤을 때"
+    "description": "개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의"
 }
     </script>
 
@@ -86,7 +86,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="IOCP 소켓통신을 이용한 채팅프로그램" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="PyTorch 기본 사용법[1/2]" href="/feed.xml" />
 
 
 </head>
@@ -146,55 +146,215 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full post tag-project ">
+        <article class="post-full post tag-develop ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="19 May 2017">19 May 2017</time>
+                    <time class="post-full-meta-date" datetime="11 January 2018">11 January 2018</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/project/'>PROJECT</a>
+                               <a href='/tag/develop/'>DEVELOP</a>,
+                            
+                        
+                            
+                               <a href='/tag/pytorch/'>PYTORCH</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">IOCP 소켓통신을 이용한 채팅프로그램</h1>
+                <h1 class="post-full-title">PyTorch 기본 사용법[1/2]</h1>
             </header>
 
             
-            <figure class="post-full-image" style="background-image: url(/assets/images/project-iocp-chat.jpg)">
+            <figure class="post-full-image" style="background-image: url(/assets/images/pytorch.png)">
             </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
-                    <iframe src="//www.slideshare.net/slideshow/embed_code/key/Bhm7gKPLJQLIuJ" width="640" height="522" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+                    <h1 id="개요">개요</h1>
 
-<h1 id="개요">개요</h1>
-<p>네트워크 프로그래밍에 대해서 공부를 하게 되면 기본적으로 <em>동기 소켓통신</em>을 시작으로 <em>비동기 소켓통신</em>을 배우고 프로그래밍 프로젝트 과제를 하게 됩니다. 어떻게 보면 소켓통신을 하는데 있어서
-기본적인 원리와 소켓통신을 하면서 이루어지는 통신과 확인과정에 대한 이해를 돕는데 가장 간단한 방법이고 배우는 시간이 오래 걸리지 않기 때문에 그런것 같습니다. 하지만 저는 MMORPG를 봤을 때
-몇십 만명이나 되는 인원들이 마다 소켓을 할당해줄 경우 메모리가 남아 나지 않을 텐데 어떻게 구현이 가능하지라는 의문을 가지게 되었고, 해결방법을 찾다가 IOCP 소켓통신에 대해 알게 되었습니다.</p>
-
-<p><em>동기 통신</em>과 <em>비동기 통신</em>으로 구현된 채팅 프로그램 소스를 IOCP로 개선하여 통신의 종류마다 테스트를 통해 성능의 차이와 IOCP 구동원리에 대한 이해와 구현까지 실습하면서 네트워크 프로그래밍의
-깊이 있는 이해를 하고자 프로젝트를 시작하게 되었습니다.</p>
-<hr />
-<h1 id="개발환경">개발환경</h1>
-<ul>
-  <li>Windows 7 환경</li>
-  <li>VC++ MFC</li>
-  <li>JsonCPP Library for C++</li>
-  <li>Windows IOCP Socket Library</li>
-  <li>MySQL 5.2</li>
-</ul>
+<p>기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다.</p>
 
 <hr />
-<h1 id="프로젝트-기간">프로젝트 기간</h1>
-<p>총 1개월(2013.01 ~ 2013.02)</p>
+
+<h2 id="텐서-생성">텐서 생성</h2>
+
+<h3 id="torchtensor">torch.Tensor()</h3>
+
+<p><code class="highlighter-rouge">torch.Tensor()</code>는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의 수를 갖는 Tensor를 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+1.00000e-29 *
+  0.0000 -2.5244  0.0000
+ -2.5244  0.0000  0.0000
+[torch.FloatTensor of size 2x3]
+'''</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="s">'''
+ 1  2
+ 3  4
+[torch.FloatTensor of size 2x2]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchrandsize">torch.rand(size)</h3>
+
+<p><code class="highlighter-rouge">torch.rand()</code>는 텐서를 랜덤하게 생성하는 메소드이며, 0이상 1미만의 수로 사이즈 만큼 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+0.4218  0.2046  0.8776
+0.1623  0.6642  0.5808
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<p>매개변수로 넘긴는 차원 수 만큼 FloatTensor로 균등분포(uniform distribution)로 랜덤하게 생성되는 메소드입니다.</p>
+
+<h3 id="torchrandnsize">torch.randn(size)</h3>
+
+<p><code class="highlighter-rouge"> torch.randn()</code>도 텐서를 랜덤하게 생성하는 메소드이며 0를 평균으로 갖는 수로 사이즈 만큼 생성합니다. 여기서 다른 점은 <code class="highlighter-rouge">torch.rand()</code>와는 다르게 정규분포(normal distribution)으로 Tensor를 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+-0.9745 -1.7317  0.1979
+-1.7215 -1.0405  0.2917
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<p>Uniform distribution과 Normal distribution의 차이를 알 수 있는 이미지를 보시면 쉽게 이해하실 수 있으실겁니다.</p>
+
+<p><img src="assets/images/distribution-graph.jpg" alt="Distribution 비교 그래프" /></p>
+
+<blockquote>
+  <p>이미지 출처 : <a href="https://www.quora.com/What-is-the-difference-between-normal-distribution-and-uniform-distribution">quora.com</a></p>
+</blockquote>
+
+<h3 id="torchrandpermn">torch.randperm(n)</h3>
+
+<p><code class="highlighter-rouge">torch.randperm()</code>은 0부터 n-1만큼 배열을 무작위로 섞은 Tensor를 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randperm</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="s">'''
+ 3
+ 0
+ 4
+ 2
+ 1
+[torch.LongTensor of size 5]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchzerossize">torch.zeros(size)</h3>
+
+<p><code class="highlighter-rouge">torch.zeros()</code>는 <code class="highlighter-rouge">size</code>만큼의 차원을 가진 Tensor를 0으로 채워서 생성해주는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 0  0  0
+ 0  0  0
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchonessize">torch.ones(size)</h3>
+
+<p><code class="highlighter-rouge">torch.ones()</code>는 그럼 무엇일까요? 당연히 <code class="highlighter-rouge">size</code>만큼의 차원을 가진 Tensor를 1로 채워서 생성해주는 메소드입니다. 쉽죠?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 1  1  1
+ 1  1  1
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torcharangestart-end-step">torch.arange(start, end, step)</h3>
+
+<p><code class="highlighter-rouge">torch.arange()</code>는 <code class="highlighter-rouge">start</code>이상 <code class="highlighter-rouge">end</code>미만의 수로 <code class="highlighter-rouge">step</code>만큼의 수만큼 건너뛰는 Tensor를 생성해주는 역할을 합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="s">'''
+ 0
+ 2
+ 4
+ 6
+ 8
+[torch.FloatTensor of size 5]
+'''</span>
+</code></pre></div></div>
+
+<p>즉, 원하는 숫자 범위에서 <code class="highlighter-rouge">step</code>만큼 일정한 간격을 두는 데이터를 만들 때 사용하면 좋겠죠? 참고로 마지막으로 남아 떨어지지 않는 수는 생성하지 않는 다는 것을 명심 하셔야 될것같습니다.</p>
+
+<h3 id="torchlinspacestart-end-steps">torch.linspace(start, end, steps)</h3>
+
+<p><code class="highlighter-rouge">torch.linspace()</code>하고 <code class="highlighter-rouge">torch.arange()</code>하고의 차이를 헷갈리시는 분들도 계실 겁니다. <code class="highlighter-rouge">torch.linspace()</code>는 <code class="highlighter-rouge">start</code>하고 <code class="highlighter-rouge">end</code>사이의 수로 <code class="highlighter-rouge">steps</code>수 만큼 일정한 간격을 갖는 수를 생성해주는 역할을 합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="s">'''
+  0.0000
+  1.4286
+  2.8571
+  4.2857
+  5.7143
+  7.1429
+  8.5714
+ 10.0000
+[torch.FloatTensor of size 8]
+'''</span>
+</code></pre></div></div>
+
+<h2 id="numpy타입과-tensor타입의-호환">Numpy타입과 Tensor타입의 호환</h2>
+
+<h3 id="torchfrom_numpyx">torch.from_numpy(x)</h3>
+
+<p><code class="highlighter-rouge">torch.from_numpy(x)</code>는 numpy로 만든 데이터를 PyTorch에서 사용이 가능한 Tensor로 변환해주는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numpy_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="nb">buffer</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]))</span>
+<span class="n">tensor_data</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">numpy_data</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h3 id="tensornumpy">Tensor.numpy()</h3>
+
+<p><code class="highlighter-rouge">Tensor.numpy()</code>는 Tensor 타입의 데이터를 numpy 타입의 데이터로 바꾸는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numpy_data</span> <span class="o">=</span> <span class="n">tensor_data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="그-외">그 외</h2>
+
+<h3 id="tensorcuda">Tensor.cuda()</h3>
+
+<p><code class="highlighter-rouge">Tensor.cuda()</code>는 GPU연산을 지원하는 디바이스에서 GPU연산용으로 변환하기 위한 메소드입니다. <strong><em>단, 사용시 <code class="highlighter-rouge">torch.cuda.is_available()</code>로 디바이스가 GPU연산이 가능한지 확인하고 사용할 수 있도록 하는 것이 좋습니다.</em></strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="tensorsize">Tensor.size()</h3>
+
+<p><code class="highlighter-rouge">Tensor.size()</code>는 해당하는 텐서의 사이즈를 확인할 수 있는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+<span class="s">'''
+torch.Size([2, 3])
+'''</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">Tensor.size(n-dim)</code>에 <code class="highlighter-rouge">n-dim</code>의 매개변수로 차원의 인덱스를 넘겨주면 해당하는 차원의 크기를 알아올 수도 있습니다.</p>
+
 <hr />
-<h1 id="소스코드">소스코드</h1>
-<div><a href="https://github.com/jinh574/cpp-iocpchat" class="btn btn-info">Github</a></div>
+<h1 id="마치며">마치며</h1>
+
+<p>기본적으로 PyTorch에서 자주 쓰는 메소드들에 대해서 알아 보았습니다. 이것 외에도 Tensor끼리 나누고 붙이고하는 메소드나 차원을 줄이고하는 메소드들에 대해서는 다음시간에 알아보도록 하겠습니다. 조금이나마 모두에게 도움이 되었으면 좋겠습니다. 감사합니다.</p>
 
                 </div>
             </section>
@@ -271,7 +431,7 @@ into the {body} of the default.hbs template -->
                         <header class="read-next-card-header">
                             <small class="read-next-card-header-sitetitle">&mdash; HASHBOX &mdash;</small>
                             
-                                <h3 class="read-next-card-header-title"><a href="/tag/project/">Project</a></h3>
+                                <h3 class="read-next-card-header-title"><a href="/tag/develop/">Develop</a></h3>
                             
                         </header>
                         <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
@@ -281,32 +441,23 @@ into the {body} of the default.hbs template -->
                                 
                                 
                                   
-                                
+                                    
+                                        
+                                        
+                                            <li><a href="/Matplotlib-Mac-%EC%82%AC%EC%9A%A9">맥에서 Python Matplotlib Import문제 해결 방법</a></li>
+                                        
+                                    
                                   
                                 
                                   
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
-                                  
-                                
+                                    
                                   
                                 
                                   
                                     
                                         
                                         
-                                            <li><a href="/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2017%EB%8C%80%EC%84%A0-%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D">2017 대통령 선거 빅데이터 분석</a></li>
+                                            <li><a href="/PyTorch%EA%B4%80%ED%95%98%EC%97%AC">PyTorch에 관하여</a></li>
                                         
                                     
                                   
@@ -317,28 +468,8 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
-                                            <li><a href="/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B3%B5%EC%98%81%EC%A3%BC%EC%B0%A8%EC%9E%A5%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%98%88%EC%B8%A1">공영주차장 실시간 예측</a></li>
+                                            <li><a href="/Apache-Tomcat-%EC%97%B0%EB%8F%99">CentOS7 + Apache + Tomcat8 연동(mod_jk)</a></li>
                                         
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                            <li><a href="/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IoTivity-%ED%99%94%EC%9E%AC%EA%B0%90%EC%A7%80%EC%8B%9C%EC%8A%A4%ED%85%9C">IoTivity 화재감지 시스템</a></li>
-                                        
-                                    
-                                  
-                                
-                                  
-                                    
-                                        
-                                        
-                                    
-                                  
-                                
-                                  
                                     
                                   
                                 
@@ -357,6 +488,11 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
+                                    
+                                  
                                 
                                   
                                     
@@ -365,14 +501,63 @@ into the {body} of the default.hbs template -->
                                     
                                   
                                 
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
                                   
                                 
                             </ul>
                         </div>
                         <footer class="read-next-card-footer">
-                            <a href="/tag/project/">
+                            <a href="/tag/develop/">
                                 
-                                    See all 7 posts  →
+                                    See all 12 posts  →
                                 
                             </a>
                         </footer>
@@ -383,28 +568,29 @@ into the {body} of the default.hbs template -->
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template">
-        
-            <a class="post-card-image-link" href="/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C">
-                <div class="post-card-image" style="background-image: url(/assets/images/project-transport-analytics.jpg)"></div>
-            </a>
+    <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%8B%A4%EC%8B%9C%EA%B0%84%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%EC%B6%94%EC%B2%9C">
+            <a class="post-card-content-link" href="/Matplotlib-Mac-%EC%82%AC%EC%9A%A9">
                 <header class="post-card-header">
                     
                         
                             <!-- 
-                                <span class="post-card-tags">Project</span>
+                               <span class="post-card-tags">Develop</span>
                              -->
-                            <span class="post-card-tags" style="display: inline;">Project</span>
+                            <span class="post-card-tags" style="display: inline;">Develop</span>
+                        
+                            <!-- 
+                                <span class="post-card-tags">Solution</span>
+                             -->
+                            <span class="post-card-tags" style="display: inline;">Solution</span>
                         
                     
 
-                    <h2 class="post-card-title">실시간 대중교통 경로 탐색</h2>
+                    <h2 class="post-card-title">맥에서 Python Matplotlib Import문제 해결 방법</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p># 개요 웹프로그래밍 강의에서 Open API를 이용한 프로젝트를 만들게 되었습니다. 그렇게 선택하게 된 주제는 **'실시간 대중교통 경로 탐색'**이었습니다. 실제로 시중에서 많이 사용되고 있는 대중교통 길찾는 앱들은 버스의 경우 실시간 위치 정보만을 이용하여 도착예정시간을</p>
+                    <p>> 필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 `matplotlib`을 설치하고 `import`를 하는 구문에서 다음과 같은 에러가 나타났습니다. ~~~ bash RuntimeError: Python is not installed as a framework. The</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -429,24 +615,33 @@ into the {body} of the default.hbs template -->
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template no-image">
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/PyTorch%EA%B4%80%ED%95%98%EC%97%AC">
+                <div class="post-card-image" style="background-image: url(/assets/images/pytorch.png)"></div>
+            </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%82%AC%EC%A7%84%ED%98%95SNS-%EC%9D%B8%EC%8A%A4%ED%94%8C">
+            <a class="post-card-content-link" href="/PyTorch%EA%B4%80%ED%95%98%EC%97%AC">
                 <header class="post-card-header">
                     
                         
                             <!-- 
-                                <span class="post-card-tags">Project</span>
+                               <span class="post-card-tags">Develop</span>
                              -->
-                            <span class="post-card-tags" style="display: inline;">Project</span>
+                            <span class="post-card-tags" style="display: inline;">Develop</span>
+                        
+                            <!-- 
+                                <span class="post-card-tags">Pytorch</span>
+                             -->
+                            <span class="post-card-tags" style="display: inline;">Pytorch</span>
                         
                     
 
-                    <h2 class="post-card-title">사진형SNS '인스플'</h2>
+                    <h2 class="post-card-title">PyTorch에 관하여</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>개요 사진형SNS ‘인스플’은 2011년 10년지기 친구와 함께 시작하게 된 스타트업 프로젝트의 일환입니다. 당시 대한민국은 소셜네트워크 서비스로 왕좌로 군림했던 싸이월드가 페이스북의 출현으로 왕좌의 자리가 변하고 있던 시기입니다. 그 당시 페이스북은 글을 통해서만 글을 게시하고,</p>
+                    <p>PyTorch에 관하여 기존 딥러닝 라이브러리를 Google의 Tensorflow를 사용했었습니다. 많이 사용해본 것은 아닙니다ㅠ 그러던 중 PyTorch라는 새로운 라이브러리를 알게 되었고 조금씩 공부해가면서 충분히 매리트가 더 있다는게 느껴졌습니다. 그래서 공부하며 정리한 내용을 포스팅할 예정입니다. 아직은</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -483,18 +678,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">IOCP 소켓통신을 이용한 채팅프로그램</div>
+    <div class="floating-header-title">PyTorch 기본 사용법[1/2]</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=IOCP+%EC%86%8C%EC%BC%93%ED%86%B5%EC%8B%A0%EC%9D%84+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8&amp;url=https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=PyTorch+%EA%B8%B0%EB%B3%B8+%EC%82%AC%EC%9A%A9%EB%B2%95%5B1%2F2%5D&amp;url=https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-IOCP-%EC%B1%84%ED%8C%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 

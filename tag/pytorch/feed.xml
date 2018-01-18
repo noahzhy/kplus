@@ -28,6 +28,204 @@
    <atom:link href="rss" rel="self" type="application/rss+xml" />
    
 	<item>
+	  <title>PyTorch 기본 사용법[1/2]</title>
+	  <link>https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2</link>
+		
+				
+		
+				
+						<author>한지승(Jee Seung, Han)</author>
+				
+		
+	  <pubDate>2018-01-11T10:45:00+00:00</pubDate>
+	  <guid>https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2</guid>
+	  <description><![CDATA[
+	     <h1 id="개요">개요</h1>
+
+<p>기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다.</p>
+
+<hr />
+
+<h2 id="텐서-생성">텐서 생성</h2>
+
+<h3 id="torchtensor">torch.Tensor()</h3>
+
+<p><code class="highlighter-rouge">torch.Tensor()</code>는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의 수를 갖는 Tensor를 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+1.00000e-29 *
+  0.0000 -2.5244  0.0000
+ -2.5244  0.0000  0.0000
+[torch.FloatTensor of size 2x3]
+'''</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="s">'''
+ 1  2
+ 3  4
+[torch.FloatTensor of size 2x2]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchrandsize">torch.rand(size)</h3>
+
+<p><code class="highlighter-rouge">torch.rand()</code>는 텐서를 랜덤하게 생성하는 메소드이며, 0이상 1미만의 수로 사이즈 만큼 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+0.4218  0.2046  0.8776
+0.1623  0.6642  0.5808
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<p>매개변수로 넘긴는 차원 수 만큼 FloatTensor로 균등분포(uniform distribution)로 랜덤하게 생성되는 메소드입니다.</p>
+
+<h3 id="torchrandnsize">torch.randn(size)</h3>
+
+<p><code class="highlighter-rouge"> torch.randn()</code>도 텐서를 랜덤하게 생성하는 메소드이며 0를 평균으로 갖는 수로 사이즈 만큼 생성합니다. 여기서 다른 점은 <code class="highlighter-rouge">torch.rand()</code>와는 다르게 정규분포(normal distribution)으로 Tensor를 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+-0.9745 -1.7317  0.1979
+-1.7215 -1.0405  0.2917
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<p>Uniform distribution과 Normal distribution의 차이를 알 수 있는 이미지를 보시면 쉽게 이해하실 수 있으실겁니다.</p>
+
+<p><img src="assets/images/distribution-graph.jpg" alt="Distribution 비교 그래프" /></p>
+
+<blockquote>
+  <p>이미지 출처 : <a href="https://www.quora.com/What-is-the-difference-between-normal-distribution-and-uniform-distribution">quora.com</a></p>
+</blockquote>
+
+<h3 id="torchrandpermn">torch.randperm(n)</h3>
+
+<p><code class="highlighter-rouge">torch.randperm()</code>은 0부터 n-1만큼 배열을 무작위로 섞은 Tensor를 생성합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">randperm</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="s">'''
+ 3
+ 0
+ 4
+ 2
+ 1
+[torch.LongTensor of size 5]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchzerossize">torch.zeros(size)</h3>
+
+<p><code class="highlighter-rouge">torch.zeros()</code>는 <code class="highlighter-rouge">size</code>만큼의 차원을 가진 Tensor를 0으로 채워서 생성해주는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 0  0  0
+ 0  0  0
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchonessize">torch.ones(size)</h3>
+
+<p><code class="highlighter-rouge">torch.ones()</code>는 그럼 무엇일까요? 당연히 <code class="highlighter-rouge">size</code>만큼의 차원을 가진 Tensor를 1로 채워서 생성해주는 메소드입니다. 쉽죠?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 1  1  1
+ 1  1  1
+[torch.FloatTensor of size 2x3]
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torcharangestart-end-step">torch.arange(start, end, step)</h3>
+
+<p><code class="highlighter-rouge">torch.arange()</code>는 <code class="highlighter-rouge">start</code>이상 <code class="highlighter-rouge">end</code>미만의 수로 <code class="highlighter-rouge">step</code>만큼의 수만큼 건너뛰는 Tensor를 생성해주는 역할을 합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="s">'''
+ 0
+ 2
+ 4
+ 6
+ 8
+[torch.FloatTensor of size 5]
+'''</span>
+</code></pre></div></div>
+
+<p>즉, 원하는 숫자 범위에서 <code class="highlighter-rouge">step</code>만큼 일정한 간격을 두는 데이터를 만들 때 사용하면 좋겠죠? 참고로 마지막으로 남아 떨어지지 않는 수는 생성하지 않는 다는 것을 명심 하셔야 될것같습니다.</p>
+
+<h3 id="torchlinspacestart-end-steps">torch.linspace(start, end, steps)</h3>
+
+<p><code class="highlighter-rouge">torch.linspace()</code>하고 <code class="highlighter-rouge">torch.arange()</code>하고의 차이를 헷갈리시는 분들도 계실 겁니다. <code class="highlighter-rouge">torch.linspace()</code>는 <code class="highlighter-rouge">start</code>하고 <code class="highlighter-rouge">end</code>사이의 수로 <code class="highlighter-rouge">steps</code>수 만큼 일정한 간격을 갖는 수를 생성해주는 역할을 합니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="s">'''
+  0.0000
+  1.4286
+  2.8571
+  4.2857
+  5.7143
+  7.1429
+  8.5714
+ 10.0000
+[torch.FloatTensor of size 8]
+'''</span>
+</code></pre></div></div>
+
+<h2 id="numpy타입과-tensor타입의-호환">Numpy타입과 Tensor타입의 호환</h2>
+
+<h3 id="torchfrom_numpyx">torch.from_numpy(x)</h3>
+
+<p><code class="highlighter-rouge">torch.from_numpy(x)</code>는 numpy로 만든 데이터를 PyTorch에서 사용이 가능한 Tensor로 변환해주는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numpy_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="nb">buffer</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]))</span>
+<span class="n">tensor_data</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">numpy_data</span><span class="p">)</span> 
+</code></pre></div></div>
+
+<h3 id="tensornumpy">Tensor.numpy()</h3>
+
+<p><code class="highlighter-rouge">Tensor.numpy()</code>는 Tensor 타입의 데이터를 numpy 타입의 데이터로 바꾸는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numpy_data</span> <span class="o">=</span> <span class="n">tensor_data</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="그-외">그 외</h2>
+
+<h3 id="tensorcuda">Tensor.cuda()</h3>
+
+<p><code class="highlighter-rouge">Tensor.cuda()</code>는 GPU연산을 지원하는 디바이스에서 GPU연산용으로 변환하기 위한 메소드입니다. <strong><em>단, 사용시 <code class="highlighter-rouge">torch.cuda.is_available()</code>로 디바이스가 GPU연산이 가능한지 확인하고 사용할 수 있도록 하는 것이 좋습니다.</em></strong></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="tensorsize">Tensor.size()</h3>
+
+<p><code class="highlighter-rouge">Tensor.size()</code>는 해당하는 텐서의 사이즈를 확인할 수 있는 메소드입니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
+<span class="s">'''
+torch.Size([2, 3])
+'''</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">Tensor.size(n-dim)</code>에 <code class="highlighter-rouge">n-dim</code>의 매개변수로 차원의 인덱스를 넘겨주면 해당하는 차원의 크기를 알아올 수도 있습니다.</p>
+
+<hr />
+<h1 id="마치며">마치며</h1>
+
+<p>기본적으로 PyTorch에서 자주 쓰는 메소드들에 대해서 알아 보았습니다. 이것 외에도 Tensor끼리 나누고 붙이고하는 메소드나 차원을 줄이고하는 메소드들에 대해서는 다음시간에 알아보도록 하겠습니다. 조금이나마 모두에게 도움이 되었으면 좋겠습니다. 감사합니다.</p>
+
+	  ]]></description>
+	</item>
+
+	<item>
 	  <title>PyTorch에 관하여</title>
 	  <link>https://hashbox.github.io/PyTorch%EA%B4%80%ED%95%98%EC%97%AC</link>
 		
@@ -56,6 +254,12 @@
 
 <blockquote>
   <p>아직까지는 이 두가지 방법이 어떻게 다르며, 어쩔때 사용하는 것이 좋은지 아니면 단순 구현방법의 차이인지 더 자세히 알아보고 내용을 추가하도록 하겠습니다.</p>
+</blockquote>
+
+<h4 id="내용-추가">내용 추가</h4>
+
+<blockquote>
+  <p>기능상 <code class="highlighter-rouge">nn.Sequencial()</code>하고 <code class="highlighter-rouge">forward()</code>하고의 차이점은 크게 없으나 <code class="highlighter-rouge">nn.Sequencial()</code>과 같은 경우에는 레이어와 레이어 사이에 중간처리가 필요하지 않은 작업일 경우 사용해도 무방하지만, 예를들어 레이어와 레이어 사이에 차원의 변경이 필요한다든지(<code class="highlighter-rouge">view()</code>와 같은 작업이라든지) 중간처리가 필요할 경우에는 <code class="highlighter-rouge">forward()</code>에서 작업을 해야하는 부분 때문에 필요한걸 확인했습니다. 위와같은 문제 이외에는 어떠한 부분으로 구현을 하는지에 대한 부분은 개인의 취향에 따라 결정하시면 될 것 같습니다.</p>
 </blockquote>
 
 <h2 id="그래디언트를-자동-계산">그래디언트를 자동 계산</h2>
