@@ -31,7 +31,7 @@
     <meta property="og:site_name" content="HASHBOX" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="PyTorch 기본 사용법[1/2]" />
-    <meta property="og:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의" />
+    <meta property="og:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch 기본사용법 [1/2] (현재글) PyTorch 기본사용법 [2/2] 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우" />
     <meta property="og:url" content="https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2" />
     <meta property="og:image" content="https://hashbox.github.io/assets/images/pytorch.png" />
     <meta property="article:publisher" content="https://www.facebook.com/jinh574" />
@@ -41,7 +41,7 @@
     <meta property="article:tag" content="Develop" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="PyTorch 기본 사용법[1/2]" />
-    <meta name="twitter:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의" />
+    <meta name="twitter:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch 기본사용법 [1/2] (현재글) PyTorch 기본사용법 [2/2] 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우" />
     <meta name="twitter:url" content="https://hashbox.github.io/" />
     <meta name="twitter:image" content="https://hashbox.github.io/assets/images/pytorch.png" />
     <meta name="twitter:label1" content="Written by" />
@@ -73,7 +73,7 @@
         "@type": "WebPage",
         "@id": "https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2"
     },
-    "description": "개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우 해당하는 사이즈의 Tensor를 생성해주며 배열을 넣을 경우 해당하는 배열의"
+    "description": "개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch 기본사용법 [1/2] (현재글) PyTorch 기본사용법 [2/2] 텐서 생성 torch.Tensor() torch.Tensor()는 여러 매개변수로 오버로딩이 되어있습니다. 사이즈를 넘길 경우"
 }
     </script>
 
@@ -177,6 +177,13 @@ into the {body} of the default.hbs template -->
                     <h1 id="개요">개요</h1>
 
 <p>기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다.</p>
+
+<p><strong>기본사용법 시리즈</strong></p>
+
+<ol>
+  <li>PyTorch 기본사용법 [1/2] (현재글)</li>
+  <li><a href="/PyTorch-기본사용법-2-2">PyTorch 기본사용법 [2/2]</a></li>
+</ol>
 
 <hr />
 
@@ -451,6 +458,15 @@ torch.Size([2, 3])
                                 
                                   
                                     
+                                        
+                                        
+                                            <li><a href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2">PyTorch 기본 사용법[2/2]</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
                                   
                                 
                                   
@@ -467,8 +483,6 @@ torch.Size([2, 3])
                                   
                                     
                                         
-                                        
-                                            <li><a href="/Apache-Tomcat-%EC%97%B0%EB%8F%99">CentOS7 + Apache + Tomcat8 연동(mod_jk)</a></li>
                                         
                                     
                                   
@@ -557,7 +571,7 @@ torch.Size([2, 3])
                         <footer class="read-next-card-footer">
                             <a href="/tag/develop/">
                                 
-                                    See all 12 posts  →
+                                    See all 13 posts  →
                                 
                             </a>
                         </footer>
@@ -568,10 +582,14 @@ torch.Size([2, 3])
             <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template no-image">
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2">
+                <div class="post-card-image" style="background-image: url(/assets/images/pytorch.png)"></div>
+            </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Matplotlib-Mac-%EC%82%AC%EC%9A%A9">
+            <a class="post-card-content-link" href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2">
                 <header class="post-card-header">
                     
                         
@@ -581,16 +599,16 @@ torch.Size([2, 3])
                             <span class="post-card-tags" style="display: inline;">Develop</span>
                         
                             <!-- 
-                                <span class="post-card-tags">Solution</span>
+                                <span class="post-card-tags">Pytorch</span>
                              -->
-                            <span class="post-card-tags" style="display: inline;">Solution</span>
+                            <span class="post-card-tags" style="display: inline;">Pytorch</span>
                         
                     
 
-                    <h2 class="post-card-title">맥에서 Python Matplotlib Import문제 해결 방법</h2>
+                    <h2 class="post-card-title">PyTorch 기본 사용법[2/2]</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>> 필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 `matplotlib`을 설치하고 `import`를 하는 구문에서 다음과 같은 에러가 나타났습니다. ~~~ bash RuntimeError: Python is not installed as a framework. The</p>
+                    <p># 개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. **기본사용법 시리즈**</p>
                 </section>
             </a>
             <footer class="post-card-meta">

@@ -11,7 +11,7 @@
 
 
 
-    <title>Java의 Static 바로알기</title>
+    <title>PyTorch 기본 사용법[2/2]</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -24,26 +24,26 @@
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="빅데이터 분야에 모험가가 되고 싶은 개발자 블로그" />
     <link rel="shortcut icon" href="https://hashbox.github.io/assets/images/favicon.ico" type="image/ico" />
-    <link rel="canonical" href="https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0" />
+    <link rel="canonical" href="https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
     <meta property="og:site_name" content="HASHBOX" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Java의 Static 바로알기" />
-    <meta property="og:description" content="개요 Java를 처음 배우게 되는 것 중에 하나는 static이라는 키워드일것입니다. 또한 Java에 Main 클래스에서 항상 존재하는 static 키워드는 누구나 익숙하실 겁니다. 하지만 생각보다 static키워드에 대해서 어쩔때 쓴다 정도는 모두 알고 계시지만 깊이있는 특성을 모르시는 분들이 많습니다. 저 또한 무분별하게 사용했었던 적이 있습니다. static키워드의 특성을 자세히 알게 되면 조금 더 활용성" />
-    <meta property="og:url" content="https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0" />
-    <meta property="og:image" content="https://hashbox.github.io/assets/images/blog-cover.jpg" />
+    <meta property="og:title" content="PyTorch 기본 사용법[2/2]" />
+    <meta property="og:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch 기본사용법 [1/2] PyTorch 기본사용법 [2/2] (현재글) 텐서 조작 Torch[:,:] 텐서는 Python을 기존에 사용하시던 분들은 쉽게 이해하실 수" />
+    <meta property="og:url" content="https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2" />
+    <meta property="og:image" content="https://hashbox.github.io/assets/images/pytorch.png" />
     <meta property="article:publisher" content="https://www.facebook.com/jinh574" />
     <meta property="article:author" content="https://www.facebook.com/jinh574" />
-    <meta property="article:published_time" content="2017-06-20T20:10:00+00:00" />
-    <meta property="article:modified_time" content="2017-06-20T20:10:00+00:00" />
+    <meta property="article:published_time" content="2018-01-14T11:21:00+00:00" />
+    <meta property="article:modified_time" content="2018-01-14T11:21:00+00:00" />
     <meta property="article:tag" content="Develop" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Java의 Static 바로알기" />
-    <meta name="twitter:description" content="개요 Java를 처음 배우게 되는 것 중에 하나는 static이라는 키워드일것입니다. 또한 Java에 Main 클래스에서 항상 존재하는 static 키워드는 누구나 익숙하실 겁니다. 하지만 생각보다 static키워드에 대해서 어쩔때 쓴다 정도는 모두 알고 계시지만 깊이있는 특성을 모르시는 분들이 많습니다. 저 또한 무분별하게 사용했었던 적이 있습니다. static키워드의 특성을 자세히 알게 되면 조금 더 활용성" />
+    <meta name="twitter:title" content="PyTorch 기본 사용법[2/2]" />
+    <meta name="twitter:description" content="개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch 기본사용법 [1/2] PyTorch 기본사용법 [2/2] (현재글) 텐서 조작 Torch[:,:] 텐서는 Python을 기존에 사용하시던 분들은 쉽게 이해하실 수" />
     <meta name="twitter:url" content="https://hashbox.github.io/" />
-    <meta name="twitter:image" content="https://hashbox.github.io/assets/images/blog-cover.jpg" />
+    <meta name="twitter:image" content="https://hashbox.github.io/assets/images/pytorch.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="HASHBOX" />
     <meta name="twitter:label2" content="Filed under" />
@@ -62,18 +62,18 @@
         "name": "HASHBOX",
         "logo": "https://hashbox.github.io/assets/images/hashbox-logo.png"
     },
-    "url": "https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0",
+    "url": "https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2",
     "image": {
         "@type": "ImageObject",
-        "url": "https://hashbox.github.io/assets/images/blog-cover.jpg",
+        "url": "https://hashbox.github.io/assets/images/pytorch.png",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0"
+        "@id": "https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2"
     },
-    "description": "개요 Java를 처음 배우게 되는 것 중에 하나는 static이라는 키워드일것입니다. 또한 Java에 Main 클래스에서 항상 존재하는 static 키워드는 누구나 익숙하실 겁니다. 하지만 생각보다 static키워드에 대해서 어쩔때 쓴다 정도는 모두 알고 계시지만 깊이있는 특성을 모르시는 분들이 많습니다. 저 또한 무분별하게 사용했었던 적이 있습니다. static키워드의 특성을 자세히 알게 되면 조금 더 활용성"
+    "description": "개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch 기본사용법 [1/2] PyTorch 기본사용법 [2/2] (현재글) 텐서 조작 Torch[:,:] 텐서는 Python을 기존에 사용하시던 분들은 쉽게 이해하실 수"
 }
     </script>
 
@@ -86,7 +86,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="Java의 Static 바로알기" href="/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="PyTorch 기본 사용법[2/2]" href="/feed.xml" />
 
 
 </head>
@@ -146,97 +146,190 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full post tag-develop no-image">
+        <article class="post-full post tag-develop ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="20 June 2017">20 June 2017</time>
+                    <time class="post-full-meta-date" datetime="14 January 2018">14 January 2018</time>
                     
                         <span class="date-divider">/</span>
                         
                             
-                               <a href='/tag/develop/'>DEVELOP</a>
+                               <a href='/tag/develop/'>DEVELOP</a>,
+                            
+                        
+                            
+                               <a href='/tag/pytorch/'>PYTORCH</a>
                             
                         
                     
                 </section>
-                <h1 class="post-full-title">Java의 Static 바로알기</h1>
+                <h1 class="post-full-title">PyTorch 기본 사용법[2/2]</h1>
             </header>
 
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/pytorch.png)">
+            </figure>
             
 
             <section class="post-full-content">
                 <div class="kg-card-markdown">
                     <h1 id="개요">개요</h1>
 
-<p>Java를 처음 배우게 되는 것 중에 하나는 <code class="highlighter-rouge">static</code>이라는 키워드일것입니다. 또한 Java에 Main 클래스에서 항상 존재하는 <code class="highlighter-rouge">static</code> 키워드는 누구나 익숙하실 겁니다. 하지만 생각보다 <code class="highlighter-rouge">static</code>키워드에 대해서 어쩔때 쓴다 정도는 모두 알고 계시지만 깊이있는 특성을 모르시는 분들이 많습니다. 저 또한 무분별하게 사용했었던 적이 있습니다.  <code class="highlighter-rouge">static</code>키워드의 특성을 자세히 알게 되면 조금 더 활용성 높게 사용하실 수 있습니다. 심지어 취업 면접을 보면서 <code class="highlighter-rouge">static</code>키워드에 대해서 심도 있게 아는지에 대한 면접질문을 많이 받았을 정도로 중요한 부분이라 생각합니다. 지금부터 자세히 알아보도록 하겠습니다.</p>
+<p>기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다.</p>
 
-<p><br /></p>
+<p><strong>기본사용법 시리즈</strong></p>
+
+<ol>
+  <li><a href="/PyTorch-기본사용법-1-2">PyTorch 기본사용법 [1/2]</a></li>
+  <li>PyTorch 기본사용법 [2/2] (현재글)</li>
+</ol>
 
 <hr />
 
-<p><br /></p>
+<h2 id="텐서-조작">텐서 조작</h2>
 
-<h2 id="static">static</h2>
+<h3 id="torch">Torch[:,:]</h3>
 
-<p>처음 Java를 배우시는 분들이 익숙하면서 어쩔때 사용하는지 모르는 키워드는 <code class="highlighter-rouge">static</code> 키워드라 생각합니다. 왜냐하면 Java 프로젝트를 처음 만들고 마주하는 것은 다음과 같은 화면이기 때문이죠.</p>
+<p>텐서는 Python을 기존에 사용하시던 분들은 쉽게 이해하실 수 있으실 겁니다. 배열 인덱싱을 매트릭스로 한다고 생각하시면 될 것 같습니다. 매트릭스에서 각 요소의 위치를 ij로 나타내면서 00, 01, 10, 11과 같이 나타낸 것을 Python 인덱싱을 하듯이 하면 됩니다.</p>
 
-<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World!"</span><span class="o">);</span>
-<span class="o">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 0.3348  0.0717  0.8247
+ 0.5290  0.6360  0.4265
+ 0.4244  0.2309  0.9879
+ 0.9493  0.7278  0.0516
+[torch.FloatTensor of size 4x3]
+'''</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="s">'''
+ 0.3348
+ 0.0717
+ 0.8247
+[torch.FloatTensor of size 3]
+'''</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<span class="s">'''
+ 0.3348  0.0717
+ 0.5290  0.6360
+[torch.FloatTensor of size 2x2]
+'''</span>
 </code></pre></div></div>
 
-<p>저 또한 대학교시절 Java를 처음 배우면서 <code class="highlighter-rouge">main</code>함수에 코딩을 하면서 연습을 했었습니다. 그러다가 자바 메소드에 대해서 알게 되면서 만들어서 사용하려고 하면 빨간줄이 <em>찍</em> 그어지면서 메소드를 호출할 수 없게 되고, 이를 해결하려고 방금 만든 함수에 <code class="highlighter-rouge">static</code>키워드를 붙임으로써 사용이 되는구나하면서 넘어갔던 적이 있습니다. 하지만 이와 같이 작동이 되어야 하는 이유는 생각보다 간단한 이유입니다.</p>
+<p>매트릭스를 표현할 때 아무것도 아닌 빈공간을 두는 것 대신에 <code class="highlighter-rouge">:</code>을 사용하고, <code class="highlighter-rouge">,</code>로 차원을 구분하여 사용한다고 생각하면 됩니다.</p>
 
-<p><br /></p>
+<h3 id="torchcat">torch.cat()</h3>
 
-<p><code class="highlighter-rouge">static</code>키워드를 붙인 멤버변수나 메소드와 안 붙인 멤버변수나 메소드와의 <strong>차이점</strong>은 메모리에 적재되는 시기에서부터 시작됩니다. 기본적으로 Java는 객체지향언어로 클래스를 작성하고 해당 클래스를 인스턴스화(객체화)해서 사용하는 형태로 이루어집니다. 여러분들께서 클래스를 작성하고 사용하기 위해서는 <code class="highlighter-rouge">new MyClass()</code>와 같은 형태로 인스턴스를 생성하고 사용을 하시는 이유가 해당 클래스로 인스턴스를 생성하고 생성된 인스턴스로 사용하시기 때문입니다. 그렇기 때문에 인스턴스를 생성하지 않고는 사용하실 경우 에러를 <em>뿜뿜</em>하신다는 것은 모두 알고 계실 것입니다. 이말은 즉, 인스턴스 생성을 할 때 해당 객체가 메모리가 적재 된다는 것을 아실 수 있으십니다.</p>
+<p><code class="highlighter-rouge">torch.cat()</code>은 두개의 텐서를 이어 붙이는 메소드입니다. 그러기 위해서는 이어 붙이고자하는 차원에 따라 차원의 사이즈를 맞춰주시는 것도 잊지 마셔야합니다!</p>
 
-<p>그렇타면, Java를 배우면서 한번쯤은 모두 써보셨을 만한 Math 클래스는 어떤가요? 실습예제대로 따라하시다보니 잘 모르실 수도 있으시지만 Math 클래스 같은 경우에는 <code class="highlighter-rouge">new Math()</code>와 같은 인스턴스 생성을 하지 않고 바로 <code class="highlighter-rouge">Math.abs()</code>와 같은 형태로 바로 사용하셨을 겁니다. 그렇타면 Math 클래스는 어떻게 사용이 가능한걸까요?</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 0.1457  0.1454  0.9445
+ 0.8396  0.5484  0.9036
+[torch.FloatTensor of size 2x3]
+'''</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+ 0.3265  0.8622  0.5800
+ 0.3340  0.7720  0.9725
+[torch.FloatTensor of size 2x3]
+'''</span>
 
-<p><br /></p>
+<span class="n">result1</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="s">'''
+ 0.1457  0.1454  0.9445
+ 0.8396  0.5484  0.9036
+ 0.3265  0.8622  0.5800
+ 0.3340  0.7720  0.9725
+[torch.FloatTensor of size 4x3]
+'''</span>
+<span class="n">result2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">cat</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="s">'''
+ 0.1457  0.1454  0.9445  0.3265  0.8622  0.5800
+ 0.8396  0.5484  0.9036  0.3340  0.7720  0.9725
+[torch.FloatTensor of size 2x6]
+'''</span>
+</code></pre></div></div>
 
-<h3 id="static의-메모리-적재-시기">static의 메모리 적재 시기</h3>
+<p><code class="highlighter-rouge">dim=0</code>을 주면 0번째 차원은 밑으로 붙습니다. 1번쨰 차원은 오른쪽으로 붙으며 2번째 차원이면 새로이 쌓이듯 이어 붙여지겠죠?</p>
 
-<p>일단 결론부터 말씀드리면 Math 클래스는 모두 <code class="highlighter-rouge">static</code>키워드로 이루어져 있기 때문에 가능합니다. 맞습니다. <code class="highlighter-rouge">static</code>키워드를 붙인 멤버변수나 메소드는 인스턴스를 생성하지도 않아도, JVM이 클래스를 읽어들일 때 이미 자동적으로 메모리에 적재가 일어납니다. 그렇기 때문에 <code class="highlighter-rouge">static</code>키워드를 붙인 멤버변수나 메소드는 인스턴스 생성을 하지 않고도 사용이 가능한 것입니다. 그렇타면 <code class="highlighter-rouge">main(String[] args)</code> 메소드가 <code class="highlighter-rouge">static</code>이 붙는 이유가 이해가 되시나요? 맞습니다, <code class="highlighter-rouge">main(String[] args)</code>는 자바 어플리케이션이 실행될 때 처음으로 실행되는 메소드이기 때문에 메모리에 적재가 되어있어야 실행이 가능하기 때문입니다. 이제 <code class="highlighter-rouge">static</code>을 붙였을 때의 기본적인 원리를 알게되었습니다. 인제 이러한 원리로 인해 어떤 특성을 갖게 되는지 알아 볼까요?</p>
+<h3 id="torchchunk-torchsplit">torch.chunk(), torch.split()</h3>
 
-<p><br /></p>
+<p><code class="highlighter-rouge">torch.chunk()</code>는 하나의 텐서를 여러개로 나누는 메소드입니다. 첫번 째 인자로 나누고자 하는 <code class="highlighter-rouge">Tensor</code>가 들어가며 2번째 인자로 몇개로 나눌것인지, <code class="highlighter-rouge">dim=n</code>와 같이 <code class="highlighter-rouge">dim</code>에 어떤 차원으로 나눌것인지 명명을 해주면 됩니다. <code class="highlighter-rouge">torch.split()</code>도 같은 역할을 하지만 정확한 사이즈로 나누어주는 역할을 합니다. 마치 <code class="highlighter-rouge">n</code>으로 나누고 남은것을 반환해준다 생각해주시면 됩니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="s">'''
+ 0.4231  0.0197  0.2480  0.6880  0.1073
+ 0.7987  0.4116  0.7590  0.4709  0.1713
+ 0.7875  0.3960  0.6544  0.0566  0.9989
+ 0.7098  0.0270  0.2983  0.2765  0.4520
+ 0.8770  0.8683  0.8228  0.3313  0.2859
+ 0.9922  0.2215  0.6708  0.5745  0.7009
+[torch.FloatTensor of size 6x5]
+'''</span>
+<span class="n">result1</span><span class="p">,</span> <span class="n">result2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">chunk</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="s">'''
+(
+  0.4231  0.0197  0.2480  0.6880  0.1073
+  0.7987  0.4116  0.7590  0.4709  0.1713
+  0.7875  0.3960  0.6544  0.0566  0.9989
+ [torch.FloatTensor of size 3x5],
+  0.7098  0.0270  0.2983  0.2765  0.4520
+  0.8770  0.8683  0.8228  0.3313  0.2859
+  0.9922  0.2215  0.6708  0.5745  0.7009
+ [torch.FloatTensor of size 3x5])
+'''</span>
+<span class="n">result3</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="s">'''
+(
+  0.4231  0.0197
+  0.7987  0.4116
+  0.7875  0.3960
+  0.7098  0.0270
+  0.8770  0.8683
+  0.9922  0.2215
+ [torch.FloatTensor of size 6x2],
+  0.2480  0.6880
+  0.7590  0.4709
+  0.6544  0.0566
+  0.2983  0.2765
+  0.8228  0.3313
+  0.6708  0.5745
+ [torch.FloatTensor of size 6x2],
+  0.1073
+  0.1713
+  0.9989
+  0.4520
+  0.2859
+  0.7009
+ [torch.FloatTensor of size 6x1])
+'''</span>
+</code></pre></div></div>
+
+<h3 id="torchsqueeze-torchunsqueeze">torch.squeeze(), torch.unsqueeze()</h3>
+
+<p><code class="highlighter-rouge">torch.squeeze()</code>와 <code class="highlighter-rouge">torch.unsqueeze()</code>는 서로 상반된 역할을 합니다. ‘쥐어짜다’라는 느낌에서 어떤 역할을 할지 감이 오지 않으신가요? 맞습니다. <code class="highlighter-rouge">torch.squeeze()</code>를 할경우 차원의 사이즈가 ‘1’인 차원을 없애주며, 반대로 <code class="highlighter-rouge">torch.unsqueeze()</code>는 차원의 사이즈가 ‘1’인 차원을 원하는 차원에 생성을 해줍니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="s">'''
+torch.Size([4, 1, 2, 1, 3])
+'''</span>
+
+<span class="n">squeeze_x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">squeeze</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="s">'''
+torch.Size([4, 2, 3])
+'''</span>
+
+<span class="n">unsqueeze_x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">unsqueeze</span><span class="p">(</span><span class="n">squeeze_x</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="s">'''
+torch.Size([4, 1, 2, 3])
+'''</span>
+</code></pre></div></div>
 
 <hr />
-
-<p><br /></p>
-
-<h2 id="static의-특성-및-사용">static의 특성 및 사용</h2>
-
-<h3 id="클래스의-인스턴스-간-공유변수">클래스의 인스턴스 간 공유변수</h3>
-
-<p>클래스를 작성하고 여러 인스턴스를 만들어 사용할 때 모두 똑같은 값을 유지해야하는 경우가 있습니다. 이럴 때 해당 멤버 변수를 <code class="highlighter-rouge">static</code>으로 선언하시면 됩니다. 해당 클래스에서 <code class="highlighter-rouge">static</code>키워드가 붙은 해당 멤버 변수는 인스턴스가 생성되기 전에 메모리를 할당 받기 때문에 모든 인스턴스가 똑같은 멤버변수를 바라보게 됩니다.</p>
-
-<p><br /></p>
-
-<h3 id="static키워드가-붙은-메소드는-static이-것만-사용-가능하다">static키워드가 붙은 메소드는 static이 것만 사용 가능하다!</h3>
-
-<p>그렇습니다. 결론부터 말하면은 <code class="highlighter-rouge">static</code>이 붙은 메소드는 <code class="highlighter-rouge">static</code>이 붙은 멤버변수나 메소드만 사용이 가능합니다. 왜그럴까요? 생각보다 간단한 원리입니다. <code class="highlighter-rouge">static</code>키워드가 붙은 메소드는 인스턴스가 생성되기도 전에 메모리에 적재돼고 사용이 가능해야 합니다. 하지만 해당 메소드 내부에서 <code class="highlighter-rouge">static</code>이 붙지 않은 메소드나 멤버변수를 사용하게 되면? 당연히 에러가 <em>찍</em> 나올 겁니다. 왜냐하면 메모리에 적재되지도 않은 멤버변수나 메소드를 호출하려고 했기 때문입니다. 그렇기 때문에 <code class="highlighter-rouge">static</code>키워드가 붙은 메소드는 사용하는 것들도 <code class="highlighter-rouge">static</code>이 붙어야합니다.</p>
-
-<p><br /></p>
-
-<h3 id="필자의-주관적인-사용-지침">필자의 주관적인 사용 지침</h3>
-
-<p><code class="highlighter-rouge">static</code>키워드에 대해서 알아 보았습니다. 그렇타면 언제 사용하는 것이 좋을까요? 우선 위에서 말씀 드렸듯이 인스턴스간에 공유하는 값이나 공통된 값을 유지해야하는 경우에는 <code class="highlighter-rouge">static</code>사용을 고려하면 되겠습니다.</p>
-
-<p>또한, 작성한 메소드가 멤버변수를 사용하지 않고 파라미터만 사용(메소드 내 변수만)하는 경우 메소드에 <code class="highlighter-rouge">static</code>키워드를 고려해보는 것이 좋지 않을까 싶습니다. <code class="highlighter-rouge">static</code> 키워드를 붙인 메소드는 호출시간이 안 붙인 메소드에 비해 짧기 때문입니다. 기본적으로 <code class="highlighter-rouge">static</code> 키워드를 안 붙인 메소드는 해당 인스턴스의 메소드를 찾는 과정이 일어나기 때문에 비교적 오래 걸리기 때문입니다.</p>
-
-<p>나아가 위와 같은 이유로 유틸리티성이 강한 클래스에 <code class="highlighter-rouge">static</code>을 붙이는 것을 고려해보는 것이 좋습니다. 유틸리티성이 강한 클래스는 인스턴스를 하지 않고도 여러 곳에서 호출이 일어나기 때문에 조금더 호출시간을 줄이고 빠르게 사용하기 위함입니다.</p>
-
-<p><br /></p>
-
-<hr />
-
-<p><br /></p>
-
 <h1 id="마치며">마치며</h1>
 
-<p><code class="highlighter-rouge">static</code>키워드에 대해서 깊이있게 아는 것이 중요하다 생각합니다. 조금이나마 알기 쉽게 또 도움이 될 수 있는 포스트였으면 좋겠습니다. 추가적으로 깊이 있는 내용이 필요하다면 댓글을 달아주시면 저 또한 많은 도움이 돼지 않을까 싶습니다. 감사합니다!</p>
+<p>이번 포스트에서도 기본적으로 PyTorch에서 자주 쓰는 메소드들에 대해서 알아 보았습니다. 처음 PyTorch를 사용하는데 있어서 가장 많이 쓰이고 필요한 메소드들에 대해서 알아보았습니다. 조금이나마 모두에게 도움이 되었으면 좋겠습니다. 감사합니다.</p>
 
                 </div>
             </section>
@@ -333,11 +426,6 @@ into the {body} of the default.hbs template -->
                                 
                                   
                                     
-                                        
-                                        
-                                            <li><a href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2">PyTorch 기본 사용법[2/2]</a></li>
-                                        
-                                    
                                   
                                 
                                   
@@ -353,6 +441,8 @@ into the {body} of the default.hbs template -->
                                     
                                         
                                         
+                                            <li><a href="/PyTorch%EA%B4%80%ED%95%98%EC%97%AC">PyTorch에 관하여</a></li>
+                                        
                                     
                                   
                                 
@@ -366,6 +456,9 @@ into the {body} of the default.hbs template -->
                                   
                                 
                                   
+                                    
+                                        
+                                        
                                     
                                   
                                 
@@ -460,21 +553,26 @@ into the {body} of the default.hbs template -->
     <article class="post-card post-template no-image">
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Apache-Tomcat-%EC%97%B0%EB%8F%99">
+            <a class="post-card-content-link" href="/Matplotlib-Mac-%EC%82%AC%EC%9A%A9">
                 <header class="post-card-header">
                     
                         
                             <!-- 
-                                <span class="post-card-tags">Develop</span>
+                               <span class="post-card-tags">Develop</span>
                              -->
                             <span class="post-card-tags" style="display: inline;">Develop</span>
                         
+                            <!-- 
+                                <span class="post-card-tags">Solution</span>
+                             -->
+                            <span class="post-card-tags" style="display: inline;">Solution</span>
+                        
                     
 
-                    <h2 class="post-card-title">CentOS7 + Apache + Tomcat8 연동(mod_jk)</h2>
+                    <h2 class="post-card-title">맥에서 Python Matplotlib Import문제 해결 방법</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p># 개요 이번에는 CentOS7 환경에서 아파치 `httpd`와 `tomcat8`을 연동하는 방법에 대해서 알아보도록 하겠습니다. 평소 웹 환경을 구축해야하는 경우가 많은데 매번 할 때마다 까먹고 찾고 하는 시간이 너무 오래 걸리는 것같아 이번에 다시 환경을</p>
+                    <p>> 필자는 맥에서 virtualenv를 통해 Python을 사용하고 있습니다. 데이터 관련 그래프를 사용하기 위해 `matplotlib`을 설치하고 `import`를 하는 구문에서 다음과 같은 에러가 나타났습니다. ~~~ bash RuntimeError: Python is not installed as a framework. The</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -499,24 +597,33 @@ into the {body} of the default.hbs template -->
             <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
             
                 
-    <article class="post-card post-template no-image">
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2">
+                <div class="post-card-image" style="background-image: url(/assets/images/pytorch.png)"></div>
+            </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="/Python-%EA%B8%B0%EB%B3%B8%ED%99%98%EA%B2%BD%EA%B5%AC%EC%B6%95">
+            <a class="post-card-content-link" href="/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-1-2">
                 <header class="post-card-header">
                     
                         
                             <!-- 
-                                <span class="post-card-tags">Develop</span>
+                               <span class="post-card-tags">Develop</span>
                              -->
                             <span class="post-card-tags" style="display: inline;">Develop</span>
                         
+                            <!-- 
+                                <span class="post-card-tags">Pytorch</span>
+                             -->
+                            <span class="post-card-tags" style="display: inline;">Pytorch</span>
+                        
                     
 
-                    <h2 class="post-card-title">Python 기본 환경 구축하기(pyenv, virtualenv, autoenv)</h2>
+                    <h2 class="post-card-title">PyTorch 기본 사용법[1/2]</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    <p>개요 Python을 시작하신지 얼마 안되신 분들은 Python을 사용하기 전에 pyenv, virtualenv, autoenv를 설치하는 이유에 대해서 잘 모르실수도 있습니다. 저또한 처음 시작할 때 굳이 번거롭게 설치할 필요가 있나 했던 적이 있습니다. 지금와서 생각해보면 그런</p>
+                    <p>개요 기본적으로 PyTorch를 사용하면서 자주 쓰게 되는 메소드에 대해서 설명하고자 합니다. 기본적으로 PyTorch 도큐먼트 내용이 잘 나와있습니다. 해당 도큐먼트를 기반으로 쉽게 설명을 위해 포스팅합니다. 현재 PyTorch 0.3.0 도큐먼트 기반으로 작성합니다. 기본사용법 시리즈 PyTorch</p>
                 </section>
             </a>
             <footer class="post-card-meta">
@@ -553,18 +660,18 @@ into the {body} of the default.hbs template -->
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">Java의 Static 바로알기</div>
+    <div class="floating-header-title">PyTorch 기본 사용법[2/2]</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
 </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Java%EC%9D%98+Static+%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0&amp;url=https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0"
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=PyTorch+%EA%B8%B0%EB%B3%B8+%EC%82%AC%EC%9A%A9%EB%B2%95%5B2%2F2%5D&amp;url=https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
 
         </a>
-        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/Java-Static-%EB%B0%94%EB%A1%9C%EC%95%8C%EA%B8%B0"
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://hashbox.github.io/PyTorch-%EA%B8%B0%EB%B3%B8%EC%82%AC%EC%9A%A9%EB%B2%95-2-2"
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
