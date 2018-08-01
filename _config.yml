@@ -8,7 +8,7 @@ paginate: 100 # it will paginate after this number
 language: 'zh-cn'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /kplus
+baseurl: /kplus/
 # url: https://hashbox.github.io
 
 # Website info
