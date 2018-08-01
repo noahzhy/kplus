@@ -8,8 +8,8 @@ paginate: 100 # it will paginate after this number
 language: 'zh-cn'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /kplus/
-# url: https://hashbox.github.io
+baseurl: /
+url: https://noahzhy.github.io/kplus
 
 # Website info
 title: 在韩K加
@@ -31,11 +31,11 @@ facebook: jinh574 # replace by your username
 github: noahzhy # replace by your username
 
 # Disqus
-disqus: False
-disqus_shortname: hashbox # replace with your disqus username
+disqus: True
+disqus_shortname: kplus # replace with your disqus username
 
 # Google Analytics
-google_analytics: UA-99247778-1 # replace with your GA tracking identifier
+# google_analytics: UA-99247778-1 # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
