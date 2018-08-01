@@ -5,21 +5,21 @@ kramdown:
     input: GFM
     syntax_highlighter: rouge
 paginate: 100 # it will paginate after this number
-language: 'ko-kr'
+language: 'zh-cn'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
-url: https://hashbox.github.io
+baseurl: /kplus/
+# url: https://hashbox.github.io
 
 # Website info
-title: HASHBOX
+title: 在韩K加
 description: 빅데이터 분야에 모험가가 되고 싶은 개발자 블로그
 cover: assets/images/blog-cover.jpg
 logo: assets/images/hashbox-logo.png
 logo_dark: assets/images/favicon.ico
 favicon: assets/images/favicon.ico
-production_url: https://hashbox.github.io/
-source_url: https://github.com/hashbox/hashbox.github.io/
+production_url: https://noahzhy.github.io/kplus/
+source_url: https://github.com/noahzhy/kplus/
 
 # Social info
 navigation: True # show the navbar links
@@ -28,7 +28,7 @@ subscribers: False # you need to connect an external service for this to work,
 # by editing `_includes/subscribe-form.html`
 twitter: jinh574 # replace by your username
 facebook: jinh574 # replace by your username
-github: jinh574 # replace by your username
+github: noahzhy # replace by your username
 
 # Disqus
 disqus: True
@@ -72,13 +72,13 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: hashbox
-repo: hashbox.github.io
+username: noahzhy
+repo: kplus
 branch: main
-relative_source: ../hashbox/
+relative_source: ../kplus/
 destination: ../hashbox-pages/
-production_url:  https://hashbox.github.io/
-source_url:  https://github.com/hashbox/hashbox.github.io/
+production_url:  https://noahzhy.github.io/kplus/
+source_url:  https://github.com/noahzhy/kplus/
 
 exclude:
   - assets/css
